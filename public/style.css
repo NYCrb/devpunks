@@ -1,6 +1,6 @@
 body {
   color: white;
-  background: black;
+  background: black url(/main.svg) no-repeat;
 
   display: flex;
   flex-direction: column;
@@ -9,4 +9,16 @@ body {
 
 h1 {
   text-align: center;
+}
+
+footer {
+  background: yellow;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 40vh;
+  width: 100vw;
+  display: block;
+  background: url(/girl.png) no-repeat bottom right;
+  background-size: contain;
 }
