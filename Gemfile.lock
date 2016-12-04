@@ -1,8 +1,13 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    libv8 (3.16.14.17)
     rack (2.0.1)
     rake (11.3.0)
+    ref (2.0.0)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
 
 PLATFORMS
   ruby
@@ -10,6 +15,7 @@ PLATFORMS
 DEPENDENCIES
   rack
   rake
+  therubyracer
 
 BUNDLED WITH
    1.12.5

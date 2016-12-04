@@ -1,20 +1,29 @@
-class DevPunks
-  def call(env)
-    request = Rack::Request.new env
+$:.unshift File.dirname(__FILE__)
 
-    case request.path_info
-      when /videos/
-        [500, {"Content-Type" => "text/html"}, ['Videos']]
-      when /podcast/
-        [500, {"Content-Type" => "text/html"}, ['Podcasts']]
-      when /jobs/
-        [500, {"Content-Type" => "text/html"}, ['Jobs']]
-      when /sponsors/
-        [500, {"Content-Type" => "text/html"}, ['Sponsors']]
-      when //
-        [200, {'Content-Type' => 'text/html'}, ['\m/ Dev Punks \m/']]
-    end
-  end
+# http://www.rubydoc.info/github/rack/rack/Rack/Static
+use Rack::Static, urls: ['/'], root: 'public', index: 'index.html'
+use Rack::Static, urls: ['/jobs'], root: 'jobs', index: 'index.html'
+
+require './application'
+
+route '/hello' do
+  "Hello #{params['name'] || 'World'}!"
 end
 
-run DevPunks.new
+route '/videos' do
+  'Videos'
+end
+
+route '/podcast' do
+  'Podcast'
+end
+
+route '/jobs' do
+  'Jobs'
+end
+
+route '/sponsors' do
+  'Sponsors'
+end
+
+run Application.app
