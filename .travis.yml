@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - 5.10.1
+addons:
+  postgresql: "9.4"
+before_install:
+  - rvm install 2.2.3
+install:
+  # run whatever you have to do here. I have a Makefile that lets you install
+  # all Node.js-related or Ruby-related dependencies as one step.
+  - make npm
+  - make bundler
+before_script:
+  # My Rails app lives in a subdirectory. I want to make sure that
+  # my database is ready before I start running RSpec tests
+  - psql -c 'create database test_db;' -U postgres
+  # I use separate database.yml config for Travis CI
+  - cp webapp/config/database.travis.yml webapp/config/database.yml
+script:
+  # `test` target executes `bundle exec rspec spec` and `npm run test`
+  # in all appropriate subdirectories
+  - make test
+shareeditflag
