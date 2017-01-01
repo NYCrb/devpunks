@@ -4,6 +4,7 @@ body {
   font-size: 3.7vw;
   background: black url(/main.svg) no-repeat;
   background-attachment: fixed;
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
 
   display: flex;
   flex-direction: column;
