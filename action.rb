@@ -7,7 +7,7 @@ class Action
   end
 
   def call(env)
-    @request = Rack::Request.new env
+    @request = Rack::Request.new(env)
 
     evaluate_body
 
@@ -22,6 +22,7 @@ class Action
 
   def params
     request.params
+      .tap { |r| r.symbolize_keys! }
   end
 
   def json(payload)

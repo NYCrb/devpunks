@@ -1,21 +1,15 @@
+%w[hash]
+  .each { |extension| require_relative "./extensions/#{extension}" }
+
 %w[events]
   .each { |store| require_relative "./stores/#{store}" }
 
 require_relative './helpers'
 
-#static!
-#four_oh_four!
+static!
 
-use Rack::TryStatic,
-  root: "public",
-  urls: %w[/],
-  try: ['.html']
+four_oh_four!
 
-run Rack::NotFound.new('./public/404.html')
+route ('/events') { json Events }
 
-
-# route ('/events') { json Events }
-# route ('/arun') { 'Arun' }
-# route ('/arun') { 'Arun' }
-
-# run!
+run!

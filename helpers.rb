@@ -4,18 +4,21 @@ require 'rack/contrib/not_found'
 require 'rack/contrib/try_static'
 
 def four_oh_four!( path = './public/404.html' )
+  Application.run Rack::NotFound.new(path)
 end
 
-def static!( path='./public' )
+def static!( path='public' )
   options = {
     gzip: true,
     root: path,
-    urls: '/',
-    index: 'index.html'
+    urls: ['/'],
+    index: 'index.html',
+
+    try: ['.html']
   }
 
-  Application.map options[:urls] do
-    run Rack::Static.new self, options
+  Application.map options[:urls].first do
+    use Rack::TryStatic, options
   end
 end
 
