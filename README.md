@@ -1,5 +1,48 @@
 # devpunks
 
+### DSL (Domain Specific Language)
+#### static!
+Expose static files _(defaults to ./public)_
+```ruby
+static!
+````
+
+#### four_oh_four!
+Fallback error page for missing route definitions.
+```ruby
+four_oh_four! # /not-found => 404 & renders ./public/404.html
+````
+
+#### route
+Define handler for route URI
+```ruby
+route ('/foo') { 'devPunks' }
+````
+
+#### params
+Access to _(GET, POST, PUT, & PATCH)_ request parameters
+```ruby
+route ('/echo?value=Hello') { "#{params[:value]} World!" }
+````
+
+#### status
+Get or set the response code.
+```ruby
+status 201 #=> Responds with 201 CREATED
+````
+
+#### json
+Responds with a JSON body
+```ruby
+json(foo: 'bar', baz: 'bat') #=> "{\"foo\":\"bar\", \"baz\":\"bat\"}"
+````
+
+#### run!
+Run the Application
+```ruby
+run!
+````
+
 ### Install
 ```bash
 $ bundle
