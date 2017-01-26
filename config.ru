@@ -3,8 +3,19 @@
 
 require_relative './helpers'
 
-static!
+#static!
+#four_oh_four!
 
-route ('/events') { json Events }
+use Rack::TryStatic,
+  root: "public",
+  urls: %w[/],
+  try: ['.html']
 
-run!
+run Rack::NotFound.new('./public/404.html')
+
+
+# route ('/events') { json Events }
+# route ('/arun') { 'Arun' }
+# route ('/arun') { 'Arun' }
+
+# run!

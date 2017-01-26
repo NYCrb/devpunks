@@ -1,5 +1,10 @@
 require './action'
 require './application'
+require 'rack/contrib/not_found'
+require 'rack/contrib/try_static'
+
+def four_oh_four!( path = './public/404.html' )
+end
 
 def static!( path='./public' )
   options = {

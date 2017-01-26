@@ -1,4 +1,4 @@
 source :rubygems
 
-gem 'rack'
+gem 'rack-contrib'
 gem 'shotgun', group: :development
