@@ -30,6 +30,6 @@ class Action
 
   def evaluate_body
     # "Some 🎩 magik🎩 stuff is happening" - Jan
-    @body = self.instance_eval &@block
+    @body = instance_eval &@block
   end
 end
