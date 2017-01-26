@@ -1,6 +1,8 @@
 # devpunks
 
-### DSL (Domain Specific Language)
+### DSL (Domain Specific Language) for ([config.ru](https://github.com/NYCrb/devpunks/blob/master/config.ru))
+Inspired by Express.js _(http://expressjs.com/)_ routing.
+
 #### static!
 Expose static files _(defaults to ./public)_
 ```ruby
@@ -64,3 +66,13 @@ $ rackup
 
 #### Development
   - [Shotgun](https://github.com/rtomayko/shotgun#shotgun)
+
+### Skeleton Framework: or...Why Rack?
+Web Servers vs. App Servers
+http://www.justinweiss.com/articles/a-web-server-vs-an-app-server/
+
+Rails vs. Sinatra
+https://blog.engineyard.com/2014/rails-vs-sinatra
+
+How Does Rack Work?
+https://blog.engineyard.com/2015/understanding-rack-apps-and-middleware
