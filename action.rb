@@ -6,8 +6,8 @@ class Action
     @headers = {'Content-Type' => 'application/json'}
   end
 
-  def status(value = nil)
-    value ? @status = value : @status || 200
+  def status(code=200)
+    @status ||= code
   end
 
   def params
