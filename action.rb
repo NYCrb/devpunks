@@ -1,25 +1,38 @@
 class Action
   attr_reader :headers, :body, :request
 
-  def initialize &block
+  def initialize(&block)
     @block = block
-    @status = 200
-    @headers = {'Content-Type' => 'text/html'}
-    @body = ''
+    @headers = {'Content-Type' => 'application/json'}
   end
 
-  def status value = nil
-    value ? @status = value : @status
+  def call(env)
+    @request = Rack::Request.new(env)
+
+    evaluate_body
+
+    [status, headers, [body]]
+  end
+
+  private
+
+  def status(code=200)
+    @status ||= code
   end
 
   def params
     request.params
+      .tap { |r| r.symbolize_keys! }
   end
 
-  def call(env)
-    @request = Rack::Request.new env
-    @body = self.instance_eval &@block
-    [status, headers, [body]]
+  def json(payload)
+    JSON.dump(payload.to_h)
   end
 
+  def evaluate_body
+    # "Some 🎩 magik🎩 stuff is happening" - Jan
+    # http://web.stanford.edu/~ouster/cgi-bin/cs142-winter15/classEval.php
+
+    @body = instance_eval &@block
+  end
 end

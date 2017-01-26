@@ -1,5 +1,4 @@
-source 'http://rubygems.org'
+source :rubygems
 
-gem 'rake'
-gem 'rack'
-gem 'therubyracer'
+gem 'rack-contrib'
+gem 'shotgun', group: :development

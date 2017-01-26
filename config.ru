@@ -1,29 +1,15 @@
-$:.unshift File.dirname(__FILE__)
+%w[hash]
+  .each { |extension| require_relative "./extensions/#{extension}" }
 
-# http://www.rubydoc.info/github/rack/rack/Rack/Static
-use Rack::Static, urls: ['/'], root: 'public', index: 'index.html'
-use Rack::Static, urls: ['/jobs'], root: 'jobs', index: 'index.html'
+%w[events]
+  .each { |store| require_relative "./stores/#{store}" }
 
-require './application'
+require_relative './helpers'
 
-route '/hello' do
-  "Hello #{params['name'] || 'World'}!"
-end
+static!
 
-route '/videos' do
-  'Videos'
-end
+four_oh_four!
 
-route '/podcast' do
-  'Podcast'
-end
+route ('/events') { json Events }
 
-route '/jobs' do
-  'Jobs'
-end
-
-route '/sponsors' do
-  'Sponsors'
-end
-
-run Application.app
+run!
