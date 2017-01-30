@@ -1,0 +1,33 @@
+links:
+  twitter:
+    icon: 🐦
+    url: http://twitter.com/devpunks
+    title: Twitter
+  github:
+    icon: 💾
+    url: http://github.com/nycrb/devpunks
+    title: GitHub
+  youtube:
+    icon: 🎬
+    url: https://www.youtube.com/channel/UCdbw8GpAB4pjVacUTtGUemQ
+    title: YouTube
+  email:
+    icon: 📨
+    url: mailto:help@devpunks.com
+    title: E-Mail
+
+sponsors:
+  pivotal:
+    title: Pivotal Labs
+    url: http://pivotal.io
+
+posts:
+  decaf:
+    title: Rails Decaf *(sans CoffeeScript &amp; Sprockets)*
+    url: http://blog.arkency.com/2015/03/gulp-modern-approach-to-asset-pipeline-for-rails-developers/
+
+tools:
+  termjs:
+    title: term.js
+    url: https://github.com/chjj/term.js
+    blurb: A terminal written in JavaScript
