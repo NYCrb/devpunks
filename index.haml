@@ -1,0 +1,61 @@
+!!!html
+%html{lang: "en"}
+  %head
+    %title= title
+    %link{rel: "stylesheet", href: "style.css"}
+
+  %body
+    %h1= title
+    %blockquote= blurb
+
+    %main
+      %img{src: "quote.png", alt: "devpunks"}
+
+      %section#mission
+        - mission.each do |m|
+          %p= m
+
+      %section#politics
+        %h1 Politics
+        - politics.each do |p|
+          %p= p
+
+      %section#community
+        %h1 Community
+        - community.each do |c|
+          %p= c
+
+      %section#media
+        %h1 devpunk vodcast
+        - media.each do |m|
+          %p= m
+
+      %section#sponsors
+        %h1 Sponsors
+        %dl
+          - sponsors.each do |key, s|
+            %dt
+              %a{title: s.title, href: s.url}= s.title
+            %dd
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    %q fight the technocracy!
+    %cite https://www.wikiwand.com/en/technocracy
+
+    %aside
+      %h1 Off the Beaten Post
+      %ul
+        = list_of posts do |key, p|
+          %a{href: p.url}= p.title
+
+      %h1 Tools
+      %ul
+        = list_of tools do |key, t|
+          %a{href: t.url}= t.title
+
+    %footer
+      %nav
+        %h1 ⚓ devpunk Links
+        %ul
+          = list_of links do |key, l|
+            %a{href: l.url, title: l.title}= l.title
