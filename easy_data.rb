@@ -1,7 +1,7 @@
-require "awesome_print"
 require "yaml"
 require "ostruct"
-require "redcarpet"
+
+require "./markdown"
 
 # EasyData
 #
@@ -22,75 +22,51 @@ require "redcarpet"
 
 # MARKDOWN
 #
-# For all strings, EasyData runs the string through a Markdown parser and HTML
-# renderer so we can easily include formatting anywhere in the site data.
+# For all strings, EasyData runs the string through a Markdown HTML renderer so
+# we can easily include formatting anywhere in the site data.
 
 module DevPunks
   module EasyData
-    DATA_DIR = "data"
-    MARKDOWN = Redcarpet::Markdown.new Redcarpet::Render::HTML
+    TRANSFORMS = [
+      # PHASE 1 - Transforms that change the enumerability of objects
+      [String, -> obj { obj.include?("\n") ? obj.split("\n") : obj }],
 
-    # Take a list of YAML file basenames and merge them all into one hash.
+      # PHASE 2 - Recursion into enumerable objects
+      [Hash  , -> obj { obj.map { |k, v| [k, transform(v)] }.to_h } ],
+      [Array , -> obj { obj.map { |v| transform(v) } }              ],
+
+      # PHASE 3 - Transforms that improve the format/usability of objects
+      [Hash  , -> obj { hash_to_data_object(obj) }                  ],
+      [String, -> obj { DevPunks::Markdown.render_inline(obj) }     ]
+    ]
 
     def self.[] *files
-      results = {}
-      each_data_file files do |file|
-        YAML.load_file(file).each do |key, value|
-          results[key] = wrap_and_render value
-        end
-      end
-      results
-    end
-
-    def self.each_data_file files
-      files.each do |file|
-        yield File.join(DATA_DIR, file + ".yaml")
+      files.reduce({}) do |hash, file|
+        hash.merge transformed_data_from(File.join("data", file + ".yaml"))
       end
     end
 
-    def self.wrap_and_render object
-      if object.is_a? String
-        if object.include? "\n"
-          # YAML allows multiline paragraphs with the > character.
-          # When defined this way, all strings end with \n even if only one
-          # paragraph was defined
-          object.split("\n").map { |s| markdown s }
-        else
-          markdown object
-        end
-      elsif object.is_a? Hash
-        wrapped_hash = object.map do |key, value|
-          [key, wrap_and_render(value)]
-        end.to_h
+    def self.transformed_data_from file
+      YAML.load_file(file).reduce({}) do |hash, (key, value)|
+        hash.merge key => transform(value)
+      end
+    end
 
-        if is_a_hash_of_hashes? object
-          # If it's a hash of hashes, then it's one of the top-level hashes
-          # like {google: {url: .., title: ..}, github: {url: .., title: ..}}
-          # whose values are OTHER hashes containing the real data
-          wrapped_hash
-        else
-          # If this hash's values are NOT all hashes, then it must be a data
-          # hash such as {url: "google.com", title: "Google"}, and we should
-          # wrap it in an OpenStruct so it can be accessed with dot notation
-          OpenStruct.new wrapped_hash
-        end
+    def self.transform object
+      TRANSFORMS.reduce(object) do |obj, (type, transform)|
+        obj.is_a?(type) ? transform.call(obj) : obj
+      end
+    end
+
+    def self.hash_to_data_object hash
+      if hash.any? { |_, v| !(v.is_a?(Hash) || v.is_a?(OpenStruct)) }
+        OpenStruct.new hash
       else
-        raise "Don't know how to wrap or render #{object.inspect}"
+        # If this hash's values are all Hashes or OpenStructs, then it must be
+        # a nested hash for organizing data objects, and it should be left as a
+        # Hash so it can be enumerated by loops in the view
+        hash
       end
-    end
-
-    def self.is_a_hash_of_hashes? object
-      object.is_a?(Hash) && object.values.all? { |v| v.is_a? Hash }
-    end
-
-    def self.markdown str
-      # By default, the Markdown HTML renderer wraps everything
-      # in <p> tags.  It also appends a \n to the end of every
-      # rendered output string.  Since many of the things we're
-      # Markdowning are meant to be inline, the <p> tags and \n
-      # are stripped out here, leaving the decision to the
-      # template(s).
-      MARKDOWN.render(str).strip[3...-4]
     end
   end
 end
