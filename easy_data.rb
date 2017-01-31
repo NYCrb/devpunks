@@ -59,13 +59,13 @@ module DevPunks
     end
 
     def self.hash_to_data_object hash
-      if hash.any? { |_, v| !(v.is_a?(Hash) || v.is_a?(OpenStruct)) }
-        OpenStruct.new hash
-      else
+      if hash.all? { |_, v| v.is_a?(Hash) || v.is_a?(OpenStruct) }
         # If this hash's values are all Hashes or OpenStructs, then it must be
         # a nested hash for organizing data objects, and it should be left as a
         # Hash so it can be enumerated by loops in the view
         hash
+      else
+        OpenStruct.new hash
       end
     end
   end
