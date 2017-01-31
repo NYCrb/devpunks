@@ -1,1 +1,0 @@
-Application = Rack::Builder.new

@@ -1,15 +1,24 @@
-%w[hash]
-  .each { |extension| require_relative "./extensions/#{extension}" }
+require "rack"
+require "rack/contrib"
 
-%w[events]
-  .each { |store| require_relative "./stores/#{store}" }
+require "./homepage"
+require "./events"
 
-require_relative './helpers'
+use Rack::ShowExceptions
 
-static!
+use Rack::TryStatic,
+  root: "public",
+  urls: %w[/]
 
-four_oh_four!
+map "/events" do
+  run DevPunks::Events.new
+end
 
-route ('/events') { json Events }
-
-run!
+run lambda { |env|
+  case env["PATH_INFO"]
+  when "/"
+    DevPunks::HomePage.new
+  else
+    Rack::NotFound.new("public/404.html")
+  end.call env
+}
