@@ -3,7 +3,7 @@ require 'date'
 require 'open-uri'
 
 class Events
-  def self.to_h
+  def self.to_json
     data.map do |hash|
       {
         "Name": "#{hash['name']}",
@@ -12,7 +12,7 @@ class Events
         "Attended":  "#{hash['yes_rsvp_count']}",
         "Link": "#{hash['link']}"
       }
-    end
+    end.to_json
   end
 
   def self.data
