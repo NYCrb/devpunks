@@ -3,10 +3,6 @@ require './application'
 require 'rack/contrib/not_found'
 require 'rack/contrib/try_static'
 
-def four_oh_four!( path = './public/404.html' )
-  Application.run Rack::NotFound.new(path)
-end
-
 def static!( path='public' )
   options = {
     gzip: true,
@@ -30,4 +26,8 @@ end
 
 def run!
   run Application
+end
+
+def four_oh_four!( path = './public/404.html' )
+  Application.run Rack::NotFound.new(path)
 end

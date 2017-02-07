@@ -19,6 +19,7 @@ end
 class AbstractRecord < ActiveRecord::Base
   CONNECTION = { adapter: 'sqlite3', database: 'development.sqlite4' }
 
+  # http://blog.bigbinary.com/2015/12/28/application-record-in-rails-5.html
   # https://github.com/rails/rails/blob/master/activerecord/lib/active_record/inheritance.rb#L122
   self.abstract_class = true
 

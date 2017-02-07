@@ -14,8 +14,6 @@ class Action
     [status, headers, [body]]
   end
 
-  private
-
   def status(code=200)
     @status ||= code
   end
@@ -25,9 +23,7 @@ class Action
       .tap { |r| r.symbolize_keys! }
   end
 
-  def json(payload)
-    JSON.dump(payload.to_h)
-  end
+private
 
   def evaluate_body
     # "Some 🎩 magik🎩 stuff is happening" - Jan
