@@ -1,12 +1,13 @@
 class Action
   attr_reader :headers, :body, :request
 
-  def initialize(&block)
+  def initialize &block
     @block = block
-    @headers = {'Content-Type' => 'application/json'}
+    @headers = Hash.new # {'Content-Type' => 'application/json'}
   end
 
-  def call(env)
+  def call env
+    # https://github.com/rack/rack/blob/master/test/spec_request.rb
     @request = Rack::Request.new(env)
 
     evaluate_body
@@ -14,7 +15,7 @@ class Action
     [status, headers, [body]]
   end
 
-  def status(code=200)
+  def status code=200
     @status ||= code
   end
 
@@ -26,7 +27,7 @@ class Action
 private
 
   def evaluate_body
-    # "Some 🎩 magik🎩 stuff is happening" - Jan
+    # "Some 🎩 🐰 magik🎩🐰 stuff is happening" - Jan
     # http://web.stanford.edu/~ouster/cgi-bin/cs142-winter15/classEval.php
 
     @body = instance_eval &@block
