@@ -1,11 +1,97 @@
-body {
-  margin-top: 30vh;
-  color: white;
-  font-size: 3.7vw;
-  background: black url(/main.svg) no-repeat;
+@import 'https://fonts.googleapis.com/css?family=Nunito|Quattrocento+Sans:300,300i,400,400i,700,700i';
+
+body > blockquote {
+  display: none;
+}
+body > figure {
+  display: flex;
+  height: 70vh;
+  width: 76vw;
+  align-self: flex-end;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+body > figure figcaption {
+  font-size: 1.2em;
+  font-weight: 700;
+  height: 10vh;
+  width: 32vw;
+  align-self: flex-end;
+  margin: 0;
+  padding:  0 1vw;
+  color: rgba(255,255,255,0.9);
+  border-radius: .9em 0 0 0;
+  background: rgba(10,10,10,0.9);
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.4)
+}
+body > figure p {
+  align-self: flex-end;
+  margin: 0;
+  padding:  0 1vw;
+  border-radius: 0 0 0 .5em;
+  width: 32vw;
+  font-size: 0.7em;
+  height: 46vh;
+  font-weight: 300;
+  background: rgba(20,20,20,0.8);
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.4)
+}
+body > figure > iframe {
+  order: 1;
+  width: 41vw;
+  height: 56vh;
+  margin-right: 1vw;
+  align-self: flex-start;
+  border-radius: .9em;
+  border-radius: 0 .5em .5em 0;
+  background: black;
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.4)
+}
+body > figure > iframe {
+  opacity: 0.9;
+}
+body > figure > iframe:hover {
+  opacity: 1.0;
+}
+
+html * {
+  margin:0;
+  padding:0;
+
+  text-align:center;
+  padding-top:0.02px;
+  padding-bottom:0.02px;
+}
+html {
+  background: rgb(29,29,29)  url(/main.svg) no-repeat top left;
+  background-size: 30%;
   background-attachment: fixed;
   // https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
 
+  text-align:center;
+
+  letter-spacing:0.06rem;
+
+  font-size: 1.5vw;
+  line-height: 1.612em;
+  font-size-adjust:0.5;
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: rgba(255,255,255,0.7);
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 2vw;
+  }
+}
+p {
+  margin: 0 22vw 1.612em;
+//background: rgba(255,255,255,0.4);;
+  text-align:left;
+//font-size: 0.9rem;
+//line-height: 1.618em;
+}
+body {
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,23 +112,40 @@ header {
   margin-top: 2em;
   text-align: center;
 }
+main > section > header {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.612em;
+  display: block;
+  text-align: center;
+  margin: 1.612em 22vw .612em;
+}
 
 h1 {
   padding: 0;
-  font-size: 2em;
-  margin-left: 3em;
+  margin: 1rem 1rem 0;
+  font-size: 3.5rem;
   text-align: right;
   line-height: 1.5em;
   padding-right: 1.1em;
-  background: rgba(0,0,0,.6) url(/h1.png) no-repeat;
+  background: url(/h1.png) no-repeat;
   background-position: top right;
   background-size: 1em 1em;
 }
 
 body > main {
-  margin: 0;
+  margin: 0 0 80vh;
   text-align: center;
-  background: rgb(0,0,0)
+  background: rgb(35,35,35);
+  box-shadow: 0 0 20px 2px rgba(0,0,0,0.2)
+}
+
+#culture, #politics, #community, #media, #sponsors {
+//background-size: 32%;
+  background-attachment: scroll;
+}
+#sponsors p:last-of-type,
+#media p:last-of-type {
+  margin-bottom: 4em;
 }
 body > main > img {
   width: 96%;
@@ -51,6 +154,7 @@ body > main > img {
 
 body > aside {
   z-index: 0;
+  margin-bottom: 20vh;
 }
 
 article {
@@ -142,15 +246,35 @@ video {
   margin: 0 0 1.612em;
 }
 
-footer {
+body > footer {
   left: 0;
   bottom: 0;
   z-index: 1;
   width: 100vw;
-  height: 40vh;
-  display: block;
+  height: 20vh;
   position: fixed;
-  background: yellow;
   background: url(/girl.png) no-repeat bottom right;
   background-size: contain;
+
+  display: flex;
+  align-items: flex-end;
+}
+body > footer nav {
+
+  display: flex;
+  background: rgba(0,0,0,0.9);
+  flex-flow: row wrap;
+
+  padding: 1em 0;
+  border-radius: 10vh;
+  height: 1.162em;
+}
+body footer nav header {
+  height: inherit;
+  margin: 0 1em 0 .5em;
+}
+body > footer nav li {
+  margin: 0 0.5em;
+  list-style: none;
+  height: inherit;
 }
