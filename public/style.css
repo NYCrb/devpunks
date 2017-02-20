@@ -148,6 +148,9 @@ body > main {
 #media p:last-of-type {
   margin-bottom: 4em;
 }
+#media {
+  display: none;
+}
 body > main > img {
   width: 96%;
   height: auto;
