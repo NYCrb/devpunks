@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'activerecord'
-gem 'sqlite3'
 
 gem 'pug-ruby'
 
@@ -12,4 +11,7 @@ gem 'faye'
 # http://railscasts.com/episodes/368-miniprofiler
 # https://github.com/MiniProfiler/rack-mini-profiler
 gem 'rack-mini-profiler'
-gem 'shotgun', group: :development
+group :development do
+  gem 'sqlite3'
+  gem 'shotgun'
+end
