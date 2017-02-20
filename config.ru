@@ -3,7 +3,7 @@ require 'faye'
 use Faye::RackAdapter, mount: '/faye'
 
 EXTENSIONS = %w[hash]
-STORES = %w[sponsor events]
+STORES = %w[events] #[sponsor events]
 
 EXTENSIONS
   .each { |extension| require_relative "./extensions/#{extension}" }
