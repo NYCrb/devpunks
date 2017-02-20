@@ -1,7 +1,16 @@
 @import 'https://fonts.googleapis.com/css?family=Nunito|Quattrocento+Sans:300,300i,400,400i,700,700i';
 
 body > blockquote {
-  display: none;
+  text-align: right;
+  margin: 0 1rem 0 68vw;
+}
+body > blockquote q {
+  font-style: italic;
+}
+body > blockquote p {
+  margin: 0;
+  opacity: 0.4;
+  text-align: right;
 }
 body > figure {
   display: flex;
@@ -125,7 +134,7 @@ h1 {
   margin: 1rem 1rem 0;
   font-size: 3.5rem;
   text-align: right;
-  line-height: 1.5em;
+  line-height: 3.5rem;
   padding-right: 1.1em;
   background: url(/h1.png) no-repeat;
   background-position: top right;
@@ -143,6 +152,9 @@ body > main {
 #culture, #politics, #community, #media, #sponsors {
 //background-size: 32%;
   background-attachment: scroll;
+}
+#culture {
+  margin-top: 3rem;
 }
 #sponsors p:last-of-type,
 #media p:last-of-type {
@@ -251,34 +263,43 @@ video {
 }
 
 body > footer {
-  left: 0;
   bottom: 0;
   z-index: 1;
   width: 100vw;
   height: 20vh;
   position: fixed;
-  background: url(/girl.png) no-repeat bottom right;
+  background: url(/girl.png) no-repeat 79vw bottom;
   background-size: contain;
 
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
 body > footer nav {
-
+  opacity: 0.9;
   display: flex;
   background: rgba(0,0,0,0.9);
   flex-flow: row wrap;
 
-  padding: 1em 0;
-  border-radius: 10vh;
+  padding: 1em 1em 1.4em;
+  border-radius: 3vh;
   height: 1.162em;
+  margin: 0 1em 0.8em;
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.4)
+}
+body > footer nav:hover {
+  opacity: 1.0;
 }
 body footer nav header {
   height: inherit;
   margin: 0 1em 0 .5em;
 }
 body > footer nav li {
+  opacity: 0.6;
   margin: 0 0.5em;
   list-style: none;
   height: inherit;
+}
+body > footer nav li:hover {
+  opacity: 0.8;
 }
