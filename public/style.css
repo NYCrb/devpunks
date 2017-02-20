@@ -104,6 +104,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(0,0,0,0.4) url(brick-wall-dark.png);
 }
 
 a, a:visited {
@@ -143,7 +144,7 @@ h1 {
 }
 
 body > main {
-  margin: 0 0 80vh;
+  margin: 2rem 0 80vh;
   text-align: center;
   background: rgb(35,35,35);
   box-shadow: 0 0 20px 2px rgba(0,0,0,0.2)
@@ -268,12 +269,12 @@ body > footer {
   width: 100vw;
   height: 20vh;
   position: fixed;
-  background: url(/girl.png) no-repeat 79vw bottom;
+//background: url(/girl.png) no-repeat 79vw bottom;
   background-size: contain;
 
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flext-start;
 }
 body > footer nav {
   opacity: 0.9;
