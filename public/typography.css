@@ -46,11 +46,10 @@ a:visited {
 
 @media screen and (min-width: 786px) {
   :root {
-    --rem: calc(2.6vw);;
+    --rem: calc(2.6vw);
   }
 
   body > * {
     margin: 0 2vw;
   }
-
 }
