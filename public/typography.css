@@ -38,7 +38,7 @@ html {
 
 body { padding: 1.612em 0 }
 
-body > * {
+body > *, body > header > p {
   margin: var(--margin);
   margin-bottom: 1.612em;
 }
