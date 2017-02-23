@@ -48,4 +48,9 @@ a:visited {
   :root {
     --rem: calc(2.6vw);;
   }
+
+  body > * {
+    margin: 0 2vw;
+  }
+
 }
