@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+
+:root {
+  --rem: 3.6vw;
+  --link: rgba(100,100,240,0.8);
+  --initial-color: rgba(240,240,240, 0.8);
+  --initial-background: rgba(10,10,10, 0.8);
+}
+
+html {
+  color: var(--initial-color);
+  background: var(--initial-background);
+
+  font-size: var(--rem);
+  line-height: 1.612em;
+  font-size-adjust: 0.5;
+  font-family: 'Ubuntu', sans-serif;
+
+  letter-spacing: -0.02em;
+  font-stretch: normal;
+  font-variant: normal;
+  unicode-range: U+0-10FFFF;
+  font-feature-settings: normal;
+}
+
+body > * {
+  margin: 0 15vw;
+  margin-bottom: 1.612em;
+}
+
+body {
+  padding: 1.612em 0;
+}
+
+body > header {
+  margin: 0;
+  margin-bottom: 1.612em;
+  text-align: center;
+}
+
+a:link,
+a:active,
+a:visited {
+  color: var(--link);
+}
+
+@media screen and (min-width: 786px) {
+  :root {
+    --rem: calc(2.6vw);;
+  }
+}
