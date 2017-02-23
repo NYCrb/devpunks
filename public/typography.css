@@ -2,14 +2,30 @@
 
 :root {
   --rem: 3.6vw;
+
   --link: rgba(100,100,240,0.8);
-  --initial-color: rgba(240,240,240, 0.8);
-  --initial-background: rgba(10,10,10, 0.8);
+  --hover-link: rgba(150,150,240,1.0);
+
+  --color: rgba(240,240,240, 0.8);
+  --background: rgba(10,10,10, 0.8);
+
+  --margin: 0 2vw;
+}
+
+@media screen and (min-width: 786px) {
+  :root {
+    --rem: 2.6vw;
+
+    --color: rgba(240,240,240, 0.8);
+    --background: rgba(10,10,10, 0.8);
+
+    --margin: 0 15vw;
+  }
 }
 
 html {
-  color: var(--initial-color);
-  background: var(--initial-background);
+  color: var(--color);
+  background: var(--background);
 
   font-size: var(--rem);
   line-height: 1.612em;
@@ -24,7 +40,7 @@ html {
 }
 
 body > * {
-  margin: 0 15vw;
+  margin: var(--margin);
   margin-bottom: 1.612em;
 }
 
@@ -43,13 +59,6 @@ a:active,
 a:visited {
   color: var(--link);
 }
-
-@media screen and (min-width: 786px) {
-  :root {
-    --rem: calc(2.6vw);
-  }
-
-  body > * {
-    margin: 0 2vw;
-  }
+a:hover {
+  color: var(--hover-link);
 }
