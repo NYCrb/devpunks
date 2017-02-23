@@ -2,60 +2,55 @@
 
 :root {
   --rem: 3.6vw;
-
-  --link: rgba(100,100,240,0.8);
-  --hover-link: rgba(150,150,240,1.0);
-
-  --color: rgba(240,240,240, 0.8);
-  --background: rgba(10,10,10, 0.8);
-
   --margin: 0 2vw;
 }
 
 @media screen and (min-width: 786px) {
   :root {
     --rem: 2.6vw;
-
     --margin: 0 15vw;
   }
+}
+
+:root {
+  --link: rgba(100,100,240,0.8);
+  --hover-link: rgba(150,150,240,1.0);
+
+  --color: rgba(240,240,240, 0.8);
+  --background: rgba(10,10,10, 0.8);
 }
 
 html {
   color: var(--color);
   background: var(--background);
 
-  font-size: var(--rem);
   line-height: 1.612em;
+  font-stretch: normal;
+  font-variant: normal;
+  font-size: var(--rem);
   font-size-adjust: 0.5;
+  font-feature-settings: normal;
   font-family: 'Ubuntu', sans-serif;
 
   letter-spacing: -0.02em;
-  font-stretch: normal;
-  font-variant: normal;
   unicode-range: U+0-10FFFF;
-  font-feature-settings: normal;
 }
+
+body { padding: 1.612em 0 }
 
 body > * {
   margin: var(--margin);
   margin-bottom: 1.612em;
 }
 
-body {
-  padding: 1.612em 0;
-}
-
 body > header {
-  margin: 0;
-  margin-bottom: 1.612em;
   text-align: center;
+  margin: 0 0 1.612em;
 }
 
 a:link,
 a:active,
-a:visited {
-  color: var(--link);
-}
-a:hover {
-  color: var(--hover-link);
-}
+a:visited
+  { color: var(--link) }
+
+a:hover { color: var(--hover-link) }
