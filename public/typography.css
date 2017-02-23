@@ -16,9 +16,6 @@
   :root {
     --rem: 2.6vw;
 
-    --color: rgba(240,240,240, 0.8);
-    --background: rgba(10,10,10, 0.8);
-
     --margin: 0 15vw;
   }
 }
