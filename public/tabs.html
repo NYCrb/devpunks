@@ -1,0 +1,96 @@
+<!-- This will degrade gracefully back to like IE6 Anchors or something ancient -->
+
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<title>#devPunk Pure CSS Tabs</title>
+
+<style>
+@import '//www.devpunks.com/typography.css';
+
+:root {
+  --lightest-color: rgba(255,255,255,0.9);
+  --lighter-color:  rgba(245,245,245,0.8);
+  --darker-color:   rgba(100,100,100, 0.8);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0; // this is just to override typography.css setting
+}
+
+h1 { text-align: center }
+section h1 { color: var(--darker-color) }
+
+menu {
+  margin: 0;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  background: var(--darker-color);
+}
+menu a {
+  border-bottom: 0;
+  padding: 0.5em 1em;
+  margin: 0.5em 0.5em 0;
+  color: var(--darker-color);
+  background: var(--lighter-color);
+}
+menu a:hover  { background: var(--lightest-color) }
+
+/*
+targeted selectors (allows fragment identifier to be used for bookmarks
+https://en.wikipedia.org/wiki/Fragment_identifier
+https://developer.mozilla.org/en-US/docs/Web/CSS/:target
+
+*/
+#about, #maintenance, #calibration { display: none }
+#about:target, #maintenance:target, #calibration:target
+{
+  flex: 1;
+  margin: 0;
+  display: block;
+  color: var(--darker-color);
+  background: var(--lightest-color);
+
+  // General sibling selectors
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_selectors
+}
+p { text-align: center; margin: var(--margin) }
+</style>
+
+<h1>#devPunk Pure CSS Tabs</h1>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu -->
+
+<p>
+  <strong>BEHOLD</strong> Pure CSS Tabs 😂
+  <a title='Get the gist' rel='external' target='github' href='https://gist.github.com/snuggs/d10c14af11c7ee3070e47168fa9bc0bb'>Get the gist</a>
+</p>
+
+<menu>
+  <a title='About' href='#about'>About</a>
+  <a title='Maintenance' href='#maintenance'>Maintenance</a>
+  <a title='Calibration' href='#calibration'>Calibration</a>
+</menu>
+
+<section id='about'>
+  <h1>About</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+</section>
+
+<section id='maintenance'>
+  <h1>Maintenance</h1>
+
+  <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+</section>
+
+<section id='calibration'>
+  <h1>Calibratoin</h1>
+
+  <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+</section>
