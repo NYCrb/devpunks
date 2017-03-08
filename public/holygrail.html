@@ -1,0 +1,44 @@
+<title>#devPunks "HOLY Holy Grail🏆" CSS/HTML5 Mobile/Desktop Responsive Layout with Flexbox</title>
+
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<style>
+:root {
+  --lighter:  #ccc;
+  --lightest: #fff;
+  --darker:   #999;
+  --darkest:  #444;
+}
+
+html   { background: black }
+body   { background: var(--darkest) }
+main   { background: var(--lightest) }
+aside  { background: var(--lighter) }
+header, footer { background: var(--darker) }
+
+body { display: flex; flex-flow: column }
+body > main, body > aside { flex: 1 }
+body > header, body > footer { height: 10vh }
+
+@media (orientation: landscape) {
+  body           { flex-flow: row wrap }
+  body > main    { flex-basis: 70% }
+  body > aside   { flex-basis: 30% }
+  body > main,
+  body > aside   { min-height: 80vh }
+  body > header,
+  body > footer  { flex-basis: 100% }
+}
+
+@media (min-width:786px) {
+  body { margin: auto 5vw }
+}
+</style>
+
+<header>Header</header>
+
+<main>Main</main>
+<aside>Aside</aside>
+
+<footer>Footer</footer>
