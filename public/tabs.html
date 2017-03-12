@@ -14,52 +14,44 @@
   --darker-color:   rgba(100,100,100, 0.8);
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 0; // this is just to override typography.css setting
-}
+h1, p { text-align: center }
 
-h1 { text-align: center }
-section h1 { color: var(--darker-color) }
-
-menu {
-  margin: 0;
-  height: 3em;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  background: var(--darker-color);
-}
-menu a {
+.tabs { display: flex; flex-flow: column nowrap }
+.tabs > a {
+  line-height: 2em;
   border-bottom: 0;
-  padding: 0.5em 1em;
-  margin: 0.5em 0.5em 0;
-  color: var(--darker-color);
-  background: var(--lighter-color);
+  text-align: center;
 }
-menu a:hover  { background: var(--lightest-color) }
 
 /*
-targeted selectors (allows fragment identifier to be used for bookmarks
-https://en.wikipedia.org/wiki/Fragment_identifier
-https://developer.mozilla.org/en-US/docs/Web/CSS/:target
-
+  targeted selectors (allows fragment identifier to be used for bookmarks
+  https://en.wikipedia.org/wiki/Fragment_identifier
+  https://developer.mozilla.org/en-US/docs/Web/CSS/:target
 */
-#about, #maintenance, #calibration { display: none }
-#about:target, #maintenance:target, #calibration:target
-{
-  flex: 1;
-  margin: 0;
-  display: block;
-  color: var(--darker-color);
-  background: var(--lightest-color);
+.tabs > a, .tabs > a:target { flex: 1; order: 0 }
+.tabs > a:target { color: var(--hover-link) }
 
-  // General sibling selectors
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_selectors
+/*
+  Adjacent sibling selectors & General sibling selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_selectors
+*/
+.tabs > section { order: 2 }
+.tabs a:target + section { order: 1; color: var(--lightest-color) }
+
+@media only screen and (orientation: landscape) {
+  .tabs { flex-flow: row wrap }
+  .tabs > a { background: var(--lighter-color) }
+  .tabs > a:hover, .tabs > a:target, .tabs a:target ~ section {
+    color: var(--darker-color);
+    background: var(--lightest-color)
+  }
+  .tabs > a ~ section { order: 1; min-height: 70% }
+  .tabs > a:not(:target) + section { display: none }
 }
-p { text-align: center; margin: var(--margin) }
+
+/* uncomment for toggle tabs (current one not visible */
+// .tabs > a:target { display: none; }
 </style>
 
 <h1>#devPunk Pure CSS Tabs</h1>
@@ -69,28 +61,28 @@ p { text-align: center; margin: var(--margin) }
   <a title='Get the gist' rel='external' target='github' href='https://gist.github.com/snuggs/d10c14af11c7ee3070e47168fa9bc0bb'>Get the gist</a>
 </p>
 
-<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu -->
+<main class='tabs'>
+  <a title='About' id='about' href='#about'>About</a>
+  <section>
+    <h1>About</h1>
 
-<menu>
-  <a title='About' href='#about'>About</a>
-  <a title='Maintenance' href='#maintenance'>Maintenance</a>
-  <a title='Calibration' href='#calibration'>Calibration</a>
-</menu>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+  </section>
 
-<section id='about'>
-  <h1>About</h1>
+  <a title='Maintenance' id='maintenance' href='#maintenance'>Maintenance</a>
+  <section>
+    <h1>Maintenance</h1>
 
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-</section>
+    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+  </section>
 
-<section id='maintenance'>
-  <h1>Maintenance</h1>
+  <!--
+  -->
 
-  <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
-</section>
+  <a title='Calibration' id='calibration' href='#calibration'>Calibration</a>
+  <section>
+    <h1>Calibratoin</h1>
 
-<section id='calibration'>
-  <h1>Calibratoin</h1>
-
-  <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
-</section>
+    <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+  </section>
+</main>
