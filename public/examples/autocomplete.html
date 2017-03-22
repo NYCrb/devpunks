@@ -5,10 +5,7 @@
 
 <link rel='stylesheet' href='http://www.devpunks.com/typography.css'>
 
-<script src='../../context.es' defer></script>
-<script src='../../elements/tag.es' defer></script>
-<script src='../../elements/template.es' defer></script>
-<script src='../../elements/element.es' defer></script>
+<script src='http://www.devpunks.com/snuggsi.es' defer></script>
 
 <p>
   This is a refactor of
@@ -20,14 +17,13 @@
 <auto-complete>
   <form action='#'>
     <label for='search'>Search</label>
-    <input id='search' placeholder='Search'>
+    <input id='search' list='results' placeholder='Search'>
 
-    <datalist for='search'></datalist>
+    <datalist id='results'></datalist>
   </form>
 
-<script>
-alert ('We are cooking with gas!')
-</script>
+<script src='http://www.devpunks.com/examples/filter.es' defer> </script>
+<script src='./autocomplete.es' defer></script>
 </auto-complete>
 
 <script src='../../vendor/browser-sync.es'></script>
