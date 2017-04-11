@@ -1,20 +1,18 @@
 require './action'
 require './application'
 require 'rack/contrib/not_found'
-require 'rack/contrib/try_static'
+require 'rack/contrib/static'
 
 def static!( path='public' )
   options = {
     gzip: true,
     root: path,
     urls: ['/'],
-    index: 'index.html',
-
-    try: ['.html']
+    index: 'index.html'
   }
 
   Application.map options[:urls].first do
-    use Rack::TryStatic, options
+    use Rack::Static, options
   end
 end
 
