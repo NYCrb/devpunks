@@ -4,7 +4,7 @@
   --rem: 3.8vw;
   --margin: 0 2vw;
   --text-align: center;
-  --paragraph-margin: 0 1.4em 1.612em;
+  --paragraph-margin: 0 1.4em 1.612em
 }
 
 :root {
@@ -17,14 +17,14 @@
   --darkest-color:  rgba(180,180,180, 0.7);
 
   --link:           rgba(100,100,240,0.8);
-  --hover-link:     rgba(150,150,240,1.0);
+  --hover-link:     rgba(150,150,240,1.0)
 }
 
 @media screen and (min-width: 786px) {
   :root {
     --rem:    2.0vw;
     --margin: 0 15vw;
-    --text-align: left;
+    --text-align: left
   }
 }
 
@@ -42,24 +42,24 @@ html {
   font-size: var(--rem);
   font-size-adjust: 0.5;
   font-feature-settings: normal;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif
 }
 
 html * {
   margin:0;
-  padding: 0.02px 0;
+  padding: 0.02px 0
 }
 
 body { padding: 1.612em 0 }
 
 body > *, body > header > p {
   margin: var(--margin);
-  margin-bottom: 1.612em;
+  margin-bottom: 1.612em
 }
 
 body > header {
   text-align: center;
-  margin: 0 0 1.612em;
+  margin: 0 0 1.612em
 }
 
 a:link,
@@ -67,7 +67,7 @@ a:active,
 a:visited {
   color: var(--link);
   text-decoration: none;
-  border-bottom: .1em solid var(--link);
+  border-bottom: .1em solid var(--link)
 }
 
 a:hover {
