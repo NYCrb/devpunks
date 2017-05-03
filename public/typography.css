@@ -7,14 +7,6 @@
   --paragraph-margin: 0 1.4em 1.612em;
 }
 
-@media screen and (min-width: 786px) {
-  :root {
-    --rem:    2.0vw;
-    --margin: 0 15vw;
-    --text-align: left;
-  }
-}
-
 :root {
   --background:     rgba(10,10,10, 0.8);
 
@@ -26,6 +18,14 @@
 
   --link:           rgba(100,100,240,0.8);
   --hover-link:     rgba(150,150,240,1.0);
+}
+
+@media screen and (min-width: 786px) {
+  :root {
+    --rem:    2.0vw;
+    --margin: 0 15vw;
+    --text-align: left;
+  }
 }
 
 html {
