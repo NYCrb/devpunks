@@ -1,7 +1,7 @@
 require './action'
 require './application'
 require 'rack/contrib/not_found'
-require 'rack/contrib/static'
+require 'rack/contrib/try_static'
 
 def static!( path='public' )
   options = {
@@ -12,7 +12,7 @@ def static!( path='public' )
   }
 
   Application.map options[:urls].first do
-    use Rack::Static, options
+    use Rack::TryStatic, options
   end
 end
 
