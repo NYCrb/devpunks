@@ -64,14 +64,28 @@ $ rackup
   - [Shotgun](https://github.com/rtomayko/shotgun#shotgun)
 
 ### Skeleton Framework: or...Why Rack?
+
+https://news.ycombinator.com/item?id=4517021
+
+"Rails" is a collection of libraries and conventions, just as "Sinatra + ActiveRecord" is. There's nothing inherent in it that makes it "worse" than Sinatra (which I love, by the way) for JSON APIs.
+
+Use Rack, pick your favorite gems, and go to town. Why mess with all the other Sinatra junk when you can have a simple config.ru for your app and just write a simple call method and you're good to go?
+
+You don't need all the ceremony and structure of Sinatra to write a JSON API, you just don't.
+
+
 Web Servers vs. App Servers
 http://www.justinweiss.com/articles/a-web-server-vs-an-app-server/
+
 
 Rails vs. Sinatra
 https://blog.engineyard.com/2014/rails-vs-sinatra
 
+
 How Does Rack Work?
 https://blog.engineyard.com/2015/understanding-rack-apps-and-middleware
 
+
 Standalone ActiveRecord[5.0]
 http://blog.bigbinary.com/2015/12/28/application-record-in-rails-5.html
+
