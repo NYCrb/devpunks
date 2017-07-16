@@ -10,6 +10,6 @@ fieldset legend {
   display: block;
   font-size: 1.8em;
   line-height: 2em;
-  background: green;
-  margin-bottom: 1.612em;
+  margin-bottom: .612em;
+  background: rgba(0,0,0,0.5);
 }
