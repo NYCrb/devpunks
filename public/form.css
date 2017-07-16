@@ -1,0 +1,15 @@
+form {
+  background: pink
+}
+
+fieldset {
+  background: #222
+}
+fieldset legend {
+  width: 100%;
+  display: block;
+  font-size: 1.8em;
+  line-height: 2em;
+  background: green;
+  margin-bottom: 1.612em;
+}
