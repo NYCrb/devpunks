@@ -11,7 +11,7 @@ module.exports = {
     },
     "port": 8080,
     "proxy": {
-      target: 'localhost:9393',
+      target: 'localhost:9292',
     },
     "serveStatic": [],
     "ghostMode": {
