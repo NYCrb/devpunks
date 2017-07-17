@@ -36,11 +36,14 @@ input[type='reset'],
 input[type='submit'],
 input[type='button'] {
   padding: 0 2em;
-  font-size: .36em;
+  background: red;
+  min-width: 15em;
+  font-size: 1.36em;
+  font-weight: 900;
   text-align: center;
-  line-height: 2.612em;
+  line-height: 2.82em;
   border-radius: 0.4em;
-  margin: 0 0.4em .612em;
+  margin: 0 auto 1.612em;
   text-shadow: 1px 1px 0 #f00;
 }
 
