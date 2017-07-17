@@ -71,7 +71,6 @@ input[type='button']:hover:not(:disabled) {
 }
 
 textarea {
-  background: pink;
 }
 
 input:disabled,
