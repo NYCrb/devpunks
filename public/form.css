@@ -1,5 +1,6 @@
-a[href=#] {
-  margin-bottom: 1.612em;
+a[href="#"] {
+  display:block;
+  margin: 0 auto 1.612em;
 }
 
 form { }
