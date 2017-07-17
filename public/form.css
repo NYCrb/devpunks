@@ -68,6 +68,8 @@ textarea {
   background: pink;
 }
 
+input:placeholder,
+textarea:plaeholder,
 input:disabled,
 button:disabled,
 textarea:disabled
