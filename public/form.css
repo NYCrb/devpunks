@@ -45,7 +45,7 @@ input:not([type='button']):focus {
 
 input:invalid {
   color: purple;
-  background: rgba(250,187,208,.7);
+  background: rgba(250,187,208,.8);
 }
 
 /* Button input */
