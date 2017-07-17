@@ -77,14 +77,14 @@ textarea:disabled
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: pink;
-  }
-  ::-moz-placeholder { /* Firefox 19+ */
-      color: pink;
-    }
-    :-ms-input-placeholder { /* IE 10+ */
-        color: pink;
-      }
-      :-moz-placeholder { /* Firefox 18- */
-          color: pink;
-        }
+color: pink;
+}
+::-moz-placeholder { /* Firefox 19+ */
+color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+color: pink;
+}
