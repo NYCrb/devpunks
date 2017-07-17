@@ -81,6 +81,7 @@ textarea:disabled
   cursor: not-allowed
 }
 
+/* https://css-tricks.com/almanac/selectors/p/placeholder */
 ::-webkit-input-placeholder
   /* Chrome/Opera/Safari */
   { color: rgba(20,20,20,0.2) }
