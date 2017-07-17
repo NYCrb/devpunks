@@ -44,7 +44,7 @@ input[type='button'] {
   line-height: 2.82em;
   border-radius: 0.4em;
   color: rgba(20,20,20,0.7);
-  background: rgba(255,255,255,0.9);
+  background: linear-gradient(red, yellow);
   border: .1em solid rgba(20,20,20,0.8);
   box-shadow: 0.05em 0.05em 0 rgba(255,0,0,0.8);
 }
