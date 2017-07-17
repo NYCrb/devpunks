@@ -26,3 +26,15 @@ input:not([type='button']) {
   margin: 0 0.4em .612em;
   text-shadow: 1px 1px 0 #f00;
 }
+
+/* Button input */
+input[type='reset'],
+input[type='submit'],
+input[type='button'] {
+  font-size: .5em;
+  text-align: center;
+  line-height: 1.612em;
+  border-radius: 0.4em;
+  margin: 0 0.4em .612em;
+  text-shadow: 1px 1px 0 #f00;
+}
