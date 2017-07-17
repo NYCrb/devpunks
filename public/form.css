@@ -63,12 +63,6 @@ input[type='button']:hover:not(:disabled) {
   border: .1em solid rgba(20,20,20,0.8);
 }
 
-button,
-button[type='reset'],
-button[type='submit'] {
-  background: green;
-}
-
 textarea {
   background: pink;
 }
