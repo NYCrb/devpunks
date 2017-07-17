@@ -76,10 +76,15 @@ textarea:disabled
   cursor: not-allowed
 }
 
-input:placeholder,
-input::placeholder,
-textarea:plaeholder,
-textarea::plaeholder {
-  opacity: 0.9;
-  color: red;
-}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+      color: pink;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: pink;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+          color: pink;
+        }
