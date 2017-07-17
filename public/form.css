@@ -35,7 +35,6 @@ input:not([type='button']) {
   line-height: 1.612em;
   border-radius: 0.4em;
   margin: 0 0.4em .612em;
-  opacity: 0.7;
   border: .1em solid rgba(20,20,20,0.3)
 }
 input:not([type='reset']):focus,
