@@ -35,19 +35,19 @@ input:not([type='button']) {
   border-radius: 0.4em;
   margin: 0 0.4em .612em;
   color: rgba(20,20,20,0.7);
-  background: rgba(2450,245,245,0.8);
+  background: rgba(245,245,245,0.8);
   border: .1em solid rgba(20,20,20,0.3)
 }
 input:not([type='reset']):focus,
 input:not([type='submit']):focus,
 input:not([type='button']):focus {
   color: rgba(20,20,20,0.9);
-  background: rgba(2450,245,245,1.0);
+  background: rgba(245,245,245,1.0);
 }
 
 input:invalid {
-  background: red;
   color: purple;
+  background: rgba(250,187,208,.7);
 }
 
 /* Button input */
