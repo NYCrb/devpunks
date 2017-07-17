@@ -81,4 +81,3 @@ https://blog.engineyard.com/2015/understanding-rack-apps-and-middleware
 
 Standalone ActiveRecord[5.0]
 http://blog.bigbinary.com/2015/12/28/application-record-in-rails-5.html
-
