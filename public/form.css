@@ -13,3 +13,16 @@ fieldset legend {
   margin-bottom: .612em;
   background: rgba(0,0,0,0.5);
 }
+
+/* Regular input */
+input:not([type='reset']),
+input:not([type='submit']),
+input:not([type='button']) {
+  border: none;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.612em;
+  border-radius: 0.4em;
+  margin: 0 0.4em .612em;
+  text-shadow: 1px 1px 0 #f00;
+}
