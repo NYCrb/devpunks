@@ -52,9 +52,9 @@ input[type='button'] {
   border: .1em solid rgba(20,20,20,0.5);
   box-shadow: 0.05em 0.05em 0.2em rgba(50,50,50,0.3);
 }
-input[type='reset']:hover,
-input[type='submit']:hover,
-input[type='button']:hover {
+input[type='reset']:hover:not(:disabled),
+input[type='submit']:hover:not(:disabled),
+input[type='button']:hover:not(:disabled) {
   color: rgba(20,20,20,0.9);
   border: .1em solid rgba(20,20,20,0.8);
 }
