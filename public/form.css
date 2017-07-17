@@ -105,6 +105,7 @@ textarea:disabled
   background: rgba(184,255,199,.9);
 }
 
+input[type=radio],
 input[type=checkbox] {
   margin: 0;
   width: 0.7em;
