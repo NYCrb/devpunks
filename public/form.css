@@ -6,6 +6,7 @@ fieldset {
   background: #fff
 }
 fieldset legend {
+  top: -3em;
   width: 100%;
   display: block;
   font-size: 1.8em;
