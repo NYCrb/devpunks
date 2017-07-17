@@ -80,6 +80,8 @@ input[type='button']:hover:not(:disabled) {
 }
 
 textarea {
+  opacity: 0.9;
+  padding: 1em;
   font-size: .7em;
   padding: 1em;
 }
