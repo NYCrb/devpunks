@@ -30,7 +30,6 @@ input:not([type='button']) {
   border-radius: 0.4em;
   margin: 0 0.4em .612em;
   border: .1em solid rgba(20,20,20,0.5);
-  box-shadow: -0.05em -0.05em 0em rgba(50,50,50,0.9);
 }
 
 /* Button input */
