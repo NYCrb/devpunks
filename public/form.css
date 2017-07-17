@@ -50,7 +50,7 @@ input[type='button'] {
     rgba(230,230,230,0.8)
   );
   border: .1em solid rgba(20,20,20,0.5);
-  box-shadow: 0.05em 0.05em 0 rgba(255,0,0,0.8);
+  box-shadow: 0.05em 0.05em 0.2em rgba(50,50,50,0.3);
 }
 input[type='reset']:hover,
 input[type='submit']:hover,
