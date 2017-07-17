@@ -82,9 +82,9 @@ textarea:disabled
   cursor: not-allowed
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-color: rgba(255,0,0,0.2);
-}
+::-webkit-input-placeholder
+  /* Chrome/Opera/Safari */
+  { color: rgba(255,0,0,0.4) }
 
 :focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 color: rgba(255,0,0,0.4);
