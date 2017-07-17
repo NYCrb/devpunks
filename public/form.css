@@ -14,6 +14,10 @@ fieldset legend {
   background: rgba(0,0,0,0.5);
 }
 
+input, textarea, button {
+  border-radius: 0.4em;
+}
+
 /* Regular input */
 input:not([type='reset']),
 input:not([type='submit']),
@@ -37,4 +41,8 @@ input[type='button'] {
   border-radius: 0.4em;
   margin: 0 0.4em .612em;
   text-shadow: 1px 1px 0 #f00;
+}
+
+textarea {
+  background: pink;
 }
