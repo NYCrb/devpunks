@@ -28,7 +28,6 @@ input:not([type='button']) {
   line-height: 1.612em;
   border-radius: 0.4em;
   margin: 0 0.4em .612em;
-  text-shadow: 0.03em 0.03em 0 #f00;
 }
 
 /* Button input */
