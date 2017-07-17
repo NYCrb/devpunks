@@ -18,12 +18,14 @@
 <div id="icons">
 
 <script>
-/* set low/high range using the numbers below */
-for(var i=9000; i < 12175; i++){
-    document.write("<div>");
-    document.write("&amp;#"+i+";");
-    document.write("<b>&#"+i+";</b>");
-    document.write("</div>");
+
+for (var i=9000; i < 12175; i++) {
+
+  // this is painfully slow of course
+  document.write ('<div>');
+  document.write ('&amp;#'+i+';');
+  document.write ('<b>&#'+i+';</b>');
+  document.write ('</div>');
 }
 </script>
 
