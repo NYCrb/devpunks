@@ -41,6 +41,7 @@ input:not([type='button']):focus
 input[type='reset'],
 input[type='submit'],
 input[type='button'],
+
 button,
 button[type='reset'],
 button[type='submit'] {
