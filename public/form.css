@@ -35,10 +35,11 @@ input:not([type='button']) {
 input[type='reset'],
 input[type='submit'],
 input[type='button'] {
+  font-size: 1.36em;
+  cursor: pointer;
   padding: 0 2em;
   background: red;
   min-width: 15em;
-  font-size: 1.36em;
   font-weight: 900;
   text-align: center;
   line-height: 2.82em;
