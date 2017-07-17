@@ -37,7 +37,6 @@ input[type='submit'],
 input[type='button'] {
   padding: 0 2em;
   cursor: pointer;
-  background: red;
   min-width: 15em;
   font-weight: 900;
   font-size: 1.36em;
