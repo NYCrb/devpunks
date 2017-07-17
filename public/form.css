@@ -68,12 +68,18 @@ textarea {
   background: pink;
 }
 
-input:placeholder,
-textarea:plaeholder,
 input:disabled,
 button:disabled,
 textarea:disabled
 {
   opacity: 0.4;
   cursor: not-allowed
+}
+
+input:placeholder,
+input::placeholder,
+textarea:plaeholder,
+textarea::plaeholder {
+  opacity: 0.9;
+  color: red;
 }
