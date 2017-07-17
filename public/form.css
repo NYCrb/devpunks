@@ -98,6 +98,6 @@ textarea:disabled
 //color: rgba(255,0,0,0.4);
 //}
 
-:-ms-input-placeholder { /* IE 10+ */
-color: rgba(255,0,0,0.4);
-}
+//:-ms-input-placeholder { /* IE 10+ */
+//color: rgba(255,0,0,0.4);
+//}
