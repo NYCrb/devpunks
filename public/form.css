@@ -1,6 +1,9 @@
 form { }
 
-fieldset { }
+fieldset {
+  border-radius: 0.6em;
+  border: .1em solid rgba(20,20,20,0.3)
+}
 
 fieldset legend {
   top: -3em;
