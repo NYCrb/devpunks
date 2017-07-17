@@ -39,9 +39,8 @@ input:not([type='button']) {
 }
 input:not([type='reset']):focus,
 input:not([type='submit']):focus,
-input:not([type='button']):focus {
-  opacity: 1
-}
+input:not([type='button']):focus
+  { opacity: 1 }
 
 input:invalid {
   color: purple;
