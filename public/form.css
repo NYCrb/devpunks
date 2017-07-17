@@ -15,9 +15,8 @@ fieldset legend {
   background: rgba(0,0,0,0.5);
 }
 
-input, textarea, button {
-  border-radius: 0.4em;
-}
+input, textarea, button
+  { border-radius: 0.4em }
 
 /* Regular input */
 input:not([type='reset']),
