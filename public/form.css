@@ -84,7 +84,7 @@ textarea:disabled
 
 ::-webkit-input-placeholder
   /* Chrome/Opera/Safari */
-  { color: rgba(255,0,0,0.4) }
+  { color: rgba(20,20,20,0.2) }
 
 :focus::-webkit-input-placeholder
   /* Chrome/Opera/Safari */
