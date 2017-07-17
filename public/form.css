@@ -87,8 +87,7 @@ textarea:disabled
   { color: rgba(20,20,20,0.2) }
 
 :focus::-webkit-input-placeholder
-  /* Chrome/Opera/Safari */
-  { color: rgba(255,0,0,0.5) }
+  { color: rgba(20,20,20,0.3) }
 
 // FOr now...
 //::-moz-placeholder { /* Firefox 19+ */
