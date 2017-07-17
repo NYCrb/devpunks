@@ -1,8 +1,7 @@
 form { }
 
-fieldset {
-  background: white
-}
+fieldset { }
+
 fieldset legend {
   top: -3em;
   width: 100%;
