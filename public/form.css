@@ -40,13 +40,13 @@ input[type='button'] {
   font-weight: 900;
   font-size: 1.36em;
   text-align: center;
+  margin: 0.36em auto;
   line-height: 2.82em;
   border-radius: 0.4em;
-  margin: 0 auto 1.612em;
   border: .1em solid green;
   text-shadow: 1px 1px 0 #f00;
-  box-shadow: 0.1em 0.1em 0 #f00;
   background: rgba(255,255,255,0.9);
+  box-shadow: 0.05em 0.05em 0 rgba(255,0,0,0.8);
 }
 
 textarea {
