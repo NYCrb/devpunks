@@ -43,7 +43,6 @@ input:not([type='button']):focus
   { opacity: 1 }
 
 input:invalid, .error + input {
-  color: purple;
   background: rgba(250,187,208,.8);
 }
 
