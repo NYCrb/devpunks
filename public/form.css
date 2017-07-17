@@ -43,10 +43,15 @@ input[type='button'] {
   margin: 0.36em auto;
   line-height: 2.82em;
   border-radius: 0.4em;
-  border: .1em solid green;
-  text-shadow: 1px 1px 0 #f00;
+  color: rgba(20,20,20,0.7);
   background: rgba(255,255,255,0.9);
+  border: .1em solid rgba(20,20,20,0.8);
   box-shadow: 0.05em 0.05em 0 rgba(255,0,0,0.8);
+}
+input[type='reset']:hover,
+input[type='submit']:hover,
+input[type='button']:hover {
+  color: rgba(20,20,20,0.9);
 }
 
 textarea {
