@@ -359,8 +359,15 @@ p q r s t u v w x y z { | } ~ </pre>
       <fieldset id=input>
         <legend>Input fields</legend>
 
-        <label for=text>Text Input</label>
-        <input id=text type=text placeholder='Text Input'>
+        <label for=forms:required>
+          <strong>Required</strong> Text Input
+        </label>
+        <input required
+          id=forms:required type=text
+          placeholder='Required Text Input'>
+
+        <label for=forms:text>Text Input</label>
+        <input id=forms:text type=text placeholder='Text Input'>
 
         <label for=password>Password</label>
         <input id=password type=password placeholder='Type your Password'>
