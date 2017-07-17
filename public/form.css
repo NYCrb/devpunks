@@ -29,7 +29,9 @@ input:not([type='button']) {
   line-height: 1.612em;
   border-radius: 0.4em;
   margin: 0 0.4em .612em;
-  border: .1em solid rgba(20,20,20,0.5);
+  color: rgba(20,20,20,0.8);
+  color: rgba(20,20,20,0.8);
+  border: .1em solid rgba(20,20,20,0.3);
 }
 
 /* Button input */
