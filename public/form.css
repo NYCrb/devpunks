@@ -67,7 +67,10 @@ textarea {
   background: pink;
 }
 
-input:disabled, textarea:disabled {
+input:disabled,
+button:disabled,
+textarea:disabled
+{
   opacity: 0.4;
   cursor: not-allowed
 }
