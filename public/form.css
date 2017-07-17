@@ -32,6 +32,11 @@ input:not([type='button']) {
   color: rgba(20,20,20,0.7);
   border: .1em solid rgba(20,20,20,0.3);
 }
+input:not([type='reset']):focus,
+input:not([type='submit']):focus,
+input:not([type='button']):focus {
+  color: rgba(20,20,20,0.9);
+}
 
 /* Button input */
 input[type='reset'],
