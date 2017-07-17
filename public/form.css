@@ -45,6 +45,11 @@ input:not([type='button']):focus {
   background: rgba(2450,245,245,1.0);
 }
 
+input:invalid {
+  background: red;
+  color: purple;
+}
+
 /* Button input */
 input[type='reset'],
 input[type='submit'],
