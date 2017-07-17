@@ -1,7 +1,12 @@
+a[href=#] {
+  margin-bottom: 1.612em;
+}
+
 form { }
 
 fieldset {
   border-radius: 0.6em;
+  margin-bottom: 1.612em;
   border: .1em solid rgba(20,20,20,0.3)
 }
 
