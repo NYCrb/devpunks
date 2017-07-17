@@ -89,6 +89,8 @@ textarea {
 textarea:focus {
   opacity: 1;
   padding: 1em;
+  font-size: .7em;
+  color: rgba(20,20,20,0.9);
 }
 
 input:disabled,
