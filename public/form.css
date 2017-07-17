@@ -40,8 +40,7 @@ input:not([type='button']) {
 input:not([type='reset']):focus,
 input:not([type='submit']):focus,
 input:not([type='button']):focus {
-  color: rgba(20,20,20,0.9);
-  background: rgba(245,245,245,1.0);
+  opacity: 1
 }
 
 input:invalid {
