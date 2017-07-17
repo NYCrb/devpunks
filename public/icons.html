@@ -1,0 +1,15 @@
+<style>
+#icons > div{ display:inline-block; border:1px solid #AAA; padding:20px; text-align:center; }
+#icons > div > b{ display:block; color:#06C; font-size:50px;  }
+</style>
+<div id="icons">
+<script>
+/* set low/high range using the numbers below */
+for(var i=9000; i < 12175; i++){
+    document.write("<div>");
+    document.write("&amp;#"+i+";");
+    document.write("<b>&#"+i+";</b>");
+    document.write("</div>");
+}
+</script>
+</div>
