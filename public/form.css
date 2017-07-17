@@ -80,7 +80,9 @@ input[type='button']:hover:not(:disabled) {
   border: .1em solid rgba(20,20,20,0.8);
 }
 
-textarea { }
+textarea {
+  padding: 1em;
+}
 
 input:disabled,
 button:disabled,
