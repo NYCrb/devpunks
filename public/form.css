@@ -34,7 +34,10 @@ input:not([type='button']) {
 /* Button input */
 input[type='reset'],
 input[type='submit'],
-input[type='button'] {
+input[type='button'],
+button,
+button[type='reset'],
+button[type='submit'] {
   padding: 0 2em;
   cursor: pointer;
   min-width: 15em;
