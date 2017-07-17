@@ -81,6 +81,7 @@ input[type='button']:hover:not(:disabled) {
 }
 
 textarea {
+  font-size: .7em;
   padding: 1em;
 }
 
