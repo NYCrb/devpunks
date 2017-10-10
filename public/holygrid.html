@@ -20,9 +20,10 @@ header, footer { background: var(--darker) }
 body { display: grid;
 
   grid-template-columns:
-    (nav)    minmax(118px, 160px),
-    (main)   minmax(612px, 1fr),
-    (aside)  minmax(182px, 242px)
+    (header) minmax(100vw, 100vw),
+    (main)   minmax(70vw, 70vw),
+    (aside)  minmax(30vw, 30vw),
+    (footer) minmax(100vw, 100vw)
 }
 /* body > main, body > aside { flex: 1 } */
 body > header, body > footer { height: 10vh }
