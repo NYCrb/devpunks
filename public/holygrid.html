@@ -29,11 +29,16 @@ body > header, body > footer { height: 10vh }
   body > aside   { grid-area: main; min-height: 80vh }
 
   body > header,
-  body > footer  { width: 100vw }
+  body > footer  { grid-area: header }
 
   body > aside   { grid-column: 1 }
 
 /*
+  grid-template-columns:
+    (header) minmax(100vw, 100vw),
+    (main)   minmax(70vw, 1fr),
+    (aside)  minmax(30vw, 30vw),
+    (footer) minmax(100vw, 100vw)
 @media (orientation: landscape) {
   body           { flex-flow: row wrap }
   body > main    { flex-basis: 70% }
