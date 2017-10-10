@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "browse": "browser-sync start --config ./watch.browser.js"
+    "browse": "bundle exec rackup & browser-sync start --config ./watch.browser.js"
   },
 
   "devDependencies": {
