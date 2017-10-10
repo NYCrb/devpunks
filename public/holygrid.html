@@ -17,25 +17,26 @@ main   { background: var(--lightest) }
 aside  { background: var(--lighter) }
 header, footer { background: var(--darker) }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout */
 body { display: grid;
 
-  grid-template-columns:
-    repeat(2, 1fr);
+  grid-templlate-areas:
+    "header header"
+    "main aside"
+    "footer footer";
 
-  grid-gap: 0;
-  grid-auto-rows: minmax(10vh, auto);
+  grid-template-columns: 1fr 30vw;
+  grid-template-rows: 10vh 1fr 10vh;
+
+//grid-gap: 0;
+//grid-auto-rows: minmax(10vh, auto);
 }
 /* body > main, body > aside { flex: 1 } */
-body > header { grid-row: 1 }
-body > footer { grid-row: 3 }
+body > header { grid-area: header }
+body > footer { grid-area: footer }
 
-  body > main,
-  body > aside   { grid-area: main; min-height: 80vh }
-
-  body > header,
-  body > footer  { grid-area: header }
-
-  body > aside   { grid-column: 1 }
+body > main  { grid-area: main  }
+body > aside { grid-area: aside }
 
 /*
   grid-template-columns:
