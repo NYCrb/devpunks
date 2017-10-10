@@ -28,6 +28,12 @@ body { display: grid;
 /* body > main, body > aside { flex: 1 } */
 body > header, body > footer { height: 10vh }
 
+  body > main,
+  body > aside   { grid-area: main; min-height: 80vh }
+
+  body > header,
+  body > footer  { grid-area: header }
+
 /*
 @media (orientation: landscape) {
   body           { flex-flow: row wrap }
