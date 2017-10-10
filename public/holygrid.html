@@ -17,10 +17,13 @@ main   { background: var(--lightest) }
 aside  { background: var(--lighter) }
 header, footer { background: var(--darker) }
 
-body { display: flex; flex-flow: column }
+body { display: grid;
+
+}
 /* body > main, body > aside { flex: 1 } */
 body > header, body > footer { height: 10vh }
 
+/*
 @media (orientation: landscape) {
   body           { flex-flow: row wrap }
   body > main    { flex-basis: 70% }
@@ -38,6 +41,7 @@ body > header, body > footer { height: 10vh }
 @media (min-width:1300px) {
   body { margin: auto 23vw }
 }
+*/
 </style>
 
 <header>Header</header>
