@@ -18,52 +18,23 @@ aside  { background: var(--lighter) }
 header, footer { background: var(--darker) }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout */
-body { display: grid;
+body {
+  margin:0;
+  display: grid;
 
   grid-template-areas:
     "header header"
     "main aside"
     "footer footer";
 
-/*
-  grid-template-columns: 1fr 30vw;
-  grid-template-rows: 10vh 1fr 10vh;
-*/
-
-//grid-gap: 0;
-//grid-auto-rows: minmax(10vh, auto);
+  grid-template-columns:
+    1fr 30vw;
+  grid-template-rows: 10vh 80vh 10vh;
 }
 /* body > main, body > aside { flex: 1 } */
 body > header { grid-area: header }
 body > footer { grid-area: footer }
 
-/*
-body > main  { grid-area: main  }
-body > aside { grid-area: aside }
-
-  grid-template-columns:
-    (header) minmax(100vw, 100vw),
-    (main)   minmax(70vw, 1fr),
-    (aside)  minmax(30vw, 30vw),
-    (footer) minmax(100vw, 100vw)
-@media (orientation: landscape) {
-  body           { flex-flow: row wrap }
-  body > main    { flex-basis: 70% }
-  body > aside   { flex-basis: 30% }
-  body > main,
-  body > aside   { min-height: 80vh }
-  body > header,
-  body > footer  { flex-basis: 100% }
-}
-
-@media (min-width:786px) {
-  body { margin: auto 5vw }
-}
-
-@media (min-width:1300px) {
-  body { margin: auto 23vw }
-}
-*/
 </style>
 
 <header>Header</header>
