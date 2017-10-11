@@ -20,25 +20,27 @@ header, footer { background: var(--darker) }
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout */
 body { display: grid;
 
-  grid-templlate-areas:
+  grid-template-areas:
     "header header"
     "main aside"
     "footer footer";
 
+/*
   grid-template-columns: 1fr 30vw;
   grid-template-rows: 10vh 1fr 10vh;
+*/
 
 //grid-gap: 0;
 //grid-auto-rows: minmax(10vh, auto);
 }
 /* body > main, body > aside { flex: 1 } */
+/*
 body > header { grid-area: header }
 body > footer { grid-area: footer }
 
 body > main  { grid-area: main  }
 body > aside { grid-area: aside }
 
-/*
   grid-template-columns:
     (header) minmax(100vw, 100vw),
     (main)   minmax(70vw, 1fr),
@@ -66,9 +68,11 @@ body > aside { grid-area: aside }
 
 <header>Header</header>
 
+<!--
 <main>Main</main>
 <aside>Aside</aside>
 
 <footer>Footer</footer>
+-->
 
 <script src=/browser-sync.es></script>
