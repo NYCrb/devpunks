@@ -6,9 +6,6 @@
   --background: pink;
 }
 
-body   { background: var(--darkest) }
-main   { background: var(--lightest) }
-aside  { --background: #bada55; }
 header, footer { background: var(--darker) }
 
 aside {
