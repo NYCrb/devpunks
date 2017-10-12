@@ -7,6 +7,7 @@
   --background: pink;
 }
 
-header, footer { background: var(--darker) }
+header, footer
+  { background: var(--darker) }
 
 aside { background: var(--background) }
