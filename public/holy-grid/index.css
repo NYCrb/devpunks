@@ -14,3 +14,22 @@ header, footer
 
 aside
   { background: var(--background) }
+
+body {
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "main   aside"
+    "footer footer";
+
+  grid-template-columns:
+    1fr 30vw;
+
+  grid-template-rows:
+    10vh 80vh 10vh
+}
+/* body > main, body > aside { flex: 1 } */
+body > header { grid-area: header }
+body > footer { grid-area: footer }
+
