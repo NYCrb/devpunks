@@ -15,7 +15,7 @@ body {
   grid-template-rows:
     10vh 80vh 10vh
 }
-/* body > main, body > aside { flex: 1 } */
+
 body > header { grid-area: header }
 body > footer { grid-area: footer }
 
