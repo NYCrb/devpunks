@@ -16,9 +16,5 @@ body {
 body > header { grid-area: header }
 body > footer { grid-area: footer }
 
-@media (min-width:786px) {
-  body {
-    grid-template-areas:
-      "header" "main" "aside" "footer";
-  }
-}
+@media (min-width:786px)
+  { body { grid-template-areas: "header" "main" "aside" "footer" } }
