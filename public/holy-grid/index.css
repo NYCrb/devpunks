@@ -3,9 +3,7 @@
   --lightest: #fff;
   --darker:   #999;
   --darkest:  #444;
-
-  color: red;
-  background: red;
+  --background: pink;
 }
 
 body   { background: var(--darkest) }
