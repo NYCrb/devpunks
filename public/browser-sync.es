@@ -1,4 +1,6 @@
-  /localhost/.test
-    ('<script src=\/browser-sync\/browser-sync-client.js><\/script>')
-  && document.write (script)
+/localhost/
+  test ()
+
+  && document.write ('<script src=\/browser-sync\/browser-sync-client.js><\/script>')
+
 console.log ('loading browsersync')
