@@ -10,4 +10,5 @@
 header, footer
   { background: var(--darker) }
 
-aside { background: var(--background) }
+aside
+  { background: var(--background) }
