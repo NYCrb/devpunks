@@ -1,20 +1,6 @@
 /* https://bitsofco.de/holy-grail-layout-css-grid */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout */
 
-:root {
-  --lighter:  #ccc;
-  --lightest: #fff;
-  --darker:   #999;
-  --darkest:  #444;
-  --background: pink;
-}
-
-header, footer
-  { background: var(--darker) }
-
-aside
-  { background: var(--background) }
-
 body {
   display: grid;
 
