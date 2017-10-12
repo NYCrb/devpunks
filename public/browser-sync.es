@@ -1,8 +1,8 @@
 void function () {
-  let script = '<script src=\/browser-sync\/browser-sync-client.js><\/script>'
+  let script = ''
 
   /localhost/.test
-      (location.hostname)
+    ('<script src=\/browser-sync\/browser-sync-client.js><\/script>')
 
     && document.write (script)
 } ()
