@@ -1,3 +1,10 @@
+:root {
+  --lighter:  #ccc;
+  --lightest: #fff;
+  --darker:   #999;
+  --darkest:  #444;
+}
+
 body {
   color: red;
   background: red;
