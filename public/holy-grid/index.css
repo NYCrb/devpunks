@@ -3,21 +3,23 @@
   --lightest: #fff;
   --darker:   #999;
   --darkest:  #444;
-}
 
-body {
   color: red;
   background: red;
 }
 
-body >
-main {
-}
+body   { background: var(--darkest) }
+main   { background: var(--lightest) }
+aside  { --background: #bada55; }
+header, footer { background: var(--darker) }
 
 aside {
   --background: pink;
+  background: pink;
 }
 
 aside {
   background: var(--background);
+  display: block;
+  background: pink;
 }
