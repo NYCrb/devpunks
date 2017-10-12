@@ -1,7 +1,7 @@
 void function () {
-  let script = `<script src='\/browser-sync\/browser-sync-client.js'><\/script>`
+  let script = '<script src=\/browser-sync\/browser-sync-client.js><\/script>'
 
-  if (location.hostname.includes (`localhost`))
+  if (/localhost/.test (location.hostname))
     document.write (script)
 } ()
 console.log ('loading browsersync')
