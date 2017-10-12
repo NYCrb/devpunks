@@ -13,8 +13,11 @@ body {
   grid-template-rows:    10vh 1fr /*80vh*/ 10vh;
 }
 
-body > header
-  { grid-area: header }
+body > header { grid-area: header }
+body > footer { grid-area: footer }
 
-body > footer
-  { grid-area: footer }
+@media (min-width:786px) {
+  body {
+  }
+}
+
