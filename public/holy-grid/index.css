@@ -16,5 +16,7 @@ body {
     10vh 80vh 10vh
 }
 
-body > header { grid-area: header }
-body > footer { grid-area: footer }
+body > header
+  { grid-area: header }
+body > footer
+  { grid-area: footer }
