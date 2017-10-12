@@ -1,6 +1,6 @@
 console.log ('loading browsersync')
 
-/localhost/.test
+void /localhost/.test
   (window.location)
 
   &&
