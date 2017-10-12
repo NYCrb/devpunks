@@ -1,0 +1,16 @@
+body {
+  color: red;
+  background: red;
+}
+
+body >
+main {
+}
+
+aside {
+  --background: pink;
+}
+
+aside {
+  background: var(--background);
+}
