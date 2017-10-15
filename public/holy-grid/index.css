@@ -7,17 +7,18 @@ body {
   display: grid;
 
   grid-template-areas:
-    "header" "main" "aside" "footer";
+    "header" "main" "aside" "footer"
 }
 
 @media ( orientation : landscape ) {
+
   body {
     grid-template-areas:
       "header header"
       " main  aside "
       "footer footer";
 
-    grid-template-columns: 1fr 20vw;
-    grid-template-rows: 10vh 1fr 10vh;
+    grid-template-columns: 1fr  20vw;
+    grid-template-rows:    10vh 1fr  10vh
   }
 }
