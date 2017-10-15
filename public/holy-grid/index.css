@@ -4,22 +4,23 @@
 body {
   display: grid;
 
-  grid-template-areas:
-    "header header"
-    "main   aside"
-    "footer footer";
+    grid-template-rows:  1fr;
+    grid-template-columns:  auto;
+    grid-template-areas: "header" "main" "aside" "footer"
 
-  grid-template-columns: 1fr 30vw;
-  grid-template-rows: 10vh 1fr /*80vh*/ 10vh;
 }
 
 body > header { grid-area: header }
 body > footer { grid-area: footer }
 
-@media ( orientation : portrait ) {
+@media ( orientation : landscape ) {
   body {
-    grid-template-rows:  1fr;
-    grid-template-columns:  auto;
-    grid-template-areas: "header" "main" "aside" "footer"
+    grid-template-areas:
+      "header header"
+      "main   aside"
+      "footer footer";
+
+    grid-template-columns: 1fr 30vw;
+    grid-template-rows: 10vh 1fr /*80vh*/ 10vh;
   }
 }
