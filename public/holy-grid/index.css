@@ -10,7 +10,7 @@ body {
     "footer footer";
 
   grid-template-columns: 1fr 30vw;
-  grid-template-rows:    10vh 1fr /*80vh*/ 10vh;
+  grid-template-rows: 10vh 1fr /*80vh*/ 10vh;
 }
 
 body > header { grid-area: header }
