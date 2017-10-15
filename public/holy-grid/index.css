@@ -25,6 +25,14 @@ body > footer { grid-area: footer }
   }
 }
 
+
+
 /* Possibly these should be kept elsewhere */
+
+body.grid > header,
+body.grid > main, body.grid > aside,
+body.grid > footer
+  { outline: 2px dashed #bada55 }
+
 body > header,
 body > footer { min-height: 10vh }
