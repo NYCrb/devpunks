@@ -1,22 +1,21 @@
 /* https://bitsofco.de/holy-grail-layout-css-grid */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout */
 
-body {
-  margin: 0;
-  padding: 0;
+body { margin: 0; padding: 0;
 
   display: grid;
-  grid-template-areas:
-    "header" "main" "aside" "footer"
+  grid-template-areas: "header"
+                       " main "
+                       " aside"
+                       "footer"
 }
 
 @media ( orientation : landscape ) {
 
   body {
-    grid-template-areas:
-      "header header"
-      " main  aside "
-      "footer footer";
+    grid-template-areas: "header header"
+                         " main   aside"
+                         "footer footer";
 
     grid-template-columns: 1fr  20vw;
     grid-template-rows:    10vh 1fr  10vh
