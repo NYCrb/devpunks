@@ -4,8 +4,8 @@
 body {
   margin: 0;
   padding: 0;
-  display: grid;
 
+  display: grid;
   grid-template-areas:
     "header" "main" "aside" "footer"
 }
