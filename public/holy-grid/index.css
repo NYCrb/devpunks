@@ -17,10 +17,14 @@ body > footer { grid-area: footer }
   body {
     grid-template-areas:
       "header header"
-      "main   aside"
+      " main  aside "
       "footer footer";
 
-    grid-template-columns: 1fr 30vw;
-    grid-template-rows: 10vh 1fr /*80vh*/ 10vh;
+    grid-template-columns: 1fr 20vw;
+    grid-template-rows: 10vh 1fr 10vh;
   }
 }
+
+/* Possibly these should be kept elsewhere */
+body > header,
+body > footer { min-height: 10vh }
