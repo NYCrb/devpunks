@@ -1,9 +1,12 @@
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout */
+/*
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+ *  https://www.codementor.io/karaluton/a-beginner-s-guide-to-css-grid-j27g9uqys?utm_swu=7100
+*/
 
 body { margin: 0; padding: 0;
 
   display: grid;
-  grid-template-columns: 10em 10em 10em 10em;
+  grid-template-columns: 10em 10em;
 
 /*
   grid-template-areas: "header"
