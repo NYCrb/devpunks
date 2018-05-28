@@ -1,7 +1,3 @@
-require 'faye'
-
-use Faye::RackAdapter, mount: '/faye'
-
 EXTENSIONS = %w[hash]
 STORES = %w[events] #[sponsor events]
 
