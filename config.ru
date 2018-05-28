@@ -7,8 +7,6 @@ EXTENSIONS
 STORES
   .each { |store| require_relative "./stores/#{store}" }
 
-require_relative './helpers'
-
 static!
 
 four_oh_four!
