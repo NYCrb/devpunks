@@ -9,6 +9,10 @@
 
 ## Legal
 
+### Parody vs. Satire
+
+  - https://copyrightalliance.org/ca_faq_post/parody-considered-fair-use-satire-isnt/
+
 
 ### Disclaimers
 
