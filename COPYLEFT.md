@@ -1,10 +1,19 @@
 # [Copyleft](https://en.wikipedia.org/wiki/Copyleft)
 
+## [Alliance for Open Media](https://en.wikipedia.org/wiki/Alliance_for_Open_Media)
+
 
 # [Copyright](https://en.wikipedia.org/wiki/Copyright)
 
 
 ## Fair Use _(Section 107 of Copyright Act)_
+
+Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
+
+  - The purpose and character of your use
+  - The nature of the copyrighted work
+  - The amount and substantiality of the portion taken, and
+  - The effect of the use upon the potential market.
 
 
 ## Legal
