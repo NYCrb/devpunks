@@ -11,6 +11,8 @@
 
 ### Parody vs. Satire
 
+  >> _"As the Supreme Court explained in Campbell v. Acuff-Rose Music, Inc., “Parody needs to mimic an original to make its point, and so has some claim to use the creation of its victim’s (or collective victims’) imagination, whereas satire can stand on its own two feet and so requires justification for the very act of borrowing.”" - Campbell v. Acuff-Rose Music.
+
   - https://copyrightalliance.org/ca_faq_post/parody-considered-fair-use-satire-isnt/
 
 
