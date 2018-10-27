@@ -20,8 +20,9 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
 ### Parody vs. Satire
 
-  >> _"As the Supreme Court explained in Campbell v. Acuff-Rose Music, Inc., “Parody needs to mimic an original to make its point, and so has some claim to use the creation of its victim’s (or collective victims’) imagination, whereas satire can stand on its own two feet and so requires justification for the very act of borrowing.”" - Campbell v. Acuff-Rose Music.
+  >> _"As the Supreme Court explained in Campbell v. Acuff-Rose Music, Inc., “Parody needs to mimic an original to make its point, and so has some claim to use the creation of its victim’s (or collective victims’) imagination, whereas satire can stand on its own two feet and so requires justification for the very act of borrowing.”" - Campbell v. Acuff-Rose Music. _(2 Live Crew v Roy Orbison)_
 
+  - https://www.youtube.com/watch?v=AabKdajl_SM
   - https://copyrightalliance.org/ca_faq_post/parody-considered-fair-use-satire-isnt/
   - https://www.avvo.com/legal-answers/do-i-need-permission-to-make-a-parody-song-to-adve-1206521.html
 
