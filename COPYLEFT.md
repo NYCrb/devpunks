@@ -29,7 +29,7 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
 #### Weird Al
 
-  - And yes, Weird Al Yankovic sort of ruined it for all song parodists by never picking fights with those whose songs he parodies by giving those songwrighter _all_ of the publishing copyright on the parodies he performs. So even though he writes his own lyrics to their famous songs, he doesn't claim any ownership interest in those songs. And as my colleague notes, his lyrics do comment directly on the song itself and/or on its songwriter, which would greatly increase his odds of winning a parody argument, if he ever engaged in one. - Pamela Koslyn
+> And yes, Weird Al Yankovic sort of ruined it for all song parodists by never picking fights with those whose songs he parodies by giving those songwrighter _all_ of the publishing copyright on the parodies he performs. So even though he writes his own lyrics to their famous songs, he doesn't claim any ownership interest in those songs. And as my colleague notes, his lyrics do comment directly on the song itself and/or on its songwriter, which would greatly increase his odds of winning a parody argument, if he ever engaged in one. - Pamela Koslyn
 
 
 ### Disclaimers
