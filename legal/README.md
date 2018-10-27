@@ -3,7 +3,7 @@
 ## [Alliance for Open Media](https://en.wikipedia.org/wiki/Alliance_for_Open_Media)
 
 
-## [Internet Archive _(Way Back Machine)_](https://archive.org)
+## [Internet Archive](https://archive.org)
 
 
 ### [_"Way Back Machine"_](https://archive.org/web/)
