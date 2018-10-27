@@ -8,6 +8,7 @@
 
 ### [_"Way Back Machine"_](https://archive.org/web/)
 
+View archived versions of pages _(irrelevant of online status)_
 
 
 # [Copyright](https://en.wikipedia.org/wiki/Copyright)
