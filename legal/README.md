@@ -3,6 +3,9 @@
 ## [Alliance for Open Media](https://en.wikipedia.org/wiki/Alliance_for_Open_Media)
 
 
+## [Internet Archive _(Way Back Machine)_](https://archive.org)
+
+
 # [Copyright](https://en.wikipedia.org/wiki/Copyright)
 
 
