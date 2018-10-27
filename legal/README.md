@@ -5,7 +5,7 @@
 
 ## [Internet Archive](https://archive.org)
 
-The Internet Archive is a non-profit with a huge mission: "Universal Access to All Knowledge".
+The Internet Archive is a non-profit with a huge mission: _"Universal Access to All Knowledge"._
 
 
 ### [_"Way Back Machine"_](https://archive.org/web/)
