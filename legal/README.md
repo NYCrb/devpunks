@@ -42,6 +42,7 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 > "As the Supreme Court explained in Campbell v. Acuff-Rose Music, Inc., “Parody needs to mimic an original to make its point, and so has some claim to use the creation of its victim’s (or collective victims’) imagination, whereas satire can stand on its own two feet and so requires justification for the very act of borrowing.”" - Campbell v. Acuff-Rose Music. _(2 Live Crew v Roy Orbison)_
 
   - https://www.youtube.com/watch?v=AabKdajl_SM
+  - [2 Live Crew Discuss Pretty Woman Supreme Court Case 'Campbell v Acuff-Rose'](https://www.youtube.com/watch?v=CRssktqjvOk)
 
 
 #### Weird Al
