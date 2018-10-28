@@ -29,6 +29,13 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 ## Legal
 
 ### [Mechanical Licenses](https://www.easysonglicensing.com/pages/help/articles/music-licensing/what-is-a-mechanical-license.aspx)
+
+
+### [Synchronization License](https://www.easysonglicensing.com/pages/help/articles/music-licensing/what-is-a-synchronization-license.aspx)
+
+Used for video licensing.
+
+
 ### [Music Modernization Act](https://en.wikipedia.org/wiki/Music_Modernization_Act)
 
   - [Lawyer Reacts](https://www.youtube.com/watch?v=ykazv-o_w0s)
