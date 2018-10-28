@@ -30,7 +30,7 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
 ### [Music Modernization Act](https://en.wikipedia.org/wiki/Music_Modernization_Act)
 
-  - Lawyer Reacts - https://www.youtube.com/watch?v=ykazv-o_w0s
+  - [Lawyer Reacts](https://www.youtube.com/watch?v=ykazv-o_w0s)
 
 
 ### Parody vs. Satire
