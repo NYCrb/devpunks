@@ -28,6 +28,11 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
 ## Legal
 
+### [Music Modernization Act](https://en.wikipedia.org/wiki/Music_Modernization_Act)
+
+  - https://www.youtube.com/watch?v=ykazv-o_w0s
+
+
 ### Parody vs. Satire
 
   - https://copyrightalliance.org/ca_faq_post/parody-considered-fair-use-satire-isnt/
