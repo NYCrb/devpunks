@@ -28,6 +28,11 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
 ## Legal
 
+### [Master License](https://www.easysonglicensing.com/pages/help/articles/music-licensing/what-is-a-master-license.aspx)
+
+Used for original Recording
+
+
 ### [Mechanical Licenses](https://www.easysonglicensing.com/pages/help/articles/music-licensing/what-is-a-mechanical-license.aspx)
 
 Used for audio licensing
