@@ -42,6 +42,13 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 ![Royalty Pool Calculation "Harry Fox Chart"](https://aristake.com/posts/images/harry-fox-chart.png)
 
 
+### Youtube
+
+** For Youtube use [We Are The Hits](https://www.wearethehits.com) **
+
+  - https://www.digitalmusicnews.com/2016/09/08/legally-release-cover-videos-youtube/
+
+
 ### [Master License](https://www.easysonglicensing.com/pages/help/articles/music-licensing/what-is-a-master-license.aspx)
 
 Used for original Recording
