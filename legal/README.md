@@ -55,6 +55,11 @@ After YouTube’s 45% cut, WATH keeps 60% (to pay the publishers/songwriters) an
   - Copyright Strikes - https://productforums.google.com/forum/#!topic/youtube/5Fu3T4FhcYs
 
 
+#### Reaction Videos
+
+- https://www.youtube.com/watch?v=rD1kzr8dmXk
+
+
 #### Dispute Copyright Strike
 
   - https://www.youtube.com/watch?v=bzuPU_df9z4
