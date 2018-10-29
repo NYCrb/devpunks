@@ -39,6 +39,9 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
   publisher.
 
 
+![Royalty Pool Calculation "Harry Fox Chart"](https://aristake.com/posts/images/harry-fox-chart.png)
+
+
 ### [Master License](https://www.easysonglicensing.com/pages/help/articles/music-licensing/what-is-a-master-license.aspx)
 
 Used for original Recording
