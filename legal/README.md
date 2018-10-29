@@ -1,6 +1,7 @@
 # [Trademark]()
 
   - Madrid System - https://en.wikipedia.org/wiki/Madrid_system
+  - Trademark Basics - https://www.uspto.gov/trademarks-getting-started/trademark-basics
 
 
 # [Copyleft](https://en.wikipedia.org/wiki/Copyleft)
