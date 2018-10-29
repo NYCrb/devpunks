@@ -54,6 +54,8 @@ Used for audio licensing
 Used for video licensing.
 
 
+## Legal
+
 ### [Music Modernization Act](https://en.wikipedia.org/wiki/Music_Modernization_Act)
 
   - [Lawyer Reacts](https://www.youtube.com/watch?v=ykazv-o_w0s)
