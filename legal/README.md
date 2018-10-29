@@ -52,6 +52,11 @@ After YouTube’s 45% cut, WATH keeps 60% (to pay the publishers/songwriters) an
   - Copyright Strikes - https://productforums.google.com/forum/#!topic/youtube/5Fu3T4FhcYs
 
 
+#### Dispute Copyright Strike
+
+  - https://www.youtube.com/watch?v=bzuPU_df9z4
+
+
 ### [Master License](https://www.easysonglicensing.com/pages/help/articles/music-licensing/what-is-a-master-license.aspx)
 
 Used for original Recording
