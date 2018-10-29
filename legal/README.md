@@ -57,7 +57,7 @@ After YouTube’s 45% cut, WATH keeps 60% (to pay the publishers/songwriters) an
 
 #### Reaction Videos
 
-- https://www.youtube.com/watch?v=rD1kzr8dmXk
+- How to Make Reaction Videos Without Copyright - https://www.youtube.com/watch?v=rD1kzr8dmXk
 
 
 #### Dispute Copyright Strike
