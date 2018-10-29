@@ -1,3 +1,6 @@
+# [Trademark]()
+
+
 # [Copyleft](https://en.wikipedia.org/wiki/Copyleft)
 
 ## [Alliance for Open Media](https://en.wikipedia.org/wiki/Alliance_for_Open_Media)
