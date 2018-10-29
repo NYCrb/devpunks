@@ -53,6 +53,7 @@ After YouTube’s 45% cut, WATH keeps 60% (to pay the publishers/songwriters) an
 
   - Legally Release Cover Videos - https://www.digitalmusicnews.com/2016/09/08/legally-release-cover-videos-youtube/
   - Copyright Strikes - https://productforums.google.com/forum/#!topic/youtube/5Fu3T4FhcYs
+  - How to Test a Song for Copyright - https://www.youtube.com/watch?v=PKkw_ukzaGw
 
 
 #### Reaction Videos
