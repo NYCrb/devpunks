@@ -34,6 +34,11 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
 ## Legal
 
+  Using these services (Loudr, ESL, Songfile), you estimate how many downloads/CDs you will sell and pay that amount x 9.1 cents (the mechanical royalty rate set by the US government - if the song is
+  under 5 minutes). So if you think you'll sell 1,000 downloads of your Oasis cover, you would pay $91 up front + the service fee. Every service will then pass 100% of those royalties along to Oasis'
+  publisher.
+
+
 ### [Master License](https://www.easysonglicensing.com/pages/help/articles/music-licensing/what-is-a-master-license.aspx)
 
 Used for original Recording
