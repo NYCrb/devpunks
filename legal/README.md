@@ -24,7 +24,7 @@ View archived versions of pages _(irrelevant of online status)_
 
 ## Fair Use _(Section 107 of Copyright Act)_
 
-Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
+  Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
   - The purpose and character of your use, including whether such use is of commercial nature or is for nonprofit educational purposes _(transformative value)
   - The nature of the copyrighted work
