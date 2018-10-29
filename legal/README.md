@@ -35,7 +35,7 @@ View archived versions of pages _(irrelevant of online status)_
 
 ### Public Domain
 
-  - Nosfernatu v. Dracula - https://nl.hideproxy.me/go.php?u=w%2FZpMvBYG5323jMLlFWmyWSlwdk67rBBBVNNFKPYBb411gVbjYSHqdmKtycO9lqjzdMi9%2FLyyUHndXVV3frRGj9N%2BtOzisup&b=5&f=norefer
+  - Nosferatu v. Dracula - https://nl.hideproxy.me/go.php?u=w%2FZpMvBYG5323jMLlFWmyWSlwdk67rBBBVNNFKPYBb411gVbjYSHqdmKtycO9lqjzdMi9%2FLyyUHndXVV3frRGj9N%2BtOzisup&b=5&f=norefer
 
 ## Licensing
 
