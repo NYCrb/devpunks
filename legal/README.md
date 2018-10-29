@@ -46,6 +46,8 @@ Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
 ** For Youtube use [We Are The Hits](https://www.wearethehits.com) **
 
+Give song credits
+
 After YouTube’s 45% cut, WATH keeps 60% (to pay the publishers/songwriters) and you keep 40%.
 
   - Legally Release Cover Videos - https://www.digitalmusicnews.com/2016/09/08/legally-release-cover-videos-youtube/
