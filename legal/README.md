@@ -26,7 +26,7 @@ View archived versions of pages _(irrelevant of online status)_
 
 Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
-  - The purpose and character of your use _(transformative value)
+  - The purpose and character of your use, including whether such use is of commercial nature or is for nonprofit educational purposes _(transformative value)
   - The nature of the copyrighted work
   - The amount and substantiality of the portion taken, and
   - The effect of the use upon the potential market.
