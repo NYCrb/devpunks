@@ -1,5 +1,7 @@
 # [Trademark]()
 
+  - Madrid System - https://en.wikipedia.org/wiki/Madrid_system
+
 
 # [Copyleft](https://en.wikipedia.org/wiki/Copyleft)
 
