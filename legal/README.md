@@ -24,6 +24,7 @@ View archived versions of pages _(irrelevant of online status)_
 
 ## Fair Use _(Section 107 of Copyright Act)_
 
+  Youtube & Fair Use Real World Examples - https://www.youtube.com/watch?v=W1R8o1OdGfY
   Four factor test: - https://fairuse.stanford.edu/overview/fair-use/four-factors/
 
   - The purpose and character of your use, including whether such use is of commercial nature or is for nonprofit educational purposes _(transformative value)
