@@ -52,7 +52,8 @@ Give song credits
 After YouTube’s 45% cut, WATH keeps 60% (to pay the publishers/songwriters) and you keep 40%.
 
   - How to Test a Song for Copyright - https://www.youtube.com/watch?v=PKkw_ukzaGw
-  - Copyright Strikes - https://productforums.google.com/forum/#!topic/youtube/5Fu3T4FhcYs
+  - Content ID Claim v. Copyright Strikes - https://www.youtube.com/watch?v=HHg5xFI1-_c
+  - Copyright Strikes - PewdiePie - https://www.youtube.com/watch?v=ah7LYxysuJ8
   - Legally Release Cover Videos - https://www.digitalmusicnews.com/2016/09/08/legally-release-cover-videos-youtube/
 
 
