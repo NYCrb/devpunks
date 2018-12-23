@@ -1,0 +1,22 @@
+body { display: flex; flex-flow: column }
+body > main  { min-height: 50vh }
+body > aside { min-height: 30vh }
+body > header, body > footer { min-height: 10vh }
+
+@media (orientation: landscape) {
+  body           { flex-flow: row wrap }
+  body > main    { flex-basis: 70% }
+  body > aside   { flex-basis: 30% }
+  body > main,
+  body > aside   { min-height: 80vh }
+  body > header,
+  body > footer  { flex-basis: 100% }
+}
+
+@media (min-width:786px) {
+  body { margin: auto 5vw }
+}
+
+@media (min-width:1300px) {
+  body { margin: auto 23vw }
+}
