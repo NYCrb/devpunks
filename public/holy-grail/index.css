@@ -1,3 +1,8 @@
+/*
+ * https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox
+*/
+
 body { display: flex; flex-flow: column }
 body > main  { min-height: 50vh }
 body > aside { min-height: 30vh }
