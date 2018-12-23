@@ -12,6 +12,12 @@ body { margin: 0; padding: 0;
                        "main aside"
                        "footer footer";
 }
+
+header { grid-area: header; }
+main   { grid-area: main;   }
+aside  { grid-area: aside;  }
+footer { grid-area: footer; }
+
 /*
 @media ( orientation : landscape ) {
 
