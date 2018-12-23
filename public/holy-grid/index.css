@@ -8,11 +8,9 @@ body { margin: 0; padding: 0;
   display: grid;
   /* grid-template-columns: 30em 30em; */
 
-  grid-template-areas: "header"
-                       " main "
-                       " aside"
-                       "footer"
-*/
+  grid-template-areas: "header header"
+                       "main aside"
+                       "footer footer";
 }
 /*
 @media ( orientation : landscape ) {
