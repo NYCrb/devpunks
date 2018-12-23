@@ -5,10 +5,10 @@
 
 body { margin: 0; padding: 0;
 
+/*
   display: grid;
   grid-template-columns: 10em 10em;
 
-/*
   grid-template-areas: "header"
                        " main "
                        " aside"
