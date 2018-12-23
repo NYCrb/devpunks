@@ -11,7 +11,7 @@ body {
 
   grid-template-areas: "header header"
                        "main aside"
-                       "footer footer";
+                       "footer footer"
 }
 
 header { grid-area: header; }
