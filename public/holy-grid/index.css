@@ -17,9 +17,8 @@ body {
 
 @media ( orientation : landscape ) {
   body {
-    grid-template-areas: "header header"
-                         " main   aside"
-                         "footer footer";
+    grid-template-areas:
+      "header header" "main aside" "footer footer";
 
     grid-template-columns: 1fr  20vw;
     grid-template-rows:    10vh 1fr  10vh
