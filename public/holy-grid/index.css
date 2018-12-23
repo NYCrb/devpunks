@@ -9,8 +9,11 @@ main   { grid-area: main   }
 aside  { grid-area: aside  }
 footer { grid-area: footer }
 
-/*
-  grid-template-columns: 70% 30%;
+body {
+  display: grid;
+  grid-template-areas:
+    "header" "main" "aside" "footer"
+}
 
   grid-template-areas: "header header"
                        "main aside"
