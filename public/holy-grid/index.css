@@ -14,10 +14,10 @@ body {
                        "footer footer"
 }
 
-header { grid-area: header; }
-main   { grid-area: main;   }
-aside  { grid-area: aside;  }
-footer { grid-area: footer; }
+header { grid-area: header }
+main   { grid-area: main   }
+aside  { grid-area: aside  }
+footer { grid-area: footer }
 
 /*
 @media ( orientation : landscape ) {
