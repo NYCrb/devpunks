@@ -20,8 +20,8 @@ body {
     grid-template-areas:
       "header header" "main aside" "footer footer";
 
-    grid-template-columns: 1fr  20vw;
-    grid-template-rows:    10vh 1fr  10vh
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 15vh 1fr  15v
   }
 }
 */
