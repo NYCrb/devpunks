@@ -15,9 +15,6 @@ body {
     "header" "main" "aside" "footer"
 }
 
-  grid-template-areas: "header header"
-                       "main aside"
-                       "footer footer"
 @media ( orientation : landscape ) {
 
   body {
