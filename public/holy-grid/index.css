@@ -21,6 +21,6 @@ body {
       "header header" "main aside" "footer footer";
 
     grid-template-columns: 70% 30%;
-    grid-template-rows: 15vh 1fr  15v
+    grid-template-rows: 15vh 70vh  15vh
   }
 }
