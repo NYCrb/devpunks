@@ -1,7 +1,6 @@
 /*
  * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
  * https://medium.com/@elad/supporting-css-grid-in-internet-explorer-b38669e75d66
- * https://www.codementor.io/karaluton/a-beginner-s-guide-to-css-grid-j27g9uqys?utm_swu=7100
 */
 
 header { grid-area: header }
