@@ -4,12 +4,6 @@
  * https://www.codementor.io/karaluton/a-beginner-s-guide-to-css-grid-j27g9uqys?utm_swu=7100
 */
 
-body {
-  display: grid;
-  grid-template-areas:
-    "header" "main" "aside" "footer"
-}
-
 header { grid-area: header }
 main   { grid-area: main   }
 aside  { grid-area: aside  }
