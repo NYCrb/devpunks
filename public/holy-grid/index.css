@@ -11,7 +11,8 @@ footer { grid-area: footer }
 body {
   display: grid;
   grid-template-areas:
-    "header" "main" "aside" "footer"
+    "header" "main" "aside" "footer";
+  grid-template-rows: 15vh 55vh 20vh  10vh
 }
 
 @media ( orientation : landscape ) {
