@@ -2,3 +2,5 @@ declare INPUT=$1
 declare OUTPUT=$2
 
 ffmpeg -i $INPUT $OUTPUT
+
+# Scaling
