@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 declare INPUT=$1
 declare OUTPUT=$2
 
