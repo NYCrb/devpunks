@@ -1,4 +1,5 @@
 a[href="#"] {
+  display:block;
   max-width: 20vw;
   margin: 0 auto 1.612em;
 }
