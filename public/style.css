@@ -10,6 +10,7 @@ body > blockquote p {
   opacity: 0.4;
   font-size: .6em;
   text-align: right;
+  letter-spacing: .1em;
 }
 body > figure {
   display: flex;
