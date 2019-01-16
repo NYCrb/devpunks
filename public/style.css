@@ -142,7 +142,9 @@ h1 {
   background: url(/h1.png) no-repeat;
   background-position: top right;
   background-size: 1em 1em;
-  text-shadow: 0 0 10px rgba(0,0,0,0.9)
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+  background-clip: text;
+  color: rgba(0,0,0,0.2);
 }
 
 body > main {
