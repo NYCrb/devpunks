@@ -34,6 +34,8 @@ declare OUTPUT=$2
 for i in *.$1
   do
 
+    echo $1
+
 #   # Generate cover image
 #   ffmpeg -i "$i" -vframes 1 -vf scale=$2:-2 -q:v 1 ${i%$1}jpg
 
