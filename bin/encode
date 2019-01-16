@@ -5,5 +5,8 @@ declare OUTPUT=$2
 
 ffmpeg -i $INPUT $OUTPUT
 
+# Video Conversion for Cross Device with FFmpeg
+# https://gist.github.com/jaydenseric/220c785d6289bcfd7366
+
 # Scaling https://trac.ffmpeg.org/wiki/Scaling
 # ffmpeg -i input.avi -vf scale=320:240 output.avi
