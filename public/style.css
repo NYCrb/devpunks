@@ -5,6 +5,7 @@ body > blockquote {
   margin: 0 1rem 0 68vw;
 }
 body > blockquote q { font-style: italic }
+body > blockquote abbr { color: rgba(255,5,225, .81) }
 body > blockquote p {
   margin: 0;
   opacity: 0.4;
