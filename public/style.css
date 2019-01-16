@@ -149,7 +149,8 @@ h1 {
 }
 h1 > abbr {
   color: white;
-  font-size: .8em;
+  font-size: .85em;
+  text-decoration: none;
 }
 
 body > main {
