@@ -147,6 +147,10 @@ h1 {
   color: rgba(0,0,0,.2);
 //text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
+h1 > abbr {
+  color: white;
+  font-size: .8em;
+}
 
 body > main {
   margin: 2rem 0 80vh;
