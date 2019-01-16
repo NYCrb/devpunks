@@ -140,11 +140,12 @@ h1 {
   line-height: 3.5rem;
   padding-right: 1.1em;
   background: url(https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1170525/1160/772/m1/fpnw/wm0/cm-prev_1-.jpg?1460400764&s=6c89cd35f4c112b09319add3636fdad9) no-repeat;
-  background-position: center center;
-  background-size: 1em 1em;
-  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+  background-position: top right;
+  background-size: 40vw;
   background-clip: text;
   -webkit-background-clip: text;
+  color: rgba(0,0,0,.2);
+//text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
 body > main {
