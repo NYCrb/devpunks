@@ -17,3 +17,7 @@ ffmpeg -i $INPUT $OUTPUT
 # Quality
 # Example flag: -crf 20.
 # 0 is lossless, 23 is default, and 51 is worst possible. 18-28 is a sane range.
+
+# Fast Start
+# Flag: -movflags +faststart.
+# Moves some data to the beginning of the file, allowing the video to be played before it is completely downloaded.
