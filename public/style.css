@@ -5,7 +5,7 @@
 
 body > blockquote {
   text-align: right;
-  margin: -1rem 1rem 0 68vw;
+  margin: -1rem 1rem 0 60vw;
 }
 body > blockquote q { font-style: italic }
 body > blockquote abbr { color: rgba(255,5,225, .81) }
