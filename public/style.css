@@ -147,9 +147,14 @@ h1 {
 //text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 h1 > abbr {
-  color: white;
   font-size: .85em;
   text-decoration: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffeff7+54,ffd8ed+100 */
+  background: rgb(255,239,247); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(255,239,247,1) 54%, rgba(255,216,237,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(255,239,247,1) 54%,rgba(255,216,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(255,239,247,1) 54%,rgba(255,216,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeff7', endColorstr='#ffd8ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 body > main {
