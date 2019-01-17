@@ -161,11 +161,11 @@ h1 > abbr {
   -webkit-background-clip: text;
 }
 h1::after {
-  display: inline-block;
   width: 10vw;
   height: 10vw;
   content: " ";
   background: red;
+  display: inline-block;
 }
 
 body > main {
