@@ -136,7 +136,7 @@ main > section > header {
 }
 
 h1 {
-  margin: 1em 0 0;
+  margin: 0;
   padding: 0;
   line-height: 6rem;
   font-size: 6.0rem;
