@@ -164,7 +164,6 @@ h1::after {
   width: 10vw;
   height: 10vw;
   content: " ";
-  background: red;
   display: inline-block;
 }
 
