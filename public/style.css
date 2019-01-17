@@ -152,7 +152,7 @@ h1 {
   background-size: 40vw;
   background-clip: text;
   -webkit-background-clip: text;
-  color: rgba(0,0,0,.2);
+  color: rgba(250,250,250,.2);
 //text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 h1 > abbr {
