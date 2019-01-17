@@ -165,6 +165,9 @@ h1::after {
   height: 10vw;
   content: " ";
   display: inline-block;
+  background: transparent url(/h1.png) no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 body > main {
