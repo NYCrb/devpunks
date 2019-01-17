@@ -3,22 +3,6 @@
 @font-face
   { font-family: Misfits; src: url(/misfits.ttf) }
 
-
-figure.avatar {
-  background: green;
-  outline: 3px dashed #fff;
-}
-figure.avatar img {
-  /* https://bennettfeely.com/clippy/ */
-  -webkit-clip-path: circle(40% at 50% 50%);
-  clip-path: circle(40% at 50% 50%);
-}
-
-figure.avatar img:hover {
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
-}
-
 body > blockquote {
   text-align: right;
   margin: -1rem 1rem 0 60vw;
