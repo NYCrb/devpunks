@@ -15,7 +15,7 @@ body > blockquote p {
   font-size: .8rem;
   text-align: right;
   font-style: italic;
-  letter-spacing: .1em;
+  letter-spacing: .05rem;
 }
 body > figure {
   display: flex;
