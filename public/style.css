@@ -1,4 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Nunito|Quattrocento+Sans:300,300i,400,400i,700,700i';
+@font-face {
+  font-family: "Misfits";
+  src:
+    url(/misfits.ttf);
+  src:
+    local('☺'), /* https://stackoverflow.com/questions/3698319/css-font-face-what-does-src-local-mean#answer-3698361 */
+    url(/misfits.ttf) format(truetype);
+}
 
 body > blockquote {
   text-align: right;
