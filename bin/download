@@ -3,4 +3,10 @@
 getopts "a" argument
 echo argument: $argument
 
+getopts "a" argument
+echo argument: $argument
+
+getopts "a" argument
+echo argument: $argument
+
 #ytdl $1
