@@ -6,7 +6,7 @@ echo argument: $argument
 getopts "b" argument
 echo argument: $argument
 
-getopts "a" argument
+getopts "c" argument
 echo argument: $argument
 
 #ytdl $1
