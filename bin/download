@@ -3,7 +3,7 @@
 getopts "a" argument
 echo argument: $argument
 
-getopts "a" argument
+getopts "b" argument
 echo argument: $argument
 
 getopts "a" argument
