@@ -1,4 +1,4 @@
-.reset-this {
+html, * {
   animation : none !important;
   animation-delay : 0 !important;
   animation-direction : normal !important;
