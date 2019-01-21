@@ -150,6 +150,14 @@ h1 {
   color: rgba(250,250,250,.2);
 //text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
+@media screen and (min-width: 786px) {
+  :root {
+    --rem:    2.0vw;
+    --margin: 0 15vw;
+    --text-align: left
+  }
+}
+
 h1 > abbr {
   font-size: .85em;
   text-decoration: none;
