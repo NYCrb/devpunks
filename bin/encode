@@ -21,7 +21,7 @@
 # Video encoding guide
 # https://trac.ffmpeg.org/wiki/Encode/H.264
 
-# ffmpeg \
+ffmpeg \
 #
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
