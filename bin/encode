@@ -10,6 +10,7 @@ declare OUTPUT=$2
 # ffmpeg \
 #   -i input.avi \
 #   -vf scale=320:240 \
+#   -framerate 30 \
 #   output.avi
 
 # Faster Processing
