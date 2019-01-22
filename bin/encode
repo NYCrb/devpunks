@@ -6,6 +6,7 @@ declare OUTPUT=$2
 # Video Conversion for Cross Device with FFmpeg
 # https://gist.github.com/jaydenseric/220c785d6289bcfd7366
 
+# RATE CONTROL - https://slhck.info/video/2017/03/01/rate-control.html
 # To summarize, here’s what you should do, depending on your use case:
 
 # - Archival — CRF that gives you the quality you want.
