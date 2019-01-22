@@ -17,7 +17,7 @@ declare OUTPUT=$2
 #   -pre preset   \
 #   -vf scale=320:240 \
 #   -framerate 24 \
-#   -b:a 1M         \ # audio bitrate (-ab)
+#   -b:a 128K       \ # audio bitrate (-ab)
 #   -b:v 1M         \ # video bitrate (-b)
 #   -c:a aac        \ # codec (shorthand)
 #   -c:v libx264    \ # codec (shorthand)
