@@ -72,6 +72,7 @@ declare OUTPUT=$2
 #   -maxrate 1M     \
 #   -bufsize 2M     \
 #   -tune stillimage \  # ** USED FOR IMAGES **
+#   -shortest       \ # Possibly used for shortest audio track
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
 #   -r 24000/1001   \ # FPS (Frames Per Second) (Assume YouTube's default frame rate is 24.)
