@@ -17,6 +17,7 @@ declare OUTPUT=$2
 #   -report         \
 #   -vol 256        \ # Audio volume level (0-256)
 #   -pre preset     \
+#   -i input.avi    \
 #   -v scale=320:240 \
 #   -f format       \ # force format (image2, )
 #   -framerate 24 \
