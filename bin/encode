@@ -38,6 +38,8 @@ declare OUTPUT=$2
 #   -r 24           \ # FPS (Frames Per Second)
 #   -b:a 128K       \ # audio bitrate (-ab)
 #   -b:v 1M         \ # video bitrate (-b)
+#   -framerate 24   \ # ** USED FOR IMAGES **
+#   -aspect 16:9    \ # Aspect Ratio (4:3, 16:9, 1.3333)
 #
 # CODECS
 #   -c:a aac        \ # codec (shorthand) (e.g. copy, etc.)
