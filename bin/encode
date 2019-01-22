@@ -20,6 +20,7 @@ declare OUTPUT=$2
 #   -i input.avi    \
 #   -vf             \  # Video filter
 #     scale=1920:1080 \ # Scale
+#   -af audio filter \ # Audio filter
 #   -f format       \ # force format (image2, )
 #   -r 24           \ # FPS (Frames Per Second)
 #   -framerate 24   \ # ** USED FOR IMAGES **
