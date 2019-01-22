@@ -12,7 +12,8 @@ declare OUTPUT=$2
 # img can be changed to another prefix
 # %03d can be changed to %04d for 0001, %05d for 00001 formats, etc...
 # -i img%03d.png  \
-#   -i input.avi \
+#   -stats        \
+#   -i input.avi  \
 #   -vf scale=320:240 \
 #   -framerate 30 \
 #   -c:a aac        \ # codec (shorthand)
