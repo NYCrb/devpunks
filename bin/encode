@@ -15,10 +15,10 @@ declare OUTPUT=$2
 #   -i input.avi \
 #   -vf scale=320:240 \
 #   -framerate 30 \
-#   -c:v libx264 \ # codec (shorthand)
 #   -c:a aac \ # codec (shorthand)
-#   -vcodec libx264 \ # codec (longform)
+#   -c:v libx264 \ # codec (shorthand)
 #   -acodec aac \ # codec (longform)
+#   -vcodec libx264 \ # codec (longform)
 
 
 # output.avi
