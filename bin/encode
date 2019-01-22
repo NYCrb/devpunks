@@ -10,7 +10,7 @@ declare OUTPUT=$2
 # ffmpeg \
 #
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
-# *** SEEK BEFORE INPUT for thumbnail ***
+# *** SEEK BEFORE INPUT for cover image ***
 #   -ss [start]     \ seek start time offset
 #   -t [duration]   \ seek duration time (precedence over -to)
 #   -to [end]       \ seek end time
