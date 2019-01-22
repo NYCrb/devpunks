@@ -69,6 +69,7 @@ declare OUTPUT=$2
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
 #   -r 24           \ # FPS (Frames Per Second)
+#   -profile:v high -level 4.0 \ # High profile for YouTube)
 #   -ar 48000       \ # Audio sample rate (41000 or 48000 for YouTube)
 #   -aspect 16:9    \ # Aspect Ratio (4:3, 16:9, 1.3333)
 #   -pix_fmt yuv420p\ # Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
