@@ -51,9 +51,9 @@ declare OUTPUT=$2
 #   -movflags +faststart \ # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 #   -b:a 128K       \ # audio bitrate (-ab)
 #   -b:v 1M         \ # video bitrate (-b)
-#   -minrate 1M
-#   -maxrate 1M
-#   -bufsize 2M
+#   -minrate 1M     \
+#   -maxrate 1M     \
+#   -bufsize 2M     \
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
 #   -r 24           \ # FPS (Frames Per Second)
