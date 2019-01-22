@@ -49,7 +49,7 @@
 #   -filter_threads 4 \
 #   -filter_complex_threads 4 \
 #   -vf             \  # Video filter
-#     scale=1920x1080 \ # Scale (use n:-2 to keep aspect ratio)
+#     scale=1920x1080 \ # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
 #    ,setdar=16:9    \ # Another way to set video resolution
 #   -af audio filter \ # Audio filter
 #   -filter [filter] \ # Main filter
