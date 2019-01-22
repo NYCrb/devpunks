@@ -36,8 +36,6 @@ declare OUTPUT=$2
 # FORMAT
 #   -f format       \ # force format (image2, )
 #   -r 24           \ # FPS (Frames Per Second)
-#   -framerate 24   \ # ** USED FOR IMAGES **
-#   -aspect 16:9    \ # Aspect Ratio (4:3, 16:9, 1.3333)
 #   -b:a 128K       \ # audio bitrate (-ab)
 #   -b:v 1M         \ # video bitrate (-b)
 #
