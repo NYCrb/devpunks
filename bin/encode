@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-declare INPUT=$1
-declare OUTPUT=$2
-
 # Video Conversion for Cross Device with FFmpeg
 # https://gist.github.com/jaydenseric/220c785d6289bcfd7366
 #
