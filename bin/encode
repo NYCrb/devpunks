@@ -41,6 +41,7 @@ declare OUTPUT=$2
 #
 # FORMAT
 #   -f format       \ # force format (image2, )
+#   -vbr 2          \ # Variable bit rate
 #   -b:a 128K       \ # audio bitrate (-ab)
 #   -b:v 1M         \ # video bitrate (-b)
 #   -framerate 24   \ # ** USED FOR IMAGES **
