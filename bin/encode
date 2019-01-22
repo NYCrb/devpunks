@@ -18,7 +18,7 @@ declare OUTPUT=$2
 #   -vol 256        \ # Audio volume level (0-256)
 #   -pre preset     \
 #   -i input.avi    \
-#   -v scale=320:240 \
+#   -vf scale=1920:1080 \ # Scale video filter
 #   -f format       \ # force format (image2, )
 #   -r 24           \ # FPS (Frames Per Second)
 #   -framerate 24   \ # ** USED FOR IMAGES **
