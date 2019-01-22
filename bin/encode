@@ -12,7 +12,7 @@ declare OUTPUT=$2
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for thumbnail ***
 #   -ss [start]     \ seek start time offset
-#   -t [duration]   \ seek duration time
+#   -t [duration]   \ seek duration time (precedence over -to)
 #   -to [end]       \ seek end time
 #
 #   -vsync 1        \ # Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
