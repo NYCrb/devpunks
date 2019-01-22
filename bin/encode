@@ -43,8 +43,8 @@ declare OUTPUT=$2
 # CODECS
 #   -c:a aac        \ # codec (shorthand) (e.g. copy, etc.)
 #   -c:v libx264    \ # codec (shorthand) (e.g. copy, etc.)
-#   -acodec aac     \ # codec (longform)
-#   -vcodec libx264 \ # codec (longform)
+#   -acodec aac     \ # codec (longform)  (e.g. copy, etc.)
+#   -vcodec libx264 \ # codec (longform)  (e.g. copy, etc.)
 #
 # output.avi
 
