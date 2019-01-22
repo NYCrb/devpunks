@@ -53,9 +53,6 @@ declare OUTPUT=$2
 #
 # output.avi
 
-# Faster Processing
-# -threads n
-
 # Quality
 # Example flag: -crf 20.
 # 0 is lossless, 23 is default, and 51 is worst possible. 18-28 is a sane range.
