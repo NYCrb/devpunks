@@ -60,11 +60,6 @@ declare OUTPUT=$2
 #
 # output.avi
 
-# Fast Start
-# Flag: -movflags +faststart.
-# Moves some data to the beginning of the file, allowing the video to be played before it is completely downloaded.
-
-
 ###################################################################################
 ###################################################################################
 
