@@ -11,15 +11,15 @@ declare OUTPUT=$2
 # read PNG images with filename img001, img002, img003, etc..
 # img can be changed to another prefix
 # %03d can be changed to %04d for 0001, %05d for 00001 formats, etc...
-# -i img%03d.png  \
-#   -stats        \
-#   -report       \
-#   -vol 256      \ # Audio volume level (0-256)
-#   -i input.avi  \
-#   -pre preset   \
-#   -t 4          \ # thread count
-#   -f format     \ # force format (image2, )
-#   -vf scale=320:240 \
+# -i img%03d.png    \
+#   -stats          \
+#   -report         \
+#   -vol 256        \ # Audio volume level (0-256)
+#   -i input.avi    \
+#   -pre preset     \
+#   -t 4            \ # thread count
+#   -f format       \ # force format (image2, )
+#   -v scale=320:240 \
 #   -framerate 24 \
 #   -b:a 128K       \ # audio bitrate (-ab)
 #   -b:v 1M         \ # video bitrate (-b)
