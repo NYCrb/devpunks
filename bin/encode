@@ -15,6 +15,7 @@ declare OUTPUT=$2
 #   -to [end]       \ seek end time
 #
 #   -vsync 1        \ # Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
+#   -copyts         \ # Copy time stamp
 #
 # read PNG images with filename img001, img002, img003, etc..
 # img can be changed to another prefix
