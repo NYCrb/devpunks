@@ -17,6 +17,7 @@ declare OUTPUT=$2
 #   -framerate 30 \
 #   -c:v libx264 \ # codec (shorthand)
 #   -vcodec libx264 \ # codec (longform)
+#   -acodec aac \ # codec (longform)
 
 
 # output.avi
