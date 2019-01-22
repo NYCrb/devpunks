@@ -13,6 +13,7 @@ declare OUTPUT=$2
 # %03d can be changed to %04d for 0001, %05d for 00001 formats, etc...
 # -i img%03d.png  \
 #   -stats        \
+#   -report       \
 #   -i input.avi  \
 #   -pre preset   \
 #   -vf scale=320:240 \
