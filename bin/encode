@@ -8,7 +8,10 @@ declare OUTPUT=$2
 
 # Scaling https://trac.ffmpeg.org/wiki/Scaling
 # ffmpeg \
+#
 # SEEKING *** SEEK BEFORE INPUT ***
+#   -ss [start]     \ seek start time offset
+#
 # read PNG images with filename img001, img002, img003, etc..
 # img can be changed to another prefix
 # %03d can be changed to %04d for 0001, %05d for 00001 formats, etc...
