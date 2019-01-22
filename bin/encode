@@ -12,6 +12,7 @@ declare OUTPUT=$2
 # SEEKING *** SEEK BEFORE INPUT ***
 #   -ss [start]     \ seek start time offset
 #   -t [duration]   \ seek duration time
+#   -to [end]       \ seek end time
 #
 # read PNG images with filename img001, img002, img003, etc..
 # img can be changed to another prefix
