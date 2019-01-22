@@ -15,6 +15,7 @@ declare OUTPUT=$2
 #   -i input.avi \
 #   -vf scale=320:240 \
 #   -framerate 30 \
+#   -c:v libx264
 
 
 # output.avi
