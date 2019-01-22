@@ -37,6 +37,7 @@ declare OUTPUT=$2
 #   -filter_complex_threads 4 \
 #   -vf             \  # Video filter
 #     scale=1920:1080 \ # Scale (use n:-2 to keep aspect ratio)
+#    ,setdar=16:9     \ # Another way to set video resolution
 #   -af audio filter \ # Audio filter
 #   -filter [filter] \ # Main filter
 #
