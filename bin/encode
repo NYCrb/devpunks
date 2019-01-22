@@ -21,7 +21,6 @@
 # Video encoding guide
 # https://trac.ffmpeg.org/wiki/Encode/H.264
 
-# Scaling https://trac.ffmpeg.org/wiki/Scaling
 # ffmpeg \
 #
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
