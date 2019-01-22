@@ -27,6 +27,7 @@ declare OUTPUT=$2
 #   -stats          \
 #   -report         \
 #   -vn             \ # Disable video
+#   -an             \ # Disable audio
 #   -vol 256        \ # Audio volume level (0-256)
 #   -pre preset     \
 #   -i input.avi    \
