@@ -14,7 +14,7 @@ declare OUTPUT=$2
 # -i img%03d.png  \
 #   -stats        \
 #   -report       \
-#   -vol 256      \
+#   -vol 256      \ # Audio volume level (0-256)
 #   -i input.avi  \
 #   -pre preset   \
 #   -vf scale=320:240 \
