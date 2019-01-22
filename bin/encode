@@ -32,8 +32,8 @@ declare OUTPUT=$2
 #   -b:v 1M         \ # video bitrate (-b)
 #
 # CODECS
-#   -c:a aac        \ # codec (shorthand)
-#   -c:v libx264    \ # codec (shorthand)
+#   -c:a aac        \ # codec (shorthand) (e.g. copy, etc.)
+#   -c:v libx264    \ # codec (shorthand) (e.g. copy, etc.)
 #   -acodec aac     \ # codec (longform)
 #   -vcodec libx264 \ # codec (longform)
 
