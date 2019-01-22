@@ -25,6 +25,7 @@ declare OUTPUT=$2
 #   -threads 4      \ # thread count
 #   -stats          \
 #   -report         \
+#   -vn             \ # Disable video
 #   -vol 256        \ # Audio volume level (0-256)
 #   -pre preset     \
 #   -i input.avi    \
