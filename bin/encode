@@ -109,7 +109,4 @@ declare OUTPUT=$2
 for i in *.$1
   do
     echo $i
-
-# Generate MP4
-#   ffmpeg -i "$i" -c:v libx264 -pix_fmt yuv420p -profile:v baseline -level 3.0 -crf 22 -preset veryslow -vf scale=$2:-2 -an -movflags +faststart -threads 0 ${i%$1}mp4
   done
