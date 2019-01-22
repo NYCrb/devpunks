@@ -16,6 +16,7 @@ declare OUTPUT=$2
 #   -vf scale=320:240 \
 #   -framerate 30 \
 #   -c:v libx264 \ # codec (shorthand)
+#   -c:a aac \ # codec (shorthand)
 #   -vcodec libx264 \ # codec (longform)
 #   -acodec aac \ # codec (longform)
 
