@@ -30,6 +30,7 @@ declare OUTPUT=$2
 #   -vf             \  # Video filter
 #     scale=1920:1080 \ # Scale
 #   -af audio filter \ # Audio filter
+#   -filter [filter] \ # Main filter
 #
 # FORMAT
 #   -f format       \ # force format (image2, )
