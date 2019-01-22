@@ -18,6 +18,9 @@ declare OUTPUT=$2
 #   -vol 256        \ # Audio volume level (0-256)
 #   -pre preset     \
 #   -i input.avi    \
+# FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
+#   -filter_threads 4 \
+#   -filter_complex_threads 4 \
 #   -vf             \  # Video filter
 #     scale=1920:1080 \ # Scale
 #   -af audio filter \ # Audio filter
