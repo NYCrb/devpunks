@@ -32,7 +32,6 @@ declare OUTPUT=$2
 #   -ss [start]     \ seek start time offset
 #   -t [duration]   \ seek duration time (precedence over -to)
 #   -to [end]       \ seek end time
-#
 #   -vsync 1        \ # Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
 #   -copyts         \ # Copy timestamp
 #   -copytb         \ # Copy time base
