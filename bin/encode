@@ -81,6 +81,7 @@ declare OUTPUT=$2
 #   -c:v libx264    \ # codec (shorthand) (e.g. copy, etc.)
 #   -acodec aac     \ # codec (longform)  (e.g. copy, etc.)
 #   -vcodec libx264 \ # codec (longform)  (e.g. copy, etc.)
+#   -coder 1        \ # (YouTube: By default CABAC is the entropy encoder used by x264.)
 #
 # output.avi
 
