@@ -44,6 +44,7 @@ declare OUTPUT=$2
 #   -b:v 1M         \ # video bitrate (-b)
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -r 24           \ # FPS (Frames Per Second)
+#   -ar 44100       \ # Audio sample rate
 #   -aspect 16:9    \ # Aspect Ratio (4:3, 16:9, 1.3333)
 #
 # CODECS
