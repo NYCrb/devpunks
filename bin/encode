@@ -36,7 +36,7 @@ ffmpeg \
 # img can be changed to another prefix
 # %03d can be changed to %04d for 0001, %05d for 00001 formats, etc...
 # -i img%03d.png    \
-#   -threads 4      \ # thread count
+    -threads 4      \ # thread count
 #   -stats          \
 #   -report         \
 #   -vn             \ # Disable video
