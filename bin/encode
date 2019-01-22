@@ -8,6 +8,10 @@ declare OUTPUT=$2
 
 # Scaling https://trac.ffmpeg.org/wiki/Scaling
 # ffmpeg \
+# read PNG images with filename img001, img002, img003, etc..
+# img can be changed to another prefix
+# %03d can be changed to %04d for 0001, %05d for 00001 formats, etc...
+# -i img%03d.png  \
 #   -i input.avi \
 #   -vf scale=320:240 \
 #   -framerate 30 \
