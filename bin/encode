@@ -53,6 +53,7 @@ declare OUTPUT=$2
 #   -b:v 1M         \ # video bitrate (-b)
 #   -minrate 1M
 #   -maxrate 1M
+#   -bufsize 2M
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
 #   -r 24           \ # FPS (Frames Per Second)
