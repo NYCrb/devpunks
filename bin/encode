@@ -57,6 +57,7 @@ declare OUTPUT=$2
 #   -filter [filter] \ # Main filter
 #
 # FORMAT
+#   -g 12           \ # or -g 15 varies on YouTube's FPS.(The default, 12, works for 24-25 fps. For NTSC and 30 fps, select 15.* FFMPEG option: -g, Not sure what youtube's default FPS is if it is 24 or 30. I assume 24 since the default 12 would be half the frame rate and 15 if their fra
 #   -f format       \ # force format (image2, )
 #   -bf 2           \ # Youtube Consecutive B Frame (default 16)
 #   -vbr 2          \ # Variable bit rate
