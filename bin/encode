@@ -24,7 +24,9 @@
 echo $1
 
 ffmpeg \
-  -threads 4
+  -threads 4 \
+  -i $1
+
 #
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
