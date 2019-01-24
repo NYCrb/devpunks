@@ -29,6 +29,7 @@ echo $1
 ffmpeg \
   -threads 4 \
   -i $1 \
+  -f null \ # Null format
   dev/null
 
 #
