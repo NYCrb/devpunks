@@ -28,7 +28,8 @@ echo $1
 
 ffmpeg \
   -threads 4 \
-  -i $1
+  -i $1 \
+  dev/null
 
 #
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
