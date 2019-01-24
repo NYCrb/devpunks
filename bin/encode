@@ -21,6 +21,8 @@
 # Video encoding guide
 # https://trac.ffmpeg.org/wiki/Encode/H.264
 
+echo $1
+
 ffmpeg \
   -threads 4
 #
