@@ -26,7 +26,7 @@
 
 echo $1
 
-time ffmpeg \
+time ffmpeg  \
   -threads 4 \
   -i $1 \
   -stats          \
