@@ -33,7 +33,7 @@ declare -xr FORMAT=$( test "$2" && echo -f null || echo -f snuggs )
 echo Input $INPUT Output $OUTPUT format $FORMAT
 
 time $FFMPEG \
-  -threads 4 \
+  $THREADS   \
   $INPUT     \
   -stats     \
   -f null    \
