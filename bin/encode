@@ -28,10 +28,10 @@ echo $1
 
 time ffmpeg  \
   -threads 4 \
-  -i $1 \
-  -stats          \
-  -f null \
-  dev/null
+  -i $1      \
+  -stats     \
+  -f null    \
+dev/null
 
 #
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
