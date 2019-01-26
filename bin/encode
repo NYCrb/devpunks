@@ -29,6 +29,10 @@ if test $2
   echo Length $# and $1 and $2
 fi
 
+declare -xr OUTPUT=${2:-dev/null}
+
+echo Output $OUTPUT
+
 time ffmpeg  \
   -threads 4 \
   -i $1      \
