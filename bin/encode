@@ -24,7 +24,7 @@
 # Send output stream to dev/null
 # https://stackoverflow.com/questions/20323640/ffmpeg-deocde-without-producing-output-file#answer-20325676
 
-declare -xr INPUT=$1
+declare -xr INPUT="-i $1"
 declare -xr OUTPUT=${2:-dev/null}
 
 echo Input $INPUT Output $OUTPUT
