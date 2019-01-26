@@ -27,7 +27,7 @@
 declare -xr INPUT=$1
 declare -xr OUTPUT=${2:-dev/null}
 
-echo Output $OUTPUT
+echo Input $INPUT Output $OUTPUT
 
 time ffmpeg  \
   -threads 4 \
