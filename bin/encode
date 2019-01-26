@@ -31,7 +31,7 @@ echo Input $INPUT Output $OUTPUT
 
 time ffmpeg  \
   -threads 4 \
-  -i $1      \
+  -i $INPUT  \
   -stats     \
   -f null    \
 $OUTPUT
