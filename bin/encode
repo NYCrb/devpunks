@@ -24,7 +24,10 @@
 # Send output stream to dev/null
 # https://stackoverflow.com/questions/20323640/ffmpeg-deocde-without-producing-output-file#answer-20325676
 
-# echo $1
+if test $2
+  then
+  echo Length $# and $1 and $2
+fi
 
 time ffmpeg  \
   -threads 4 \
