@@ -32,7 +32,7 @@ echo Input $INPUT Output $OUTPUT format $FORMAT
 
 time ffmpeg  \
   -threads 4 \
-  -i $INPUT  \
+  $INPUT     \
   -stats     \
   -f null    \
 $OUTPUT
