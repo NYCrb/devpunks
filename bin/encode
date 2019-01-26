@@ -38,7 +38,7 @@ time ffmpeg  \
   -i $1      \
   -stats     \
   -f null    \
-dev/null
+$OUTPUT
 
 #
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
