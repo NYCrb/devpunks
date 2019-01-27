@@ -35,7 +35,7 @@ declare -xr FORMAT=$((test ! "$2" && echo "-f null") || echo "-f snuggs" )
 time $FFMPEG \
   $THREADS   \
   $INPUT     \
-  -stats     \
+  $STATS     \
   $FORMAT    \
 $OUTPUT
 
