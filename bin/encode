@@ -38,7 +38,7 @@ time $FFMPEG \
   $THREADS   \
   $INPUT     \
   -stats     \
-  -f null    \
+  $FORMAT    \
 $OUTPUT
 
 #
