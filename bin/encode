@@ -29,7 +29,7 @@ declare -xr OUTPUT=${2:-dev/null}
 declare -xr FFMPEG=$(which ffmpeg)
 declare -xr THREADS="-threads 4"
 declare -xr STATS="-stats"
-declare -xr FORMAT=$((test ! "$2" && echo "-f null") || echo "-f snuggs" )
+declare -xr FORMAT=$((test ! "$2" && echo "-f null") || echo "-f mp4" )
 
 
 time $FFMPEG \
