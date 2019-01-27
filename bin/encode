@@ -26,6 +26,7 @@
 
 declare -xr INPUT="-i $1"
 declare -xr OUTPUT=${2:-dev/null}
+declare -xr FFMPEG=$(which ffmpeg)
 declare -xr THREADS="-threads 4"
 declare -xr FORMAT=$((test ! "$2" && echo "-f null") || echo "-f snuggs" )
 
