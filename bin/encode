@@ -30,9 +30,6 @@ declare -xr OUTPUT=${2:-dev/null}
 declare -xr THREADS="-threads 4"
 declare -xr FORMAT=$((test ! "$2" && echo "-f null") || echo "-f snuggs" )
 
-echo TESTING $((test "$2" && echo "Snuggs") || echo "whatever")
-
-echo FFMPEG $(which ffmpeg) $FFMPEG Input $INPUT Output $OUTPUT format $FORMAT
 
 time $FFMPEG \
   $THREADS   \
