@@ -38,7 +38,7 @@ time $FFMPEG \
   $FORMAT    \
 $OUTPUT
 
-#
+
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
 #   -ss [start]     \ seek start time offset
