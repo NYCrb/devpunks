@@ -34,8 +34,6 @@ declare -r RATE="-ar 48000"
 
 
 time $FFMPEG \
-  $THREADS   \
-  $INPUT     \
   $STATS     \
   $FORMAT    \
 $OUTPUT
