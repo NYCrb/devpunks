@@ -82,7 +82,6 @@ $OUTPUT
 #   -vbr 2          \ # Variable bit rate
 #   -crf 23         \ # crf (constant rate factor) quality (51 worst, 0 lossless, 18-28 is sane, default 23)
 #   -movflags +faststart \ # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
-#   -b:a 128K       \ # audio bitrate (-ab)
 #   -b:v 1M         \ # video bitrate (-b)
 #   -minrate 1M     \
 #   -maxrate 1M     \
