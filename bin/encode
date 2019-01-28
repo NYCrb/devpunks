@@ -65,7 +65,6 @@ $OUTPUT
 #   -report         \
 #   -vn             \ # Disable video
 #   -an             \ # Disable audio
-#   -vol 256        \ # Audio volume level (0-256)
 #   -pre preset     \
 #
 # FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
