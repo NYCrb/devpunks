@@ -38,6 +38,7 @@ time $FFMPEG \
   $INPUT     \
   $THREADS   \
   $FORMAT    \
+  $RATE      \
 $OUTPUT
 
 
