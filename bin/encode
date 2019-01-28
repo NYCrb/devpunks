@@ -55,6 +55,7 @@ time $FFMPEG \
   $SAMPLES   \
   $CODECS    \
   $VOLUME    \
+  $RATE      \
 $OUTPUT
 
 
