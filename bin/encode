@@ -60,6 +60,9 @@ time $FFMPEG \
 $OUTPUT
 
 
+# LUTS
+#  - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
+
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
 #   -ss [start]     \ seek start time offset
