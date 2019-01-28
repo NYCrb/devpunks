@@ -55,7 +55,7 @@ time $FFMPEG \
   $STAMP     \
   $STATS     \
   $THREADS   \
-  $FORMAT    \
+  $FILTERS   \
   $SAMPLES   \
   $CODECS    \
   $VOLUME    \
