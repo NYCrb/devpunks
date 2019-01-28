@@ -47,7 +47,6 @@ declare -r MAPS="-map 0"
 declare -r SCALE="scale=1920x1080"
 
 time $FFMPEG \
-  $QUICKTIME \
   $INPUT     \
   $BASE      \
   $SYNC      \
