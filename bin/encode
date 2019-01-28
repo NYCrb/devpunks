@@ -37,6 +37,7 @@ declare -r BASE="-copytb"
 
 time $FFMPEG \
   $BASE      \
+  $STAMP     \
   $STATS     \
   $INPUT     \
   $THREADS   \
