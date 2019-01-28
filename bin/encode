@@ -40,6 +40,7 @@ declare -r CODECS="-c:a aac"
 declare -r SYNC="-vsync 1"
                                      # Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
 declare -r FPS="-r 24000/1001"       # FPS (Frames Per Second) (Assume YouTube's default frame rate is 24.)
+declare -r SCALE="-video_track_timescale 24000/1001"
 
 
 time $FFMPEG \
