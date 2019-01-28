@@ -34,8 +34,7 @@ declare -r SAMPLE="-ar 48000"
 declare -r STAMP="-copyts"
 declare -r BASE="-copytb -1"
 declare -r BITRATE="-b:a 128K"
-declare -r PIXELS="-pix_fmt yuv420p"
-\ # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
+declare -r PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 
 
 time $FFMPEG \
