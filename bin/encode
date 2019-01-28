@@ -97,7 +97,6 @@ $OUTPUT
 #   -level 4.0      \ # Profile level
 #   -ar 48000       \ # Audio sample rate (41000 or 48000 for YouTube)
 #   -aspect 16:9    \ # Aspect Ratio (4:3, 16:9, 1.3333)
-#   -pix_fmt yuv420p\ # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 #
 # CODECS
 #   -c:a aac        \ # codec (shorthand) (e.g. copy, etc.)
