@@ -33,6 +33,7 @@ declare -r FORMAT=$((test ! "$2" && echo "-f null") || echo "-f mp4" )
 declare -r RATE="-ar 48000"
 declare -r STAMP="-copyts"
 declare -r BASE="-copytb"
+declare -r BITRATE="-b:a 128K"
 
 
 time $FFMPEG \
