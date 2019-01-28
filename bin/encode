@@ -58,6 +58,7 @@ time $FFMPEG \
   $CODECS    \
   $VOLUME    \
   $RATE      \
+  $MAPS      \
 $OUTPUT
 
 
