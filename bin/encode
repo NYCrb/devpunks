@@ -46,6 +46,7 @@ declare -r SCALE="-video_track_timescale 24000/1001"
 time $FFMPEG \
   $BASE      \
   $FPS       \
+  $SCALE     \
   $STAMP     \
   $STATS     \
   $INPUT     \
