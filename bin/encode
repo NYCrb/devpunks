@@ -31,6 +31,7 @@ declare -r THREADS="-threads 4"
 declare -r STATS="-stats"
 declare -r FORMAT=$((test ! "$2" && echo "-f null") || echo "-f mp4" )
 declare -r RATE="-ar 48000"
+declare -r STAMP="-copyts"
 declare -r BASE="-copytb"
 
 
@@ -50,8 +51,6 @@ $OUTPUT
 #   -t [duration]   \ seek duration time (precedence over -to)
 #   -to [end]       \ seek end time
 #   -vsync 1        \ # Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
-#   -copyts         \ # Copy timestamp
-#   -copytb         \ # Copy time base
 #
 # read PNG images with filename img001, img002, img003, etc..
 # img can be changed to another prefix
