@@ -49,7 +49,6 @@ time $FFMPEG \
   $SYNC      \
   $STAMP     \
   $STATS     \
-  $INPUT     \
   $THREADS   \
   $FORMAT    \
   $PIXELS    \
