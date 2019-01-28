@@ -38,7 +38,7 @@ declare -r VOLUME="-vol 256"         # Audio volume level (0-256)
 declare -r PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r CODECS="-c:a aac"
 declare -r SYNC="-vsync 1"
-# Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
+                                     # Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
 declare -r FPS="-r 24000/1001"       # FPS (Frames Per Second) (Assume YouTube's default frame rate is 24.)
 
 
