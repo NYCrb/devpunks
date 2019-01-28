@@ -33,14 +33,13 @@ declare -r  FORMAT=$((test ! "$2" && echo "-f null") || echo "-f mp4" )
 declare -r  SAMPLES="-ar 48000"
 # declare -r STAMP="-copyts"
 # declare -r BASE="-copytb -1"
-declare -r BITRATE="-b:a 128K"
-declare -r VOLUME="-vol 256"         # Audio volume level (0-256)
-declare -r PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
-declare -r CODECS="-c:a aac"
-declare -r SYNC="-vsync cfr"         # -async for audio
-                                     # Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
-declare -r RATE="-r 24000/1001"      # FPS (Frame Rate Per Second) (Assume YouTube's default frame rate is 24.)
-                                     # PLACE BEFORE OUTPUT TO FORCE
+declare -r  BITRATE="-b:a 128K"
+declare -r  VOLUME="-vol 256"         # Audio volume level (0-256)
+declare -r  PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
+declare -r  CODECS="-c:a aac"
+declare -r  SYNC="-vsync cfr"         # (-async for audio) Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
+declare -r  RATE="-r 24000/1001"      # FPS (Frame Rate Per Second) (Assume YouTube's default frame rate is 24.)
+                                      # PLACE BEFORE OUTPUT TO FORCE
 
 
 time $FFMPEG \
