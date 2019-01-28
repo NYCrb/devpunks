@@ -45,6 +45,7 @@ declare -r  RATE="-r 24000/1001"      # FPS (Frame Rate Per Second) (Assume YouT
 declare -r QUICKTIME="-movflags +faststart $PIXELS" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 
 time $FFMPEG \
+  $QUICKTIME \
   $INPUT     \
   $BASE      \
   $SYNC      \
