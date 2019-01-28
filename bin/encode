@@ -45,6 +45,7 @@ declare -r FPS="-r 24000/1001"
 
 time $FFMPEG \
   $BASE      \
+  $FPS       \
   $STAMP     \
   $STATS     \
   $INPUT     \
