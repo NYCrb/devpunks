@@ -44,6 +44,7 @@ declare -r RATE="-r 24000/1001"      # FPS (Frame Rate Per Second) (Assume YouTu
 
 
 time $FFMPEG \
+  $INPUT     \
   $BASE      \
   $FPS       \
   $SCALE     \
