@@ -46,6 +46,7 @@ time $FFMPEG \
   $THREADS   \
   $FORMAT    \
   $SAMPLE    \
+  $PIXELS    \
 $OUTPUT
 
 
