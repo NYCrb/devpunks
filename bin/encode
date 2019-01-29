@@ -35,6 +35,7 @@ declare -r  SAMPLES="-ar 48000"
 # declare -r STAMP="-copyts"
 # declare -r BASE="-copytb -1"
 declare -r  BITRATE="-b:a 128K"
+declare -r  CODECS="-c:a aac -c:v libx264"
 declare -r  VOLUME="-vol 256"         # Audio volume level (0-256)
 declare -r  PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r  CODECS="-c:a aac"
