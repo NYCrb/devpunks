@@ -24,7 +24,7 @@
 # Send output stream to dev/null
 # https://stackoverflow.com/questions/20323640/ffmpeg-deocde-without-producing-output-file#answer-20325676
 
-declare -r CORES="4"
+declare -r  CORES="4"
 declare -rx INPUT="-i $1"
 declare -rx OUTPUT=${2:-dev/null}
 declare -r  FFMPEG=$(which ffmpeg)
