@@ -117,8 +117,6 @@ $OUTPUT
 #   -acodec aac     \ # codec (longform)  (e.g. copy, etc.) Fraunhofer is best `-c:a libfdk_aac`
 #   -vcodec libx264 \ # codec (longform)  (e.g. copy, etc.)
 #   -coder 1        \ # (YouTube: By default CABAC is the entropy encoder used by x264.)
-#
-# output.avi
 
 ### 2-PASS https://slhck.info/video/2017/03/01/rate-control.html#2-pass-average-bitrate-2-pass-abr
 # ffmpeg -i <input> -c:v libx264 -b:v 1M -pass 1 -f mp4 /dev/null
