@@ -89,8 +89,6 @@ $OUTPUT
 #   -pre preset     \
 #
 # FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
-#   -filter_threads 4         \
-#   -filter_complex_threads 4 \
 #   -vf                       \  # Video filter
 #     scale=1920x1080         \ # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
 #    ,setdar=16:9             \ # Another way to set video resolution
