@@ -59,12 +59,12 @@ time $FFMPEG \
   $FILTERS   \
   $SAMPLES   \
   $CODECS    \
-  $VOLUME    \
   $MAPS      \
   $QUICKTIME \
   $RATE      \
   $BITRATE   \
   $FORMAT    \
+  $VOLUME    \
 $OUTPUT
 
 
