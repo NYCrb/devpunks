@@ -47,6 +47,7 @@ declare -r  BITRATE="-b:a 128K -b:v 1M -crf 23"         # audio bitrate (-a) vid
 declare -r  PIXELS="-pix_fmt yuv420p"                   # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r  QUICKTIME="-movflags +faststart $PIXELS"    # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 declare -r  VIDEO_FILTERS="scale=1920:1080,setdar=16:9" # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
+                                                        # setdar (Sample Aspect Ratio) setdar (Display Aspect Ratio)
 declare -r  AUDIO_FILTERS="" #
 declare -r  FILTERS="-af $AUDIO_FILTERS -vf $VIDEO_FILTERS -filter_threads $CORES -filter_complex_threads $CORES"
 
