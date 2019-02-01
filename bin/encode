@@ -58,11 +58,10 @@ time $FFMPEG \
   $REPORT    \
   $THREADS   \
   $FILTERS   \
-  $SAMPLES   \
   $CODECS    \
   $MAPS      \
   $QUICKTIME \
-  $RATE      \
+  $FREQUENCY \
   $BITRATE   \
   $FORMAT    \
   $VOLUME    \
