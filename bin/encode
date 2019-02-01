@@ -92,6 +92,7 @@ $OUTPUT
 #   -pre preset     \
 #
 # FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
+#         http://manpages.ubuntu.com/manpages/cosmic/man1/ffmpeg-filters.1.html
 #   -vf                       \  # Video filter
 #     scale=1920x1080         \ # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
 #    ,setdar=16:9             \ # Another way to set video resolution
