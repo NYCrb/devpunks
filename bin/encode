@@ -99,7 +99,6 @@ $OUTPUT
 #   -f format       \ # force format (image2, )
 #   -bf 2           \ # Youtube Consecutive B Frame (default 16)
 #   -vbr 2          \ # Variable bit rate
-#   -crf 23         \ # crf (constant rate factor) quality (51 worst, 0 lossless, 18-28 is sane, default 23)
 #   -minrate 1M     \
 #   -maxrate 1M     \
 #   -bufsize 2M     \
