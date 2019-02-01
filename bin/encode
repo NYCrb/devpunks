@@ -34,7 +34,6 @@ declare -r  REPORT="-report"
 declare -r  FFMPEG=$(which ffmpeg)
 declare -r  THREADS="-threads $CORES"
 declare -r  FORMAT=$( ( test ! "$2" && echo -f null ) || echo -f mp4 )
-declare -r  SAMPLES="-ar 48000"
 # declare -r STAMP="-copyts"
 # declare -r BASE="-copytb -1"
 declare -r  CODECS="-c:a aac -c:v libx264"
