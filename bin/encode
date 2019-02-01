@@ -48,6 +48,7 @@ declare -r  MAPS="-map 0"
 declare -r  SCALE="scale=1920x1080,setdar=16:9" # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
 declare -r  FILTERS="-vf $SCALE -filter_threads $CORES -filter_complex_threads $CORES"
 
+echo FORMAT: $FORMAT
 
 time $FFMPEG \
   $INPUT     \
