@@ -46,8 +46,8 @@ declare -r  RATE="-r 24000/1001"        # FPS (Frame Rate Per Second) (Assume Yo
 declare -r  BITRATE="-b:a 128K -b:v 1M" # audio bitrate (-a) video bitrate (-b)
 declare -r  PIXELS="-pix_fmt yuv420p"   # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r  QUICKTIME="-movflags +faststart $PIXELS" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
-declare -r  SCALE="scale=1920x1080,setdar=16:9" # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
-declare -r  FILTERS="-vf $SCALE -filter_threads $CORES -filter_complex_threads $CORES"
+declare -r  RESOLUTION="scale=1920x1080,setdar=16:9" # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
+declare -r  FILTERS="-vf $RESOLUTION -filter_threads $CORES -filter_complex_threads $CORES"
 
 
 time $FFMPEG \
