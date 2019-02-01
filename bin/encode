@@ -39,11 +39,11 @@ declare -r  FORMAT=$( ( test ! "$2" && echo -f null ) || echo -f mp4 )
 declare -r  CODECS="-c:a aac -c:v libx264"
 declare -r  VOLUME="-vol 256"           # Audio volume level (0-256)
 declare -r  SYNC="-vsync cfr"           # (-async for audio) Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
-declare -r  RATE="-r 24000/1001"        # FPS (Frame Rate Per Second) (Assume YouTube's default frame rate is 24.)
-                                        # PLACE BEFORE OUTPUT TO FORCE
-                                        # http://www.reduser.net/forum/showthread.php?102725-24P-or-23-976P-That-is-the-question
-declare -r  BITRATE="-b:a 128K -b:v 1M" # audio bitrate (-a) video bitrate (-b)
-declare -r  PIXELS="-pix_fmt yuv420p"   # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
+declare -r  FREQUENCY="-ar 48000 -r 24000/1001"      # SAMPLE RATE &  FPS (Frame Rate Per Second) (Assume YouTube's default frame rate is 24FPS 48000Hz)
+                                                     # PLACE BEFORE OUTPUT TO FORCE
+                                                     # http://www.reduser.net/forum/showthread.php?102725-24P-or-23-976P-That-is-the-question
+declare -r  BITRATE="-b:a 128K -b:v 1M"              # audio bitrate (-a) video bitrate (-b)
+declare -r  PIXELS="-pix_fmt yuv420p"                # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r  QUICKTIME="-movflags +faststart $PIXELS" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 declare -r  RESOLUTION="scale=1920:1080,setdar=16:9" # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
 declare -r  FILTERS="-vf $RESOLUTION -filter_threads $CORES -filter_complex_threads $CORES"
