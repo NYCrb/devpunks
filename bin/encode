@@ -29,6 +29,7 @@ declare -rx OUTPUT=${2:-dev/null}
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
 declare -r START="-ss [start]" # seek start time offset
+declare -r DURATION="-t [duration]"   # seek duration time (precedence over -to)
 
 declare -r  CORES=4
 declare -r  MAPS="-map 0"
