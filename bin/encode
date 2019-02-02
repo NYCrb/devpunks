@@ -80,12 +80,6 @@ $OUTPUT
 #  - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
 #   -vf lut3d=<lut file> -c:a copy output
 
-# SEEKING https://trac.ffmpeg.org/wiki/Seeking
-# *** SEEK BEFORE INPUT for cover image ***
-#   -ss [start]     \ seek start time offset
-#   -t [duration]   \ seek duration time (precedence over -to)
-#   -to [end]       \ seek end time
-#
 # read PNG images with filename img001, img002, img003, etc..
 # img can be changed to another prefix
 # %03d can be changed to %04d for 0001, %05d for 00001 formats, etc...
