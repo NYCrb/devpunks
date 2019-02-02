@@ -55,7 +55,7 @@ declare -r  PIXELS="-pix_fmt yuv420p"                # Chroma subsampling: 4:2:0
 declare -r  QUICKTIME="-movflags +faststart $PIXELS" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 declare -r  VIDEO_FILTERS="-vf scale=1920:1080"      # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
                                                      # setdar (Sample Aspect Ratio) setdar (Display Aspect Ratio)
-declare -r  AUDIO_FILTERS="" # -af
+declare -r  AUDIO_FILTERS= # -af
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS -filter_threads $CORES -filter_complex_threads $CORES"
 
 echo FILTERS: $FILTERS
