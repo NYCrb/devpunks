@@ -50,7 +50,7 @@ declare -r  FREQUENCY="-ar 48000 -r 24000/1001"      # SAMPLE RATE &  FPS (Frame
                                                      # 24000/1001 (23.976fps). 30000/1001 (29.970fps). 60000/1001 (59.94fps)
                                                      # PLACE BEFORE OUTPUT TO FORCE
                                                      # http://www.reduser.net/forum/showthread.php?102725-24P-or-23-976P-That-is-the-question
-declare -r  BITRATE="-b:a 128K -b:v 1M -crf 23"      # audio bitrate (-a) video bitrate (-b)
+declare -r  BITRATE="-b:a 128K -b:v 1M -crf 18"      # audio bitrate (-a) video bitrate (-b)
                                                      # crf (constant rate factor) quality (51 worst, 0 lossless, 18-28 is sane, default 23)
 declare -r  PIXELS="-pix_fmt yuv420p"                # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r  QUICKTIME="-movflags +faststart $PIXELS" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
