@@ -63,7 +63,7 @@ declare -r  FILTER= # -filter [filter]               # Main filter
 declare -r  SCALE="scale=1920:1080,setsar=sar=1:1,setdar=dar=16/9"  # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
 declare -r  VIDEO_FILTERS="-vf $SCALE"
                                                      # setdar (Sample Aspect Ratio) setdar (Display Aspect Ratio)
-declare -r  AUDIO_FILTERS= # -af                     # Audio Filters
+declare -r  AUDIO_FILTERS="-af volume=1.00"          # Audio Filters
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
 echo FILTERS: $FILTERS
