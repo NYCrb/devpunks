@@ -51,7 +51,7 @@ declare -r  SYNC="-vsync vfr"                           # 0 (passthrough), 1 (cf
                                                         # (-async for audio) Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
 
 # Keyframe interval (or GOP length). -g 15 varies on YouTube's FPS.(The default, 12, works for 24-25 fps. For NTSC and 30 fps, select 15.* FFMPEG option: -g, Not sure what youtube's default FPS is if it is 24 or 30. I assume 24 since the default 12 (or 15) would be half the frame rate
-declare -r  KEYFRAMES="-g 24 -keyint_min 12"      
+declare -r  KEYFRAMES="-g 24 -keyint_min 12"            # https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping
 # SAMPLE RATE &  FPS (Frame Rate Per Second) (Assume YouTube's default frame rate is 24FPS 48000Hz)
 # 24000/1001 (23.976fps). 30000/1001 (29.970fps). 60000/1001 (59.94fps)
 # PLACE BEFORE OUTPUT TO FORCE
