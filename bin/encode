@@ -44,7 +44,6 @@ declare -r  FORMAT=$( ( test ! "$2" && echo -f null ) || echo -f mp4 )
 declare -r  STAMP="-copyts"
 # declare -r BASE="-copytb -1"
 declare -r  CODECS="-c:a aac -c:v libx264"
-declare -r  VOLUME="-vol 56"                        # Audio volume level 0-256 (256 = normaled)
 declare -r  SYNC="-vsync vfr"                        # 0 (passthrough), 1 (cfr), 2 (vfr), drop, auto
                                                      # (-async for audio) Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
 declare -r  FREQUENCY="-ar 48000 -r 24000/1001"      # SAMPLE RATE &  FPS (Frame Rate Per Second) (Assume YouTube's default frame rate is 24FPS 48000Hz)
