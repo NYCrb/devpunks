@@ -48,10 +48,12 @@ declare -r  STAMP="-copyts"
 declare -r  CODECS="-c:a aac -c:v libx264 -tune film -ac 2" # Possible tunes: film animation grain stillimage psnr ssim fastdecode zerolatency
 declare -r  SYNC="-vsync vfr"                               # 0 (passthrough), 1 (cfr), 2 (vfr), drop, auto
                                                             # (-async for audio) Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
-declare -r  FREQUENCY="-ar 48000 -r 24000/1001 -deinterlace -no-scenecut" # SAMPLE RATE &  FPS (Frame Rate Per Second) (Assume YouTube's default frame rate is 24FPS 48000Hz)
-                                                       # 24000/1001 (23.976fps). 30000/1001 (29.970fps). 60000/1001 (59.94fps)
-                                                       # PLACE BEFORE OUTPUT TO FORCE
-                                                       # http://www.reduser.net/forum/showthread.php?102725-24P-or-23-976P-That-is-the-question
+
+# SAMPLE RATE &  FPS (Frame Rate Per Second) (Assume YouTube's default frame rate is 24FPS 48000Hz)
+# 24000/1001 (23.976fps). 30000/1001 (29.970fps). 60000/1001 (59.94fps)
+# PLACE BEFORE OUTPUT TO FORCE
+# http://www.reduser.net/forum/showthread.php?102725-24P-or-23-976P-That-is-the-question
+declare -r  FREQUENCY="-ar 48000 -r 24000/1001 -deinterlace -no-scenecut"
 declare -r  PRESET="-preset veryfast"                  # fast, veryfast, slow, veryslow
 declare -r  PROFILE="-profile:v baseline -level:v 3.0" # baseline, main, high
 declare -r  BITRATE="-b:a 128K -b:v 1024K -bufsize 1216k -maxrate 1280K -crf 28"
