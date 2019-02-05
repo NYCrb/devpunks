@@ -51,7 +51,7 @@ declare -r  FREQUENCY="-ar 48000 -r 24000/1001"      # SAMPLE RATE &  FPS (Frame
                                                      # PLACE BEFORE OUTPUT TO FORCE
                                                      # http://www.reduser.net/forum/showthread.php?102725-24P-or-23-976P-That-is-the-question
 declare -r  PRESET="-preset veryfast"
-declare -r  PROFILE="-profile:v baseline -level 3.0"
+declare -r  PROFILE="-profile:v baseline -level 3.0" # baseline, main
 declare -r  BITRATE="-b:a 128K -b:v 1M -crf 25"      # audio bitrate (-a) video bitrate (-b)
                                                      # crf (constant rate factor) quality (51 worst, 0 lossless, 18-28 is sane, default 23)
 declare -r  PIXELS="-pix_fmt yuv420p"                # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
