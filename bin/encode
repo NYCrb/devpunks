@@ -74,9 +74,6 @@ declare -r  AUDIO_FILTERS="-filter:a $VOLUME"          # Audio Filters
 declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
-# Keyframe interval (or GOP length). -g 15 varies on YouTube's FPS.(The default, 12, works for 24-25 fps. For NTSC and 30 fps, select 15.* FFMPEG option: -g, Not sure what youtube's default FPS is if it is 24 or 30. I assume 24 since the default 12 (or 15) would be half the frame rate
-declare -r  KEYFRAMES="-g 12"
-
 echo FILTERS: $FILTERS
 
 
