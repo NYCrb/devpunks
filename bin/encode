@@ -84,6 +84,7 @@ time $FFMPEG \
   $QUICKTIME \
   $FREQUENCY \
   $BITRATE   \
+  $PRESET    \
   $FORMAT    \
   $VOLUME    \
 $OUTPUT
