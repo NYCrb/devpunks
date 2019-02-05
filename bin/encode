@@ -56,7 +56,7 @@ declare -r  KEYFRAMES="-g 12"
 # 24000/1001 (23.976fps). 30000/1001 (29.970fps). 60000/1001 (59.94fps)
 # PLACE BEFORE OUTPUT TO FORCE
 # http://www.reduser.net/forum/showthread.php?102725-24P-or-23-976P-That-is-the-question
-declare -r  FREQUENCY="-r 24000/1001 -ar 48000"
+declare -r  FREQUENCY="$KEYFRAMES -r 24000/1001 -ar 48000"
 declare -r  PRESET="-preset veryfast"                  # fast, veryfast, slow, veryslow
 declare -r  PROFILE="-profile:v baseline -level:v 3.0" # baseline, main, high
 declare -r  BITRATE="-b:a 128K -b:v 1024K -bufsize 1216k -maxrate 1280K -crf 28"
