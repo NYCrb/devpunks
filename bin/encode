@@ -84,7 +84,6 @@ time $FFMPEG \
   $STAMP     \
   $STATS     \
   $REPORT    \
-  $BUFFER    \
   $THREADS   \
   $FILTERS   \
   $CODECS    \
