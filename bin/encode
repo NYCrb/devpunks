@@ -41,7 +41,6 @@ declare -r  MAPS="-map 0"
 declare -r  STATS="-stats"
 declare -r  REPORT="-report"
 declare -r  FFMPEG=$(which ffmpeg)
-declare -r  BUFFER="-bufsize 1216k"
 declare -r  THREADS="-threads $CORES -filter_threads $CORES -filter_complex_threads $CORES"
 declare -r  FORMAT=$( ( test ! "$2" && echo -f null ) || echo -f mp4 )
 declare -r  STAMP="-copyts"
