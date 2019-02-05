@@ -6,6 +6,8 @@
 #Social Media Video encodings
 # - https://trac.ffmpeg.org/wiki/Encode/YouTube
 
+# FFMPEG and How to Use It Wrong - https://videoblerg.wordpress.com/2017/11/10/ffmpeg-and-how-to-use-it-wrong/
+
 # Best Youtube settings
 # - https://support.google.com/youtube/answer/1722171?hl=en
 # - https://superuser.com/questions/866798/what-ffmpeg-command-line-matches-the-one-youtube-uses
