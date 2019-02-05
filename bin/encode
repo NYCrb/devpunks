@@ -67,6 +67,7 @@ declare -r  SCALE="scale=1920:1080,setsar=sar=1:1,setdar=dar=16/9"  # Scale (use
 declare -r  VIDEO_FILTERS="-filter:v $SCALE"
 declare -r  VOLUME="volume=1.00"                       # Audio volume level 0-256 (256 = normaled)
 declare -r  AUDIO_FILTERS="-filter:a $VOLUME"          # Audio Filters
+declare -r  FILTER= # -filter [filter]               # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
 echo FILTERS: $FILTERS
