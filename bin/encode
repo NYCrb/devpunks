@@ -86,7 +86,6 @@ time $FFMPEG \
   $BITRATE   \
   $PRESET    \
   $FORMAT    \
-  $VOLUME    \
 $OUTPUT
 
 
