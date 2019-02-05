@@ -45,9 +45,10 @@ declare -r  THREADS="-threads $CORES -filter_threads $CORES -filter_complex_thre
 declare -r  FORMAT=$( ( test ! "$2" && echo -f null ) || echo -f mp4 )
 declare -r  STAMP="-copyts"
 # declare -r BASE="-copytb -1"
-declare -r  CODECS="-c:a aac -c:v libx264 -tune film -ac 2" # Possible tunes: film animation grain stillimage psnr ssim fastdecode zerolatency
-declare -r  SYNC="-vsync vfr"                               # 0 (passthrough), 1 (cfr), 2 (vfr), drop, auto
-                                                            # (-async for audio) Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
+declare -r  TUNE="-tune film"                           # Possible tunes: film animation grain stillimage psnr ssim fastdecode zerolatency
+declare -r  CODECS="-c:a aac -c:v libx264 $TUNE -ac 2 -deinterlace -x264opts no-scenecut"
+declare -r  SYNC="-vsync vfr"                           # 0 (passthrough), 1 (cfr), 2 (vfr), drop, auto
+                                                        # (-async for audio) Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
 
 # SAMPLE RATE &  FPS (Frame Rate Per Second) (Assume YouTube's default frame rate is 24FPS 48000Hz)
 # 24000/1001 (23.976fps). 30000/1001 (29.970fps). 60000/1001 (59.94fps)
