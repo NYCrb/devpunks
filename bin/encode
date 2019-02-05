@@ -67,7 +67,7 @@ declare -r  QUICKTIME="-movflags +faststart $PIXELS"   # https://trac.ffmpeg.org
 # FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
 #         http://manpages.ubuntu.com/manpages/cosmic/man1/ffmpeg-filters.1.html
 declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = shorter)
-declare -r  SCALE="scale=1920:1080,setsar=sar=1:1,setdar=dar=16/9"  # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
+declare -r  SCALE="scale=1920:1080,setsar=sar=1,setdar=dar=16/9"  # Scale (use n:-2 to keep aspect ratio) https://trac.ffmpeg.org/wiki/Scaling
                                                                     # setdar (Sample Aspect Ratio) setdar (Display Aspect Ratio)
 declare -r  VIDEO_FILTERS="-filter:v $SCALE,$SPEED"
 declare -r  VOLUME="volume=1.00"                       # Audio volume level 0-256 (256 = normaled)
