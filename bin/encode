@@ -75,6 +75,8 @@ echo FILTERS: $FILTERS
 time $FFMPEG \
   $SEEK      \
   $INPUT     \
+  $PROFILE   \
+  $PRESET    \
   $BASE      \
   $SYNC      \
   $STAMP     \
