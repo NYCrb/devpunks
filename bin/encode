@@ -91,6 +91,7 @@ declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
 
 echo ASPECT $ASPECT
+echo SCALE $SCALE
 
 time $FFMPEG \
   $SEEK      \
