@@ -133,8 +133,7 @@ $OUTPUT
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
 #
 # CODECS
-#   -c:v libx264    \ # codec (shorthand) (e.g. copy, etc.)
-#   -acodec aac     \ # codec (longform)  (e.g. copy, etc.) Fraunhofer is best `-c:a libfdk_aac`
+#   -acodec aac     \ # codec (longform)  (e.g. copy, etc.) 
 #   -vcodec libx264 \ # codec (longform)  (e.g. copy, etc.)
 #   -coder 1        \ # (YouTube: By default CABAC is the entropy encoder used by x264.)
 
