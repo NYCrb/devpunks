@@ -90,7 +90,6 @@ echo SCALE $SCALE
 echo LETTERBOX $LETTERBOX
 echo FILTERS: $FILTERS
 
-
 time $FFMPEG \
   $SEEK      \
   $INPUT     \
