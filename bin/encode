@@ -77,7 +77,7 @@ declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for a
 # https://stackoverflow.com/questions/8133242/ffmpeg-resize-down-larger-video-to-fit-desired-size-and-add-padding
 declare -r  LETTERBOX="pad=$WIDTH:$HEIGHT:($WIDTH-($COEFFICIENT*(iw*sar)))/2:($HEIGHT-($COEFFICIENT*(ih*sar)))/2:color=green"
 # declare -r ASPECT="-aspect 16:9" # Aspect Ratio (4:3, 16:9, 1.3333) (DEPRECATED?)
-declare -r  SCALE="scale=$COEFFICIENT*iw:$COEFFICIENT*ih:force_original_aspect_ratio=increase:flags=bicubic,$LETTERBOX,setsar=sar=1,setdar=dar=16/9"
+declare -r  SCALE="scale=$COEFFICIENT*iw:$COEFFICIENT*ih:force_original_aspect_ratio=increase:flags=bicubic,$LETTERBOX,setsar=sar=1,setdar=dar=$WIDTH/$HEIGHT"
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 declare -r  VIDEO_FILTERS="-filter:v $DEINTERLACE,$SCALE,$SPEED" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
 declare -r  VOLUME="volume=1.00"                       # Audio volume level 0-256 (256 = normaled)
