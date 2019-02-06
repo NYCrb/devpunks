@@ -81,10 +81,11 @@ declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGH
 # https://superuser.com/questions/547296/resizing-videos-with-ffmpeg-avconv-to-fit-into-static-sized-player/1136305#1136305
 declare -r  LETTERBOX="pad=$WIDTH:$HEIGHT:($WIDTH-($COEFFICIENT*(iw*sar)))/2:($HEIGHT-($COEFFICIENT*(ih*sar)))/2:color=green"
 # declare -r ASPECT="-aspect 16:9" # Aspect Ratio (4:3, 16:9, 1.3333) (DEPRECATED?)
-declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=decrease:flags=bicubic,setsar=sar=1:1,setdar=dar=$ASPECT"
+declare -r  ALGORITHM="flags=bicubic"
+declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=decrease:flags=bicubic,setsar=sar=w/h,setdar=dar=$ASPECT"
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 declare -r  VIDEO_FILTERS="-filter:v $DEINTERLACE,$SCALE,$SPEED" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
-declare -r  VOLUME="volume=0.40"                       # Audio volume level 0-256 (256 = normaled)
+declare -r  VOLUME="volume=0.20"                       # Audio volume level 0-256 (256 = normaled)
 declare -r  AUDIO_FILTERS="-filter:a $VOLUME"          # Audio Filters
 declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
