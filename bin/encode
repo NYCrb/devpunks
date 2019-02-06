@@ -73,7 +73,7 @@ declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = short
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
 declare -r  WIDTH=1920
 declare -r  HEIGHT=1080
-declare -r  COEFFICIENT="min($WIDTH/iw\,$HEIGHT/ih)"
+declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))"
 # https://stackoverflow.com/questions/8133242/ffmpeg-resize-down-larger-video-to-fit-desired-size-and-add-padding
 declare -r  LETTERBOX="pad=$WIDTH:$HEIGHT:($WIDTH-($COEFFICIENT*iw))/2:($HEIGHT-($COEFFICIENT*ih))/2"
 # declare -r ASPECT="-aspect 16:9" # Aspect Ratio (4:3, 16:9, 1.3333) (DEPRECATED?)
