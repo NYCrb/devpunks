@@ -128,10 +128,6 @@ $OUTPUT
 #   -f format       \ # force format (image2, )
 #   -bf 2           \ # Youtube Consecutive B Frame (default 16)
 #   -vbr 2          \ # Variable bit rate
-#   -minrate 1M     \
-#   -maxrate 1M     \
-#   -bufsize 2M     \
-#   -tune stillimage \  # ** USED FOR IMAGES **
 #   -shortest       \ # Possibly used for shortest audio track
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
