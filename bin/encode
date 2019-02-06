@@ -85,7 +85,7 @@ declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = shorter)
 
 declare -r  VIDEO_FILTERS="-filter:v $SCALE,$SPEED,$DEINTERLACE" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
-declare -r  VOLUME="volume=-40dB"                      # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
+declare -r  VOLUME="volume=-20dB"                      # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
 declare -r  AUDIO_FILTERS="-filter:a $VOLUME"          # Audio Filters
 declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
