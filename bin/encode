@@ -64,10 +64,6 @@ declare -r  BITRATE="-b:a 128K -b:v 1M -bufsize 2M -minrate 1M -maxrate 1M -crf 
 declare -r  PIXELS="-pix_fmt yuv420p"                  # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r  QUICKTIME="-movflags +faststart $PIXELS"   # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 
-# FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
-#         http://manpages.ubuntu.com/manpages/cosmic/man1/ffmpeg-filters.1.html
-declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = shorter)
-
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
