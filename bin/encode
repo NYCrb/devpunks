@@ -131,8 +131,6 @@ $OUTPUT
 #   -shortest       \ # Possibly used for shortest audio track
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
-#   -profile:v high \ # High profile for YouTube)
-#   -level 4.0      \ # Profile level
 #
 # CODECS
 #   -c:v libx264    \ # codec (shorthand) (e.g. copy, etc.)
