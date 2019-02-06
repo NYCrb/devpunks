@@ -91,6 +91,8 @@ declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
 
+echo ASPECT $ASPECT
+
 time $FFMPEG \
   $SEEK      \
   $INPUT     \
