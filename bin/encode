@@ -74,6 +74,7 @@ declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = short
 declare -r  WIDTH=1080
 declare -r  HEIGHT=1080
 declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for anamorphic video
+declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGHT\,trunc($COEFFICIENT*(ih*sar)/2)*2)"
 # LETTERBOXING
 # https://stackoverflow.com/questions/8133242/ffmpeg-resize-down-larger-video-to-fit-desired-size-and-add-padding
 # https://superuser.com/questions/547296/resizing-videos-with-ffmpeg-avconv-to-fit-into-static-sized-player/1136305#1136305
