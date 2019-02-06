@@ -80,6 +80,10 @@ declare -r  LETTERBOX="pad=$WIDTH:$HEIGHT:($WIDTH-($COEFFICIENT*(iw*sar)))/2:($H
 declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png
 declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=decrease:flags=bicubic,setsar=sar=w/h,setdar=dar=$ASPECT"
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
+# FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
+#         http://manpages.ubuntu.com/manpages/cosmic/man1/ffmpeg-filters.1.html
+declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = shorter)
+
 declare -r  VIDEO_FILTERS="-filter:v $SCALE,$SPEED,$DEINTERLACE" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
 declare -r  VOLUME="volume=0.20"                       # Audio volume level 0-256 (256 = normaled)
 declare -r  AUDIO_FILTERS="-filter:a $VOLUME"          # Audio Filters
