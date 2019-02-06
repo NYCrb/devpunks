@@ -85,9 +85,6 @@ declare -r  AUDIO_FILTERS="-filter:a $VOLUME"          # Audio Filters
 declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
-echo SCALE $SCALE
-echo LETTERBOX $LETTERBOX
-echo FILTERS: $FILTERS
 
 time $FFMPEG \
   $SEEK      \
