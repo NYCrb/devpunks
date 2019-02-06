@@ -71,6 +71,7 @@ declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = short
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
+declare -r  LETTERBOX=",pad=1280:720:(ow-iw)/2:(oh-ih)/2"
 declare -r  SCALE="scale=w=1920:h=1080:force_original_aspect_ratio=increase:flags=bicubic,setsar=sar=1,setdar=dar=16/9"
                                                        # setdar (Sample Aspect Ratio) setdar (Display Aspect Ratio)
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
