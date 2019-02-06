@@ -125,7 +125,6 @@ $OUTPUT
 #   -an             \ # Disable audio
 #
 # FORMAT
-#   -f format       \ # force format (image2, )
 #   -bf 2           \ # Youtube Consecutive B Frame (default 16)
 #   -vbr 2          \ # Variable bit rate
 #   -shortest       \ # Possibly used for shortest audio track
