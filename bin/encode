@@ -59,7 +59,7 @@ declare -r  KEYFRAMES="-g 24 -keyint_min 12"            # https://sites.google.c
 declare -r  FREQUENCY="$KEYFRAMES -r 24000/1001 -ar 48000"
 declare -r  PRESET="-preset veryfast"                  # fast, veryfast, slow, veryslow
 declare -r  PROFILE="-profile:v baseline -level:v 3.0" # baseline, main, high
-declare -r  BITRATE="-b:a 128K -b:v 1M -bufsize 2M -maxrate 1M -crf 23"
+declare -r  BITRATE="-b:a 128K -b:v 1M -bufsize 2M -minrate 1M -maxrate 1M -crf 23"
                                                        # crf (constant rate factor) quality (51 worst, 0 lossless, 18-28 is sane, default 23)
 declare -r  PIXELS="-pix_fmt yuv420p"                  # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r  QUICKTIME="-movflags +faststart $PIXELS"   # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
