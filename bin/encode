@@ -79,9 +79,6 @@ declare -r  LETTERBOX="pad=$WIDTH:$HEIGHT:($WIDTH-iw)/2:($HEIGHT-ih)/2" # https:
 # declare -r ASPECT="-aspect 16:9" # Aspect Ratio (4:3, 16:9, 1.3333) (DEPRECATED?)
 #declare -r  SCALE="scale=w=1920:h=1080:force_original_aspect_ratio=increase:flags=bicubic,$LETTERBOX,setsar=sar=1,setdar=dar=16/9"
                                                        # setdar (Sample Aspect Ratio) setdar (Display Aspect Ratio)
-echo SCALE $SCALE
-echo LETTERBOX $LETTERBOX
-
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 declare -r  VIDEO_FILTERS="-filter:v $DEINTERLACE,$SCALE,$SPEED" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
 declare -r  VOLUME="volume=1.00"                       # Audio volume level 0-256 (256 = normaled)
