@@ -112,7 +112,6 @@ declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 #  - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
 #   -vf lut3d=<lut file> -c:a copy output
 
-echo ASPECT $ASPECT
 echo SCALE $SCALE
 
 time $FFMPEG \
