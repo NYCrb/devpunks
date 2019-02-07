@@ -87,7 +87,6 @@ declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGH
 # https://stackoverflow.com/questions/8133242/ffmpeg-resize-down-larger-video-to-fit-desired-size-and-add-padding
 # https://superuser.com/questions/547296/resizing-videos-with-ffmpeg-avconv-to-fit-into-static-sized-player/1136305#1136305
 declare -r  LETTERBOX="pad=$WIDTH:$HEIGHT:($WIDTH-($COEFFICIENT*(iw*sar)))/2:($HEIGHT-($COEFFICIENT*(ih*sar)))/2:color=green"
-# declare -r ASPECT="-aspect 16:9"
 declare -r  ALGORITHM="flags=+bilinear" # https://i.stack.imgur.com/AaIAW.png # https://ffmpeg.org/ffmpeg-scaler.html#toc-Scaler-Options
 declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=increase:$ALGORITHM,setsar=sar=1,setdar=dar=16/9"
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
