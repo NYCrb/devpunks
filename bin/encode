@@ -95,7 +95,8 @@ declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=increase:$ALGOR
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 
 # LUTS - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
-declare -r  LUT="lut3d=<lut file>"
+# BBC Article - http://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf
+declare -r  LUT="lut3d=./orange.cube"
 
 # FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
 #         http://manpages.ubuntu.com/manpages/cosmic/man1/ffmpeg-filters.1.html
