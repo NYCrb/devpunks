@@ -31,6 +31,10 @@
 # Send output stream to dev/null
 # https://stackoverflow.com/questions/20323640/ffmpeg-deocde-without-producing-output-file#answer-20325676
 
+# LUTS
+#  - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
+#   -vf lut3d=<lut file> -c:a copy output
+
 declare -rx INPUT="-i $1"
 declare -rx OUTPUT=${2:-dev/null}
 
