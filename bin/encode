@@ -52,7 +52,8 @@ declare -r  STAMP="-copyts"
 # CODECS
 declare -r  TUNE="-tune film"                           # Possible tunes: film animation grain stillimage psnr ssim fastdecode zerolatency
 declare -r  VIDEO_CODEC="-c:v libx264 -x264opts no-scenecut $TUNE -coder 0" # (YouTube: By default CABAC is the entropy encoder used by x264.)
-declare -r  CODECS="$VIDEO_CODEC -ac 2 -c:a aac"        # Fraunhofer is best but need to compile `-c:a libfdk_aac`
+declare -r  AUDIO_CODEC="-ac 2 -c:a aac" # Fraunhofer is best but need to compile `-c:a libfdk_aac`
+declare -r  CODECS="$VIDEO_CODEC "
 declare -r  SYNC="-vsync vfr"                           #Video sync https://www.cleancss.com/explain-command/ffmpeg/6658
                                                         # 0 (passthrough), 1 (cfr), 2 (vfr), drop, auto
                                                         # (-async for audio)
