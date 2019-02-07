@@ -69,7 +69,8 @@ declare -r  KEYFRAMES="-g 24 -keyint_min 12"
 # http://www.reduser.net/forum/showthread.php?102725-24P-or-23-976P-That-is-the-question
 declare -r  FREQUENCY="$KEYFRAMES -r 24000/1001 -ar 48000"
 declare -r  PROFILE="-profile:v baseline -level:v 3.0" # baseline, main, high
-declare -r  BITRATE="-b:a 128K -b:v 5M -bufsize 10M -minrate 1M -maxrate 5M -crf 18"
+# declare -r  BITRATE="-b:a 128K -b:v 5M -bufsize 10M -minrate 1M -maxrate 5M -crf 18"
+declare -r  BITRATE="-b:a 128K -crf 28"
                                                        # crf Guide - https://slhck.info/video/2017/02/24/crf-guide.html
                                                        # Rate Control modes - https://slhck.info/video/2017/03/01/rate-control.html
                                                        # crf (constant rate factor) quality (51 worst, 0 lossless, 18-28 is sane, default 23)
@@ -79,8 +80,8 @@ declare -r  QUICKTIME="-movflags +faststart $PIXELS"   # https://trac.ffmpeg.org
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
-declare -r  WIDTH=640
-declare -r  HEIGHT=360
+declare -r  WIDTH=1920
+declare -r  HEIGHT=1080
 printf  -v  ASPECT "%.3f" "$((WIDTH/HEIGHT))" # Aspect Ratio (4:3, 16:9, 1.3333) (DEPRECATED?)
 declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for anamorphic video
 declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGHT\,trunc($COEFFICIENT*(ih*sar)/2)*2)"
@@ -101,7 +102,7 @@ declare -r  VIDEO_FILTERS="-filter:v $SCALE,$SPEED,$DEINTERLACE" # https://ffmpe
 #declare -r  VOLUME="volume=-3dB"                      # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
 declare -r  FADE_IN="volume=enable='between(t,0,20)':volume='t/20.0':eval=frame"
 declare -r  FADE_OUT="volume=enable='between(t,40,60)':volume='1-(t-40)/20.0':eval=frame"
-declare -r  VOLUME="$FADE_IN,$FADE_OUT"                # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
+# declare -r  VOLUME="$FADE_IN,$FADE_OUT"                # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
 declare -r  AUDIO_FILTERS="-filter:a $VOLUME"          # Audio Filters
 declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
