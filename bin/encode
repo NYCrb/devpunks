@@ -53,7 +53,7 @@ declare -r  STAMP="-copyts"
 
 # CODECS
 declare -r  TUNE="-tune film"                           # Possible tunes: film animation grain stillimage psnr ssim fastdecode zerolatency
-declare -r  PRESET="-preset veryfast $TUNE"             # fast, veryfast, slow, veryslow
+declare -r  PRESET="-preset ultrafast $TUNE"             # fast, veryfast, ultrafast, slow, veryslow
 declare -r  AUDIO_CODEC="-ac 2 -c:a aac"                # Fraunhofer is best but need to compile `-c:a libfdk_aac`
 declare -r  VIDEO_CODEC="-c:v libx264 -x264opts no-scenecut -coder 0" # (YouTube: By default CABAC is the entropy encoder used by x264.)
 declare -r  CODECS="$PRESET $AUDIO_CODEC $VIDEO_CODEC"
