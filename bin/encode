@@ -132,7 +132,6 @@ $OUTPUT
 # FORMAT
 #   -bf 2           \ # Youtube Consecutive B Frame (default 16)
 #   -vbr 2          \ # Variable bit rate
-#   -shortest       \ # Possibly used for shortest audio track
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
 #
