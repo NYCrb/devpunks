@@ -141,8 +141,6 @@ $OUTPUT
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
 #
-# CODECS
-#   -coder 1        \ # (YouTube: By default CABAC is the entropy encoder used by x264.)
 
 ### 2-PASS https://slhck.info/video/2017/03/01/rate-control.html#2-pass-average-bitrate-2-pass-abr
 # ffmpeg -i <input> -c:v libx264 -b:v 1M -pass 1 -f mp4 /dev/null
