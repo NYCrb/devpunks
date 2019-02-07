@@ -122,6 +122,7 @@ time $FFMPEG \
   $REPORT    \
   $THREADS   \
   $FILTERS   \
+  $LUT       \
   $CODECS    \
   $MAPS      \
   $QUICKTIME \
