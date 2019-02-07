@@ -96,7 +96,8 @@ declare -r  VIDEO_FILTERS="-filter:v $SCALE,$SPEED,$DEINTERLACE" # https://ffmpe
 
 # VOLUME https://stackoverflow.com/questions/38085408/complex-audio-volume-changes-with-ffmpeg
 #declare -r  VOLUME="volume=-3dB"                      # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
-declare -r  VOLUME="volume=enable='between(t,0,3)':volume='t/3.0':eval=frame"    # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
+declare -r  FADE_IN="volume=enable='between(t,0,30)':volume='t/30.0':eval=frame"    # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
+declare -r  VOLUME="volume=enable='between(t,0,30)':volume='t/30.0':eval=frame"    # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
 declare -r  AUDIO_FILTERS="-filter:a $VOLUME"          # Audio Filters
 declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
