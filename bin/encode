@@ -139,11 +139,6 @@ $OUTPUT
 #  - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
 #   -vf lut3d=<lut file> -c:a copy output
 
-# read PNG images with filename img001, img002, img003, etc..
-# img can be changed to another prefix
-# %03d can be changed to %04d for 0001, %05d for 00001 formats, etc...
-# -i img%03d.png    \
-#
 # FORMAT
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
