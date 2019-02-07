@@ -148,8 +148,3 @@ $OUTPUT
 #   -framerate 24   \ # ** USED FOR IMAGES **
 #   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
 #
-
-for i in *.$1
-  do
-    echo $i
-  done
