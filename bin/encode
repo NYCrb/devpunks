@@ -97,12 +97,12 @@ declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 # LUTS - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
 # FFMPEG Mailing List - https://ffmpeg.org/pipermail/ffmpeg-user/2014-February/020063.html
 # BBC Article - http://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf
-declare -r  LUT="lut3d=./orange.cube"
+declare -r  LUT="lut3d=./blue.cube"
 
 # FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
 #         http://manpages.ubuntu.com/manpages/cosmic/man1/ffmpeg-filters.1.html
 declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = shorter)
-declare -r  VIDEO_FILTERS="-filter:v $SCALE,$SPEED,$DEINTERLACE,$LUT" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
+declare -r  VIDEO_FILTERS="-filter:v $LUT,$SCALE,$SPEED,$DEINTERLACE" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
 
 # VOLUME https://stackoverflow.com/questions/38085408/complex-audio-volume-changes-with-ffmpeg
 #declare -r  VOLUME="volume=-3dB"                      # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
