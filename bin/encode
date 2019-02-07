@@ -77,7 +77,7 @@ declare -r  QUICKTIME="-movflags +faststart $PIXELS"   # https://trac.ffmpeg.org
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
-declare -r  WIDTH=1080
+declare -r  WIDTH=1920
 declare -r  HEIGHT=1080
 printf  -v  ASPECT "%.3f" "$((WIDTH/HEIGHT))"
 declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for anamorphic video
