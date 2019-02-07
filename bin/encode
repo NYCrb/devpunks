@@ -138,8 +138,3 @@ $OUTPUT
 # LUTS
 #  - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
 #   -vf lut3d=<lut file> -c:a copy output
-
-# FORMAT
-#   -framerate 24   \ # ** USED FOR IMAGES **
-#   -frames:v 1     \ # (-vframes) ** USED FOR IMAGES **
-#
