@@ -3,7 +3,6 @@
 
 ## `encode`
 
-
   To summarize, here’s what you should do, depending on your use case:
 
   - Archival — CRF that gives you the quality you want.
