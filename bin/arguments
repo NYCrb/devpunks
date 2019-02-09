@@ -33,5 +33,5 @@ do
 
   shift
   echo Variable  $argument
-  echo Letterbox $LETTERBOX
+  echo Letterbox $MATTE
 done
