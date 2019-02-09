@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 echo "Loading letterbox"
 
 function letterbox {
