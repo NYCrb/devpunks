@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Loading letterbox"
+echo Loading letterbox
 
 function letterbox.color {
   echo Letterbox
