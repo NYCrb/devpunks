@@ -87,8 +87,8 @@ declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 source $BIN/arguments
 source $BIN/letterbox
 
-letterbox
-blurred
+letterbox.colored
+letterbox.blurred
 
 time $FFMPEG \
   $SEEK      \
