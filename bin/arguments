@@ -4,6 +4,13 @@ echo "Loading arguments"
 
 while test $# -gt 0
 do
-  echo Variable $1
+  case $1 in
+    -l|--letterbox)
+    shift
+    ;;
+  esac
+
   shift
 done
+
+echo Variable $1
