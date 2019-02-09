@@ -8,7 +8,7 @@ for argument in $@
 
     case $argument in
       -l=*|--letterbox=*)
-        MATTE=$1
+        MATTE="${argument#*=}"
         echo HOT DAMN IM IN $MATTE
         # shift # past key
         # shift # past value
