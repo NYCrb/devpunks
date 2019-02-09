@@ -16,21 +16,3 @@ for argument in $@
       ;;
     esac
   done
-
-while test $# -gt 0
-do
-  argument=$1
-
-  case $argument in
-    -l|--letterbox)
-      MATTE=$1
-      echo HOT DAMN IM IN $MATTE
-      shift # past key
-      shift # past value
-    ;;
-  esac
-
-  shift
-  echo Variable  $argument
-  echo Letterbox $MATTE
-done
