@@ -3,6 +3,8 @@
 
 ## `arguments`
 
+  Parses arguments
+
 
 ## `encode`
 
