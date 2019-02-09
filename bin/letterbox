@@ -6,6 +6,6 @@ function letterbox.color {
   echo Letterbox
 }
 
-function letterbox.blurred {
+function letterbox.blur {
   echo Blurred
 }
