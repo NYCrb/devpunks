@@ -2,18 +2,35 @@
 
 echo "Loading arguments"
 
+for argument in $@
+  do
+    echo The Argument $argument
+
+    case $argument in
+      -l|--letterbox)
+        LETTERBOX="$2"
+        echo HOT DAMN IM IN LETTERBOX
+        shift # past key
+        shift # past value
+      ;;
+    esac
+
+  done
+
 while test $# -gt 0
 do
-  declare argument=$1
+  argument=$1
 
   case $argument in
     -l|--letterbox)
       LETTERBOX="$2"
+      echo HOT DAMN IM IN LETTERBOX
       shift # past key
       shift # past value
     ;;
   esac
 
+  shift
   echo Variable  $argument
   echo Letterbox $LETTERBOX
 done
