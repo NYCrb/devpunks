@@ -6,11 +6,11 @@ while test $# -gt 0
 do
   case $1 in
     -l|--letterbox)
-    shift
+      declare -r $LETTERBOX=$2
+      shift # past key
+      shift # past value
     ;;
   esac
 
-  shift
+  echo Variable $1
 done
-
-echo Variable $1
