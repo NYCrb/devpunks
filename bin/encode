@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+./letterbox
+
 declare -rx INPUT="-i $1"
 declare -rx OUTPUT=${2:-dev/null}
 
