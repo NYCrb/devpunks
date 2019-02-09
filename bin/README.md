@@ -4,7 +4,7 @@
 ## `encode`
 
 
-To summarize, here’s what you should do, depending on your use case:
+  To summarize, here’s what you should do, depending on your use case:
 
   - Archival — CRF that gives you the quality you want.
   - Streaming — Two-pass CRF or ABR with VBV-constained bitrate.
