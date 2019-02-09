@@ -6,7 +6,7 @@ while test $# -gt 0
 do
   declare argument=$1
 
-  case argument in
+  case $argument in
     -l|--letterbox)
       LETTERBOX="$2"
       shift # past key
