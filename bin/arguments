@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Loading arguments"
+echo Loading arguments
 
 for argument in $@
   do
