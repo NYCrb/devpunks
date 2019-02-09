@@ -3,7 +3,7 @@
 
 echo "Loading arguments"
 
-while test $% -gt 0
+while test $# -gt 0
 do
   echo Variable $1
 done
