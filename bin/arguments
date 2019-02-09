@@ -15,7 +15,6 @@ for argument in $@
         shift # past argument AND value
       ;;
     esac
-
   done
 
 while test $# -gt 0
