@@ -87,6 +87,7 @@ declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 source $BIN/letterbox
 
 letterbox
+blurred
 
 
 time $FFMPEG \
