@@ -24,7 +24,7 @@ do
 
   case $argument in
     -l|--letterbox)
-      LETTERBOX="$2"
+      MATTE="$2"
       echo HOT DAMN IM IN LETTERBOX
       shift # past key
       shift # past value
