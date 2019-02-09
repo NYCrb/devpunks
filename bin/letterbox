@@ -8,7 +8,6 @@ function letterbox {
   echo Letterbox
 }
 
-
 function blurred {
   echo Blurred
 }
