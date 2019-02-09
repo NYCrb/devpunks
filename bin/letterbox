@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
+
 echo "Loading letterbox"
+
 
 function letterbox {
   echo Letterbox
 }
+
 
 function blurred {
   echo Blurred
