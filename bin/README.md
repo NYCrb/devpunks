@@ -8,9 +8,9 @@
   - FFMPEG and How to Use It Wrong - https://videoblerg.wordpress.com/2017/11/10/ffmpeg-and-how-to-use-it-wrong/
   - ARCH Linux FFMPEG Man(ual) - https://wiki.archlinux.org/index.php/FFmpeg
 
-# Best Youtube settings
-# - https://support.google.com/youtube/answer/1722171?hl=en
-# - https://superuser.com/questions/866798/what-ffmpeg-command-line-matches-the-one-youtube-uses
+  - Youtube settings
+    - https://support.google.com/youtube/answer/1722171?hl=en
+    - https://superuser.com/questions/866798/what-ffmpeg-command-line-matches-the-one-youtube-uses
 
 # RATE CONTROL - https://slhck.info/video/2017/03/01/rate-control.html
 # To summarize, here’s what you should do, depending on your use case:
