@@ -21,8 +21,7 @@
 
     - RATE CONTROL - https://slhck.info/video/2017/03/01/rate-control.html
 
-# Video encoding guide
-# https://trac.ffmpeg.org/wiki/Encode/H.264
+  - Video encoding guide - https://trac.ffmpeg.org/wiki/Encode/H.264
 
 # FFMPEG MAPPING FLAGS
 # https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping
