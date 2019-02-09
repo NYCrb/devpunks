@@ -25,5 +25,4 @@
   - Video encoding guide - https://trac.ffmpeg.org/wiki/Encode/H.264
   - FFMPEG MAPPING FLAGS - https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping
   - Send output stream to dev/null - https://stackoverflow.com/questions/20323640/ffmpeg-deocde-without-producing-output-file#answer-20325676
-
   - [A.I. Encoding](https://bitmovin.com/chunk-based-3-pass-video-encoding-uses-machine-learning-deliver-unrivalled-quality/)
