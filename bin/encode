@@ -86,6 +86,8 @@ declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
 $BIN/letterbox
 
+letterbox
+
 
 time $FFMPEG \
   $SEEK      \
