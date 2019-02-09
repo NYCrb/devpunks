@@ -4,14 +4,16 @@ echo "Loading arguments"
 
 while test $# -gt 0
 do
-  case $1 in
+  declare argument=$1
+
+  case argument in
     -l|--letterbox)
-      declare -r $LETTERBOX=$2
+      LETTERBOX="$2"
       shift # past key
       shift # past value
     ;;
   esac
 
-  echo Variable $1
+  echo Variable  $argument
   echo Letterbox $LETTERBOX
 done
