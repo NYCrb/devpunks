@@ -7,11 +7,12 @@ for argument in $@
     echo The Argument $argument
 
     case $argument in
-      -l|--letterbox)
+      -l=*|--letterbox=*)
         LETTERBOX="$2"
         echo HOT DAMN IM IN LETTERBOX
-        shift # past key
-        shift # past value
+        # shift # past key
+        # shift # past value
+        shift # past argument AND value
       ;;
     esac
 
