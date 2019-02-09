@@ -13,4 +13,5 @@ do
   esac
 
   echo Variable $1
+  echo Letterbox $LETTERBOX
 done
