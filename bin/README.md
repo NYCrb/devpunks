@@ -1,6 +1,9 @@
 # `bin/`
 
 
+## `arguments`
+
+
 ## `encode`
 
   To summarize, here’s what you should do, depending on your use case:
