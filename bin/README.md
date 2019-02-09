@@ -4,6 +4,13 @@
 ## `encode`
 
 
+To summarize, here’s what you should do, depending on your use case:
+
+  - Archival — CRF that gives you the quality you want.
+  - Streaming — Two-pass CRF or ABR with VBV-constained bitrate.
+  - Live Streaming — One-pass CRF or ABR with VBV-constained bitrate, or CBR if you can waste bits.
+  - Encoding for Devices — Two-pass ABR, typically.
+
   - Video Conversion for Cross Device with FFmpeg - https://gist.github.com/jaydenseric/220c785d6289bcfd7366 # #Social Media Video encodings # - https://trac.ffmpeg.org/wiki/Encode/YouTube
   - FFMPEG and How to Use It Wrong - https://videoblerg.wordpress.com/2017/11/10/ffmpeg-and-how-to-use-it-wrong/
   - ARCH Linux FFMPEG Man(ual) - https://wiki.archlinux.org/index.php/FFmpeg
