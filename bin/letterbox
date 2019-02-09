@@ -2,7 +2,7 @@
 
 echo "Loading letterbox"
 
-function letterbox.colored {
+function letterbox.color {
   echo Letterbox
 }
 
