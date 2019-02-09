@@ -89,7 +89,6 @@ source $BIN/letterbox
 letterbox
 blurred
 
-
 time $FFMPEG \
   $SEEK      \
   $INPUT     \
