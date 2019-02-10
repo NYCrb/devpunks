@@ -87,8 +87,20 @@ declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 source $BIN/arguments
 source $BIN/.letterbox
 
-letterbox.color
-letterbox.blur
+$COLOR=$(letterbox.color)
+#letterbox.blur
+
+echo
+echo
+echo
+echo
+echo
+echo HOLY SHIT THE COLOR IS $COLOR
+echo
+echo
+echo
+echo
+echo
 
 time $FFMPEG \
   $SEEK      \
