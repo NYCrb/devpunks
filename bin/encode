@@ -85,7 +85,7 @@ declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
 
 source $BIN/arguments
-source $BIN/letterbox
+source $BIN/.letterbox
 
 letterbox.color
 letterbox.blur
