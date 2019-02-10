@@ -5,7 +5,6 @@ echo Loading letterbox
 function letterbox.color {
   echo Letterbox
   local filter="pad=720:720:(ow-iw)/2:(oh-ih)/2:black"
-
 }
 
 function letterbox.blur {
