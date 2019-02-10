@@ -87,7 +87,7 @@ declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 source $BIN/arguments
 source $BIN/.letterbox
 
-declare -rx LETTERBOX_FILTER==$(letterbox.color)
+declare -rx LETTERBOX_FILTER=$(letterbox.color)
 #letterbox.blur
 
 echo

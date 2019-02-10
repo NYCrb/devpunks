@@ -3,8 +3,9 @@
 echo Loading letterbox
 
 function letterbox.color {
-  echo Letterbox
-  local filter="pad=720:720:(ow-iw)/2:(oh-ih)/2:black"
+  local color="black"
+  local filter="pad=720:720:(ow-iw)/2:(oh-ih)/2:$color"
+  echo $filter
 }
 
 function letterbox.blur {
