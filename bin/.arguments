@@ -48,7 +48,6 @@ for argument in "$@"
   done
 
 
-  echo PASSES $PASSES
 
 # args=`getopt abc:d $*`
 # set -- $args
