@@ -38,5 +38,8 @@ for argument in $@
     esac
   done
 
+
+  echo PASSES $PASSES
+
 # args=`getopt abc:d $*`
 # set -- $args
