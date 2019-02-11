@@ -7,7 +7,7 @@ for argument in $@
     echo The Argument $argument
 
     case $argument in
-      -h|--help)
+      -help)
         echo
         echo "Options:"
         echo "-h, --help                   show brief help"
