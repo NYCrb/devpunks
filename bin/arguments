@@ -7,6 +7,11 @@ for argument in $@
     echo The Argument $argument
 
     case $argument in
+      -h|--help)
+        echo "options:"
+        echo "-h, --help             show brief help"
+        echo "-l, --letterbox=[color|blur] set letterbox to color or blurred video matte"
+        ;;
       -l=*|--letterbox=*)
         MATTE="${argument#*=}"
         echo HOT DAMN IM IN $MATTE
