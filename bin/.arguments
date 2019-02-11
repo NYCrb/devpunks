@@ -16,7 +16,7 @@ for argument in $@
         exit 0
         ;;
 
-      -l=*|--letterbox=*)
+      -letterbox=*)
         MATTE="${argument#*=}"
         echo HOT DAMN IM IN $MATTE
         # shift # past key
