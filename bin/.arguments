@@ -26,6 +26,7 @@ for argument in $@
 
       -passes=*)
         PASSES="${argument#=*}"
+        shift # past argument AND value
         ;;
 
       -letterbox|-passes)
