@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-echo Loading arguments
-
 for argument in $@
   do
     echo The Argument $argument
