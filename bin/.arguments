@@ -25,20 +25,18 @@ for argument in "$@"
         echo
         exit 0
         ;;
-
       -letterbox=*)
         MATTE="${argument#*=}"
-        echo HOT DAMN IM IN $MATTE
+        echo MATTE $MATTE
         # shift # past key
         # shift # past value
         shift # past argument AND value
         ;;
-
       -passes=*)
         PASSES="${argument#=*}"
+        echo PASSES $PASSES
         shift # past argument AND value
         ;;
-
       -letterbox|-passes)
         echo "$1 requires a value to be set (i.e. $1=value)" >&2; exit 1;;
       -*)
