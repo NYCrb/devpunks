@@ -11,6 +11,7 @@ for argument in $@
         echo "options:"
         echo "-h, --help                   show brief help"
         echo "-l, --letterbox=[color|blur] set letterbox to color or blurred video matte"
+        exit 0
         ;;
       -l=*|--letterbox=*)
         MATTE="${argument#*=}"
