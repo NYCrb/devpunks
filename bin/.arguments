@@ -25,7 +25,8 @@ for argument in $@
         ;;
 
       -passes=*)
-        PASSES=${argument#=*}
+        PASSES="${argument#=*}"
+        ;;
 
       -letterbox|-pass)
         echo "$1 requires a value to be set (i.e. $1=value)" >&2; exit 1;;
