@@ -15,6 +15,7 @@ for argument in $@
         echo
         exit 0
         ;;
+
       -l=*|--letterbox=*)
         MATTE="${argument#*=}"
         echo HOT DAMN IM IN $MATTE
