@@ -19,8 +19,8 @@ for argument in $@
         # shift # past key
         # shift # past value
         shift # past argument AND value
-      ;;
-    --letterbox) echo "$1 requires a value to be set (i.e. $1=value)"
+        ;;
+      --letterbox) echo "$1 requires a value to be set (i.e. $1=value)" >&2; exit 1;;
     esac
   done
 
