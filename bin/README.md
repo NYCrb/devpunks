@@ -1,11 +1,6 @@
 # `bin/`
 
 
-## `arguments`
-
-  Parse arguments
-
-
 ## `download`
 
   Parse arguments
