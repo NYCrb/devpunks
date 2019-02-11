@@ -22,7 +22,7 @@ for argument in $@
         # shift # past value
         shift # past argument AND value
         ;;
-      --letterbox) echo "$1 requires a value to be set (i.e. $1=value)" >&2; exit 1;;
+      -l|--letterbox|-p|--pass)echo "$1 requires a value to be set (i.e. $1=value)" >&2; exit 1;;
       -*) echo "unknown option: $1" >&2; exit 1;;
     esac
   done
