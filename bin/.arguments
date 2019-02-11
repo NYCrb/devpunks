@@ -9,7 +9,7 @@ for argument in $@
     case $argument in
       -h|--help)
         echo
-        echo "options:"
+        echo "Options:"
         echo "-h, --help                   show brief help"
         echo "-l, --letterbox=[color|blur] set letterbox to color or blurred video matte"
         echo
