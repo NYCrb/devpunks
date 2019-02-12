@@ -43,7 +43,9 @@ for argument in "$@"
         echo "unknown option: $1" >&2; exit 1;;
 
       *)
-        echo $1; shift 1;;
+        echo $1
+        exit 1
+        ;;
     esac
   done
 
