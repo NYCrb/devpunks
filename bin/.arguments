@@ -2,7 +2,7 @@
 
 # https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash
 
-: ${CORES?} # Check for existence first
+: ${CORES?} # Check for existence first ${PARAMETER?"Error Message"}
 
 echo CORES $CORES MATTE $MATTE
 
