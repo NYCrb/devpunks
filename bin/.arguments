@@ -60,3 +60,4 @@ for argument in "$@"
 echo INPUT  $INPUT
 echo MATTE  $MATTE
 echo PASSES $PASSES
+echo OUTPUT $OUTPUT
