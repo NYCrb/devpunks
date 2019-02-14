@@ -9,15 +9,7 @@ declare -rx LETTERBOX_FILTER=$(letterbox.color)
 #letterbox.blur
 
 echo
-echo
-echo
-echo
-echo
 echo HOLY SHIT THE COLOR IS $LETTERBOX_FILTER
-echo
-echo
-echo
-echo
 echo
 
 : ${INPUT? ❌ not set}
