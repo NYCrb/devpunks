@@ -50,3 +50,8 @@ for argument in "$@"
         ;;
     esac
   done
+
+
+echo INPUT  $INPUT
+echo MATTE  $MATTE
+echo PASSES $PASSES
