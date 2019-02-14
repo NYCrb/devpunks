@@ -10,8 +10,6 @@ for i in `seq 1 10`
 
 for argument in "$@"
   do
-    echo The Argument $argument
-
     case $argument in
 
       -help)
