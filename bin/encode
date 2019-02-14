@@ -5,7 +5,7 @@ declare -rx BIN=`dirname $0`
 source $BIN/.arguments
 # source $BIN/.letterbox
 
-: ${INPUT?Please provide input} ${OUTPUT?Output file not set}
+: ${INPUT?❌ Please provide input} ${OUTPUT?Output file not set}
 
 echo INPUT  $INPUT
 echo OUTPUT $OUTPUT
