@@ -33,7 +33,7 @@ for argument in "$@"
         shift # past argument AND value
         ;;
       -passes=*)
-        P="${argument#=*}"
+        P="${argument#*=}"
         echo PASSES $P
         shift # past argument AND value
         ;;
