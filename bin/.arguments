@@ -31,7 +31,6 @@ for argument in "$@"
         ;;
       -letterbox=*)
         MATTE="${argument#*=}"
-        echo MATTE $MATTE
         # shift # past key
         # shift # past value
         shift # past argument AND value
