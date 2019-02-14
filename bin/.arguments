@@ -28,7 +28,7 @@ for argument in "$@"
         ;;
 
       -input=*)
-        INPUT="${argument#*=}"
+        declare -r INPUT="${argument#*=}"
         shift # past argument AND value
         ;;
 
