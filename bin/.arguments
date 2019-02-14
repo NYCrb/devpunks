@@ -48,8 +48,3 @@ for argument in "$@"
         ;;
     esac
   done
-
-
-
-# args=`getopt abc:d $*`
-# set -- $args
