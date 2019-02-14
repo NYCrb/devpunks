@@ -10,8 +10,8 @@ echo OUTPUT $OUTPUT
 
 declare -rx BIN=`dirname $0`
 
-declare -rx INPUT="-i $1"
-declare -rx OUTPUT=${2:-dev/null}
+declare -rx  INPUT="-i $1"
+declare -rx  OUTPUT=${2:-dev/null}
 
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
