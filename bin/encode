@@ -107,21 +107,6 @@ declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
 
-declare -rx LETTERBOX_FILTER=$(letterbox.color)
-#letterbox.blur
-
-echo
-echo
-echo
-echo
-echo
-echo HOLY SHIT THE COLOR IS $LETTERBOX_FILTER
-echo
-echo
-echo
-echo
-echo
-
 time $FFMPEG \
   $SEEK      \
   $IN        \
