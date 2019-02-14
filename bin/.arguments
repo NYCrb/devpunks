@@ -26,6 +26,7 @@ for argument in "$@"
         echo
         exit 0
         ;;
+
       -input=*)
         INPUT="${argument#*=}"
         shift # past argument AND value
