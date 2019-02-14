@@ -124,7 +124,7 @@ time $FFMPEG \
   $FREQUENCY \
   $BITRATE   \
   $FORMAT    \
-$OUTPUT
+$OUT
 
 ### 2-PASS https://slhck.info/video/2017/03/01/rate-control.html#2-pass-average-bitrate-2-pass-abr
 # ffmpeg -i <input> -pass 1 -f mp4 /dev/null
