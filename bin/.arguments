@@ -33,14 +33,14 @@ for argument in "$@"
         ;;
 
       -letterbox=*)
-        MATTE="${argument#*=}"
+        declare -r MATTE="${argument#*=}"
         # shift # past key
         # shift # past value
         shift # past argument AND value
         ;;
 
       -passes=*)
-        PASSES="${argument#*=}"
+        declare -r PASSES="${argument#*=}"
         shift # past argument AND value
         ;;
 
