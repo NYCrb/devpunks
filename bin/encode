@@ -6,7 +6,6 @@ source $BIN/.arguments
 source $BIN/.letterbox
 
 declare -rx LETTERBOX_FILTER=$(letterbox.color)
-#letterbox.blur
 
 echo
 echo HOLY SHIT THE COLOR IS $LETTERBOX_FILTER
