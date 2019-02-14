@@ -109,7 +109,7 @@ echo
 
 time $FFMPEG \
   $SEEK      \
-  $INPUT     \
+  $IN        \
   $PROFILE   \
   $BASE      \
   $SYNC      \
