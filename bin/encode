@@ -10,8 +10,8 @@ source $BIN/.arguments
 echo INPUT  $INPUT
 echo OUTPUT $OUTPUT
 
-declare -rx  INPUT="-i $1"
-declare -rx  OUTPUT=${2:-dev/null}
+declare -rx  IN="-i $INPUT"
+declare -rx  OUT=${OUTPUT:-dev/null}
 
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
