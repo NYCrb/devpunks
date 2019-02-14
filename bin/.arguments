@@ -38,6 +38,7 @@ for argument in "$@"
         # shift # past value
         shift # past argument AND value
         ;;
+
       -passes=*)
         PASSES="${argument#*=}"
         shift # past argument AND value
