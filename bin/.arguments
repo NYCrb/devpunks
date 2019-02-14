@@ -51,7 +51,7 @@ for argument in "$@"
         echo "unknown option: $1" >&2; exit 1;;
 
       *)
-        OUTPUT="$1"
+        declare -r OUTPUT="$1"
         ;;
     esac
   done
