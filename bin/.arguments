@@ -17,6 +17,7 @@ for argument in "$@"
     echo The Argument $argument
 
     case $argument in
+
       -help)
         echo
         echo "Options:"
