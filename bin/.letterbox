@@ -8,7 +8,7 @@ letterbox.color () {
   echo $filter
 }
 
-function letterbox.blur {
+letterbox.blur () {
   echo Blurred
 }
 
