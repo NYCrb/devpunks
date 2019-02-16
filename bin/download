@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-getopts "b" argument
-echo argument: $argument
-
 getopts "c" argument
 echo argument: $argument
 
