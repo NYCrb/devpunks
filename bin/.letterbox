@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# How Blurs & Filters Work - https://www.youtube.com/watch?v=C_zFhWdM4ic
 echo Loading letterbox
 
 letterbox.color () {
