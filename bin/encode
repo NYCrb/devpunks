@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 declare -rx BIN=`dirname $0`
+declare -r  FFMPEG=$(which ffmpeg)
 
 source $BIN/.arguments
 source $BIN/.letterbox
