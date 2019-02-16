@@ -9,8 +9,6 @@ source $BIN/.display
 declare -r  TIME=$( test "$STATS" && echo "time " )
 declare -r  FFMPEG="$TIME$(which ffmpeg)"
 
-declare -rx LETTERBOX_FILTER=$(letterbox.color)
-
 declare -r  CORES=4
 declare -r  MAPS="-map 0"
 declare -r  THREADS="-threads $CORES -filter_threads $CORES -filter_complex_threads $CORES"
