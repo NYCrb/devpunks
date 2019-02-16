@@ -11,11 +11,6 @@ declare -r  FFMPEG="$TIME$(which ffmpeg)"
 
 declare -rx LETTERBOX_FILTER=$(letterbox.color)
 
-: ${INPUT? ❌ not set}
-
-echo INPUT  $INPUT
-echo OUTPUT $OUTPUT
-
 declare -rx  IN="-i $INPUT"
 declare -rx  OUT=${OUTPUT:-dev/null}
 
