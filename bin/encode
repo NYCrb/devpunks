@@ -95,7 +95,7 @@ declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
 
-time $FFMPEG \
+$FFMPEG      \
   $SEEK      \
   $IN        \
   $PROFILE   \
