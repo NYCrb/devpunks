@@ -5,3 +5,27 @@ echo Loading display
 source $BIN/.letterbox
 
 declare -rx LETTERBOX_FILTER=$(letterbox.color)
+
+declare -r  PIXELS="-pix_fmt yuv420p"                  # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
+declare -r  QUICKTIME="-movflags +faststart $PIXELS"   # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
+
+# SCALE https://trac.ffmpeg.org/wiki/Scaling
+#  - https://ffmpeg.org/ffmpeg-scaler.html
+#  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
+declare -ir WIDTH=1920
+declare -ir HEIGHT=1080
+printf  -v  ASPECT "%.3f" "$((WIDTH/HEIGHT))" # Aspect Ratio (4:3, 16:9, 1.3333) (Used for x265 encoding)
+declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for anamorphic video
+declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGHT\,trunc($COEFFICIENT*(ih*sar)/2)*2)"
+
+# LETTERBOXING
+# https://stackoverflow.com/questions/8133242/ffmpeg-resize-down-larger-video-to-fit-desired-size-and-add-padding
+# https://superuser.com/questions/547296/resizing-videos-with-ffmpeg-avconv-to-fit-into-static-sized-player/1136305#1136305
+declare -r  LETTERBOX="pad=$WIDTH:$HEIGHT:($WIDTH-($COEFFICIENT*(iw*sar)))/2:($HEIGHT-($COEFFICIENT*(ih*sar)))/2:color=green"
+declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # https://ffmpeg.org/ffmpeg-scaler.html#toc-Scaler-Options
+declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=increase:$ALGORITHM,setdar=dar=$WIDTH/$HEIGHT" # CHECK $ASPECT
+declare -r  DEINTERLACE="yadif=send_frame:auto:all"
+
+# LUTS - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
+# FFMPEG Mailing List - https://ffmpeg.org/pipermail/ffmpeg-user/2014-February/020063.html
+# BBC Article - http://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf
