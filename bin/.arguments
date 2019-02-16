@@ -16,6 +16,7 @@ for argument in "$@"
         echo
         echo "Options:"
         echo "-help                   show brief help"
+        echo "-input=[file]           Input file"
         echo "-letterbox=[color|blur] set letterbox to color or blurred video matte"
         echo
         exit 0
