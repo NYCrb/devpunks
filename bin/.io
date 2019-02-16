@@ -2,6 +2,7 @@
 
 : ${INPUT? ❌ not set}
 
+echo Loading I/O
 echo INPUT  $INPUT
 echo OUTPUT $OUTPUT
 
