@@ -104,7 +104,6 @@ time $FFMPEG \
   $SYNC      \
   $STAMP     \
   $STATS     \
-  $REPORT    \
   $THREADS   \
   $FILTERS   \
   $CODECS    \
