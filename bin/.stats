@@ -7,7 +7,7 @@ echo Loading stats
 declare -r  REPORT="-report"
 declare -r  REFERENCE="movie=FEAR.mp4"
 declare -r  PTS="setpts=PTS-STARTPTS [main]; [main][ref]"
-declare -r  SSIM="stats_file=stats.log"
+declare -r  SSIM="ssim='stats_file=stats.log'"
 declare -r  STATS="-stats $REPORT $REFERENCE, $PTS $SSIM"
 
 echo STATS $STATS
