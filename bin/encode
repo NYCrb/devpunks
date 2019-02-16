@@ -7,10 +7,6 @@ source $BIN/.letterbox
 
 declare -rx LETTERBOX_FILTER=$(letterbox.color)
 
-echo
-echo HOLY SHIT THE COLOR IS $LETTERBOX_FILTER
-echo
-
 : ${INPUT? ❌ not set}
 
 echo INPUT  $INPUT
