@@ -3,6 +3,7 @@
 declare -rx BIN=`dirname $0`
 
 source $BIN/.arguments
+source $BIN/.io
 source $BIN/.letterbox
 
 declare -r  TIME=$( test $STATS && echo "time " )
