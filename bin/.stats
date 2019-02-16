@@ -7,7 +7,7 @@ echo Loading stats
 declare -r  REPORT="-report"
 declare -r  REFERENCE="movie=REFERENCE.mp4"
 declare -r  PTS="setpts=PTS-STARTPTS [main]; [main][ref]"
-declare -r  PSNR=";[0:v][1:v]psnr"
+declare -r  PSNR=";[0:v][1:v]psnr" # https://ffmpeg.org/ffmpeg-filters.html#psnr
 declare -r  SSIM="ssim='stats_file=stats.log'"
 declare -r  STATS="-stats $REPORT $REFERENCE, $PTS $SSIM$PSNR"
 
