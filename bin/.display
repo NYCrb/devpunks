@@ -3,3 +3,5 @@
 echo Loading display
 
 source $BIN/.letterbox
+
+declare -rx LETTERBOX_FILTER=$(letterbox.color)
