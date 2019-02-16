@@ -5,5 +5,5 @@
 echo Loading stats
 
 declare -r  REPORT="-report"
-declare -r  STATS="-stats $REPORT"
+declare -r  REFERENCE="FEAR.mp4"
 declare -r  SSIM="stats_file=stats.log"
