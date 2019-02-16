@@ -15,8 +15,8 @@ for argument in "$@"
       -help)
         echo
         echo "Options:"
-        echo "-h, --help                   show brief help"
-        echo "-l, --letterbox=[color|blur] set letterbox to color or blurred video matte"
+        echo "-help                   show brief help"
+        echo "-letterbox=[color|blur] set letterbox to color or blurred video matte"
         echo
         exit 0
         ;;
