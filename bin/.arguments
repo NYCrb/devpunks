@@ -18,6 +18,7 @@ for argument in "$@"
         echo "-help                   show brief help"
         echo "-input=[file]           Input file"
         echo "-letterbox=[color|blur] set letterbox to color or blurred video matte"
+        echo "-passes=[number]        Number of passes for video"
         echo
         exit 0
         ;;
