@@ -2,6 +2,9 @@
 
 echo Loading display
 
+declare -ir WIDTH=1920
+declare -ir HEIGHT=1080
+
 source $BIN/.letterbox
 
 declare -rx LETTERBOX_FILTER=$(letterbox.color)
