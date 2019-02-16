@@ -25,7 +25,6 @@ declare -r  SEEK="$START $DURATION $END"
 
 declare -r  CORES=4
 declare -r  MAPS="-map 0"
-declare -r  FFMPEG=$(which ffmpeg)
 declare -r  THREADS="-threads $CORES -filter_threads $CORES -filter_complex_threads $CORES"
 declare -r  FORMAT=$( ( test ! "$OUTPUT" && echo -f null ) || echo -f mp4 ) # image2 for still frames
 declare -r  STAMP="-copyts"
