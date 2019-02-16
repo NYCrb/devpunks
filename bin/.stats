@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# SSIM (Structural Similarity Metric) https://ffmpeg.org/ffmpeg-filters.html#ssim
+
 echo Loading stats
 
 declare -r  REPORT="-report"
