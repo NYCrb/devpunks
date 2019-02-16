@@ -15,3 +15,4 @@ declare -r  DURATION="-t 60"   # seek duration time (precedence over -to)
 declare -r  END= #"-to [end]"       # seek end time
 declare -r  SEEK="$START $DURATION $END"
 
+declare -r  FORMAT=$( ( test ! "$OUTPUT" && echo -f null ) || echo -f mp4 ) # image2 for still frames
