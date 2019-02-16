@@ -6,7 +6,7 @@ declare -r  REPORT="-report"
 declare -r  REFERENCE="movie=REFERENCE.mp4"
 declare -r  PTS="setpts=PTS-STARTPTS [main]; [main][ref]"
 # PSNR (Peak Signal to Noise Ratio) https://ffmpeg.org/ffmpeg-filters.html#psnr
-declare -r  PSNR=";[0:v][1:v]psnr"
+declare -r  PSNR=";[0:v][1:v]psnr" # PSNR = 10* log10(MAX ^ 2 / Mean_Squarred_Error)
 # SSIM (Structural Similarity Metric) https://ffmpeg.org/ffmpeg-filters.html#ssim
 declare -r  SSIM="ssim='stats_file=stats.log'"
 declare -r  STATS="-stats $REPORT $REFERENCE, $PTS $SSIM$PSNR"
