@@ -6,8 +6,8 @@ source $BIN/.arguments
 source $BIN/.io
 source $BIN/.letterbox
 
-declare -r  TIME=$( test $STATS && echo "time " )
-declare -r  FFMPEG="$(TIME)$(which ffmpeg)"
+declare -r  TIME=$( test "$STATS" && echo "time " )
+declare -r  FFMPEG="$TIME$(which ffmpeg)"
 
 declare -rx LETTERBOX_FILTER=$(letterbox.color)
 
