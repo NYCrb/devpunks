@@ -38,6 +38,11 @@ for argument in "$@"
         shift # past argument AND value
         ;;
 
+      -stats)
+        source $BIN/.stats
+        shift # past argument AND value
+        ;;
+
       -input|-letterbox|-passes)
         echo "$1 requires a value to be set (i.e. $1=value)" >&2; exit 1;;
 
