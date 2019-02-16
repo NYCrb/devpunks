@@ -12,4 +12,4 @@ function letterbox.blur {
   echo Blurred
 }
 
-declare -xf letterbox.color
+declare -f letterbox.color
