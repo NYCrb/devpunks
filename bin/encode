@@ -5,6 +5,7 @@ declare -rx BIN=`dirname $0`
 source $BIN/.arguments
 source $BIN/.io
 source $BIN/.display
+source $BIN/.filters
 
 declare -r  TIME=$( test "$STATS" && echo "time " )
 declare -r  FFMPEG="$TIME$(which ffmpeg)"
