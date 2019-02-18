@@ -18,7 +18,7 @@ declare -r  LETTERBOX="pad=$WIDTH:$HEIGHT:($WIDTH-($COEFFICIENT*(iw*sar)))/2:($H
 
 letterbox.color () {
   local color="black"
-  local filter="pad=720:720:(ow-iw)/2:(oh-ih)/2:$color"
+  local filter="pad=$WIDTH:$HEIGHT:(ow-iw)/2:(oh-ih)/2:$color"
   echo $filter
 }
 
