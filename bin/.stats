@@ -8,6 +8,7 @@ declare -r  PTS="setpts=PTS-STARTPTS [main]; [main][ref]"
 
 # PSNR (Peak Signal to Noise Ratio) https://ffmpeg.org/ffmpeg-filters.html#psnr
 declare -r  PSNR=";[0:v][1:v]psnr" # PSNR = 10* log10(MAX ^ 2 / Mean_Squarred_Error)
+
 # SSIM (Structural Similarity Metric) https://ffmpeg.org/ffmpeg-filters.html#ssim
 declare -r  LOG=stats.log
 declare -r  SSIM="ssim='stats_file=$LOG'"
