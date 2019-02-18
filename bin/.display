@@ -8,7 +8,7 @@ declare -ir WIDTH=1920
 declare -ir HEIGHT=1080
 
 declare -r  PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
-declare -r  QUICKTIME="-movflags +faststart $PIXELS" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
+declare -r  QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
