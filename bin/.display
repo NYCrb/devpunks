@@ -24,4 +24,4 @@ declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 # BBC Article - http://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf
 
 source $BIN/.letterbox
-$(letterbox.color)
+echo $(letterbox.color)
