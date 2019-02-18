@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+
+: ${WIDTH? ❌ not set}
+
 # LETTERBOXING
 # https://stackoverflow.com/questions/8133242/ffmpeg-resize-down-larger-video-to-fit-desired-size-and-add-padding
 # https://superuser.com/questions/547296/resizing-videos-with-ffmpeg-avconv-to-fit-into-static-sized-player/1136305#1136305
