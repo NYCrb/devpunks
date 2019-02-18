@@ -19,3 +19,5 @@ letterbox.blur () {
 }
 
 declare -fx letterbox.color
+
+echo The letter box is $LETTERBOX
