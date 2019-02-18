@@ -8,12 +8,16 @@ declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # h
 echo Loading display
 
 
+# DIMENSIONS
 declare -ir WIDTH=1920
 declare -ir HEIGHT=1080
 
+
+# PLAYBACK?
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 declare -r  PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r  QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
+
 
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
