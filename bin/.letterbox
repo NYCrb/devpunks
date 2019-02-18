@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo Loading letterbox
+
+: ${WIDTH? ❌ not set} ${HEIGHT? ❌ not set} ${COEFFICIENT? ❌ not set}
 
 : ${WIDTH? ❌ not set} ${HEIGHT? ❌ not set}
 
