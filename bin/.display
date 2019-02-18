@@ -20,7 +20,6 @@ declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGH
 
 declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # https://ffmpeg.org/ffmpeg-scaler.html#toc-Scaler-Options
 declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=increase:$ALGORITHM,setdar=dar=$WIDTH/$HEIGHT" # CHECK $ASPECT
-declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 
 source $BIN/.letterbox
 echo Final letter box:
