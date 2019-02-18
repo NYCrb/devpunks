@@ -6,6 +6,7 @@ echo Loading letterbox
 
 echo WIDTH:  $WIDTH
 echo HEIGHT: $HEIGHT
+echo ASPECT RATIO: $ASPECT
 echo RESOLUTION: $RESOLUTION
 echo COEFFICIENT: $COEFFICIENT
 
