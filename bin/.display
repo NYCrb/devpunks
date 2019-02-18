@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+: ${BIN? ❌ not set}
+
 echo Loading display
 
 declare -ir WIDTH=1920
