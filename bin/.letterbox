@@ -22,3 +22,7 @@ letterbox.blur () {
 }
 
 declare -fx letterbox.color
+
+echo
+echo Interanal Letterbox $LETTERBOX
+echo
