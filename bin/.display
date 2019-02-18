@@ -22,5 +22,6 @@ declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=increase:$ALGOR
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 
 source $BIN/.letterbox
-echo The letter box is $(letterbox.color)
+echo Final letter box
+echo $(letterbox.color)
 echo
