@@ -33,3 +33,6 @@ echo
 echo Interanal Letterbox:
 echo $LETTERBOX
 echo
+echo Scale:
+echo $SCALE
+echo
