@@ -23,4 +23,5 @@ declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 # FFMPEG Mailing List - https://ffmpeg.org/pipermail/ffmpeg-user/2014-February/020063.html
 # BBC Article - http://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf
 
-echo The letter box is $LETTERBOX
+source $BIN/.letterbox
+declare -rx LETTERBOX=$(letterbox.color)
