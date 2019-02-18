@@ -14,7 +14,7 @@ declare -r  QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/w
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
-printf  -v  ASPECT "%.3f" "$((WIDTH/HEIGHT))" # Aspect Ratio (4:3, 16:9, 1.3333) (Used for x265 encoding)
+declare -r  ASPECT="$WIDTH/$HEIGHT" # Aspect Ratio (4:3, 16:9, 1.3333) (Used for x265 encoding)
 declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for anamorphic video
 declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGHT\,trunc($COEFFICIENT*(ih*sar)/2)*2)"
 
