@@ -19,9 +19,5 @@ declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # h
 declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=increase:$ALGORITHM,setdar=dar=$WIDTH/$HEIGHT" # CHECK $ASPECT
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 
-# LUTS - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
-# FFMPEG Mailing List - https://ffmpeg.org/pipermail/ffmpeg-user/2014-February/020063.html
-# BBC Article - http://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf
-
 source $BIN/.letterbox
 echo $(letterbox.color)
