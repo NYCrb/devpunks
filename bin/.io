@@ -28,8 +28,6 @@ declare -r OUT=${OUTPUT:-/dev/null}
 # lavfi for blank image
 declare -r FORMAT="-f $(format)" # image2 for still frames
 
-echo INPUT  $INPUT
-echo OUTPUT $OUTPUT
 echo IN $IN
 echo OUT $OUT
 echo FORMAT $FORMAT
