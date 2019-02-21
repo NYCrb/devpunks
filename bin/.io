@@ -9,8 +9,7 @@ open () {
 }
 
 format () {
-  ( test      "$OUTPUT" && echo mp4   ) || \
-  ( test ! -f "$INPUT"  && echo lavfi )
+  ( test ! -f "$INPUT"  && echo lavfi ) || echo mp4
 }
 
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
