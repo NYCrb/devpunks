@@ -27,6 +27,8 @@ echo OUTPUT $OUTPUT
 declare -rx  IN="-i $( ( test -f $INPUT && echo $INPUT ) || echo color=c=$INPUT)"
 declare -rx  OUT=${OUTPUT:-dev/null}
 
-echo IN $IN
 # lavfi for blank image
-declare -r  FORMAT=$( ( test ! "$OUTPUT" && echo -f null ) || echo -f mp4 ) # image2 for still frames
+declare -r  FORMAT="-f $( format $OUTPUT )" # image2 for still frames
+
+echo IN $IN
+echo FORMAT $FORMAT
