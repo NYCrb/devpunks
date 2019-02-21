@@ -12,6 +12,12 @@ for argument in "$@"
   do
     case $argument in
 
+      -hd)
+        declare -ir WIDTH=1920
+        declare -ir HEIGHT=1080
+        shift # past argument AND value
+        ;;
+
       -help)
         echo
         echo "Options:"
