@@ -4,6 +4,14 @@ echo Loading I/O
 
 : ${INPUT? ❌ not set}
 
+format () {
+  local output=$1
+
+  ( test   "$OUTPUT"   && echo mp4  ) || \
+  ( test ! "$OUTPUT"   && echo null ) || \
+  ( test ! -f "$INPUT" && echo lavfi )
+}
+
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
 declare -r  START="-ss 00:00:00" # seek start time offset
