@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 echo Loading I/O
-echo INPUT  $INPUT
-echo OUTPUT $OUTPUT
 
 declare -rx  IN="-i $INPUT"
 declare -rx  OUT=${OUTPUT:-dev/null}
