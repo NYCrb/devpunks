@@ -4,8 +4,6 @@ echo Loading letterbox
 
 : ${RESOLUTION? ❌ not set} ${COEFFICIENT? ❌ not set}
 
-echo WIDTH:        $WIDTH
-echo HEIGHT:       $HEIGHT
 echo ASPECT RATIO: $ASPECT
 echo COEFFICIENT:  $COEFFICIENT
 echo RESOLUTION:   $RESOLUTION
