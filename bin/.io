@@ -22,8 +22,8 @@ declare -r  SEEK="$START $DURATION $END"
 
 
 # color=c=$COLOR:s=widthxheight:d=duration
-declare -rx  IN="-i $( open $INPUT || color $INPUT )"
-declare -rx  OUT=${OUTPUT:-/dev/null}
+declare -r  IN="-i $( open $INPUT || color $INPUT )"
+declare -r  OUT=${OUTPUT:-/dev/null}
 
 # lavfi for blank image
 declare -r  FORMAT="-f $(format)" # image2 for still frames
