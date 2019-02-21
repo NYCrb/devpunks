@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo Loading display
+
 : ${BIN? ❌ not set}
 
 # DIMENSIONS
