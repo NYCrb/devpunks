@@ -19,15 +19,13 @@ echo LETTERZ: $LETTER
 
 # ????????
 
-declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # https://ffmpeg.org/ffmpeg-scaler.html#toc-Scaler-Options
-echo Loading display
-
 
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
 
 declare -r  RATIOS="setdar=dar=$WIDTH/$HEIGHT"
+declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # https://ffmpeg.org/ffmpeg-scaler.html#toc-Scaler-Options
 declare -r  SCALE="$RATIOS,scale=$RESOLUTION:$ALGORITHM:force_original_aspect_ratio=decrease" # CHECK $ASPECT
 
 # PLAYBACK?
