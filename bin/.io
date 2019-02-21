@@ -8,6 +8,10 @@ format () {
   ( test ! -f "$INPUT"  && echo lavfi ) || echo mp4
 }
 
+open () {
+  test -f $1 && echo $1
+}
+
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
 declare -r START="-ss 00:00:00" # seek start time offset
