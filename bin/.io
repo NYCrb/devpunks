@@ -5,6 +5,7 @@ echo Loading I/O
 : ${INPUT? ❌ not set}
 
 color () {
+  local color=$1
 
 }
 
