@@ -24,8 +24,6 @@ declare -r START="-ss 00:00:00" # seek start time offset
 declare -r DURATION="-t 60"   # seek duration time (precedence over -to)
 declare -r END= #"-to [end]"       # seek end time
 declare -r SEEK="$START $DURATION $END"
-
-
 declare -r IN="-i $( open $INPUT || color $INPUT )"
 declare -r OUT=${OUTPUT:-"-y /dev/null"}
 
