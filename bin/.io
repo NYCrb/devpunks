@@ -9,11 +9,8 @@ open () {
 }
 
 format () {
-  local output=$1
-
-  ( test   "$OUTPUT"   && echo mp4   ) || \
-  ( test ! "$OUTPUT"   && echo null  ) || \ # https://trac.ffmpeg.org/wiki/Null
-  ( test ! -f "$INPUT" && echo lavfi )
+  ( test      "$OUTPUT" && echo mp4   ) || \
+  ( test ! -f "$INPUT"  && echo lavfi )
 }
 
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
