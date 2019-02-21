@@ -7,6 +7,7 @@ echo Loading I/O
 color () {
   local color=$1
 
+  echo color=c=$color # :s=widthxheight:d=duration
 }
 
 format () {
