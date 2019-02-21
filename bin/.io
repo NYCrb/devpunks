@@ -28,11 +28,11 @@ echo OUTPUT $OUTPUT
 
 
 # color=c=$COLOR:s=widthxheight:d=duration
-declare -rx  IN="-i $( ( test -f $INPUT && echo $INPUT ) || echo color=c=$INPUT)"
+declare -rx  IN="-i $( open $INPUT || color $INPUT )"
 declare -rx  OUT=${OUTPUT:-dev/null}
 
 # lavfi for blank image
-declare -r  FORMAT="-f $( format $OUTPUT )" # image2 for still frames
+declare -r  FORMAT="-f $(format)" # image2 for still frames
 
 echo IN $IN
 echo FORMAT $FORMAT
