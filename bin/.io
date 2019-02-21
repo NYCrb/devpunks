@@ -4,10 +4,6 @@ echo Loading I/O
 
 : ${INPUT? ❌ not set}
 
-open () {
-  test -f $1 && echo $1
-}
-
 format () {
   ( test ! -f "$INPUT"  && echo lavfi ) || echo mp4
 }
