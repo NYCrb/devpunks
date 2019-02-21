@@ -2,8 +2,7 @@
 
 echo Loading I/O
 
-declare -rx  IN="-i $INPUT"
-declare -rx  OUT=${OUTPUT:-dev/null}
+: ${INPUT? ❌ not set}
 
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
