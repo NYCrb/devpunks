@@ -22,15 +22,11 @@ declare -r  COEFFICIENT="1.00" # Use SAR for anamorphic video
 #declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGHT\,trunc($COEFFICIENT*(ih*sar)/2)*2)"
 declare -r  RESOLUTION="$WIDTH:$HEIGHT"
 
-declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=decrease:$ALGORITHM,setdar=dar=$WIDTH/$HEIGHT" # CHECK $ASPECT
+declare -r  RATIOS="setdar=dar=$WIDTH/$HEIGHT"
+declare -r  SCALE="$RATIOS,scale=$RESOLUTION:$ALGORITHM:force_original_aspect_ratio=decrease" # CHECK $ASPECT
 
 
 # PLAYBACK?
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
 declare -r  PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
 declare -r  QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
-
-source $BIN/.letterbox
-echo Final letter box:
-echo $(letterbox.color)
-echo
