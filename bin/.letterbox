@@ -31,4 +31,4 @@ declare -fx letterbox.color
 
 echo
 echo Interanal Letterbox:
-echo $LETTERBOX
+echo $LETTER
