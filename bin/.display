@@ -2,6 +2,10 @@
 
 : ${BIN? ❌ not set}
 
+# DIMENSIONS
+declare -ir WIDTH=1920
+declare -ir HEIGHT=1080
+
 # ????????
 
 declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # https://ffmpeg.org/ffmpeg-scaler.html#toc-Scaler-Options
