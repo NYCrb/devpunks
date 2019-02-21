@@ -12,11 +12,6 @@ declare -ir HEIGHT=1080
 declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # https://ffmpeg.org/ffmpeg-scaler.html#toc-Scaler-Options
 echo Loading display
 
-# PLAYBACK?
-declare -r  DEINTERLACE="yadif=send_frame:auto:all"
-declare -r  PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
-declare -r  QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
-
 
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
@@ -28,6 +23,12 @@ declare -r  COEFFICIENT="1.00" # Use SAR for anamorphic video
 declare -r  RESOLUTION="$WIDTH:$HEIGHT"
 
 declare -r  SCALE="scale=$RESOLUTION:force_original_aspect_ratio=decrease:$ALGORITHM,setdar=dar=$WIDTH/$HEIGHT" # CHECK $ASPECT
+
+
+# PLAYBACK?
+declare -r  DEINTERLACE="yadif=send_frame:auto:all"
+declare -r  PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
+declare -r  QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 
 source $BIN/.letterbox
 echo Final letter box:
