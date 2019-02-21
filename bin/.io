@@ -6,8 +6,11 @@ echo Loading I/O
 
 color () {
   local color=$1
+  local width=200
+  local height=200
+  local duration=60
 
-  echo color=c=$color # :s=widthxheight:d=duration
+  echo color=c=$color:s=${width}x${height}:d=${duration}
 }
 
 format () {
