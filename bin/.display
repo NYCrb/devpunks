@@ -13,6 +13,7 @@ resolve () {
   local distance=$1
   ( test $distance && echo $distance ) || echo 0
 }
+
 declare -r  RESOLUTION="$(resolve $WIDTH):$(resolve $HEIGHT)"
 
 echo
