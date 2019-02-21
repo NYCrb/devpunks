@@ -2,9 +2,7 @@
 
 echo Loading filters
 
-: ${SCALE? ❌ not set} ${DEINTERLACE? ❌ not set}
-
-echo Loading Scale: $SCALE
+: ${SCALE? ❌ not set} ${DEINTERLACE? ❌ not set} ${LETTERBOX? ❌ not set}
 
 
 # LUTS - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
