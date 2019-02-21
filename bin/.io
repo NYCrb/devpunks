@@ -26,7 +26,6 @@ declare -r END= #"-to [end]"       # seek end time
 declare -r SEEK="$START $DURATION $END"
 
 
-# color=c=$COLOR:s=widthxheight:d=duration
 declare -r IN="-i $( open $INPUT || color $INPUT )"
 declare -r OUT=${OUTPUT:-"-y /dev/null"}
 
