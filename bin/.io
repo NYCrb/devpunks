@@ -11,4 +11,14 @@ declare -r  DURATION="-t 60"   # seek duration time (precedence over -to)
 declare -r  END= #"-to [end]"       # seek end time
 declare -r  SEEK="$START $DURATION $END"
 
+echo INPUT  $INPUT
+echo OUTPUT $OUTPUT
+
+
+# color=c=$COLOR:s=widthxheight:d=duration
+declare -rx  IN="-i $( ( test -f $INPUT && echo $INPUT ) || echo color=c=$INPUT)"
+declare -rx  OUT=${OUTPUT:-dev/null}
+
+echo IN $IN
+# lavfi for blank image
 declare -r  FORMAT=$( ( test ! "$OUTPUT" && echo -f null ) || echo -f mp4 ) # image2 for still frames
