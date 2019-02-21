@@ -13,9 +13,7 @@ declare -r  COEFFICIENT="1.00" # Use SAR for anamorphic video
 declare -r  RESOLUTION="$WIDTH:$HEIGHT"
 declare -r  ASPECT="$WIDTH/$HEIGHT" # Aspect Ratio (4:3, 16:9, 1.3333) (Used for x265 encoding)
 source $BIN/.letterbox
-declare -r  LETTER=$(letterbox.color)
-
-echo LETTERZ: $LETTER
+declare -r  LETTERBOX=$(letterbox.color)
 
 
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
