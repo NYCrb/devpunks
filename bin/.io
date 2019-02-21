@@ -4,6 +4,10 @@ echo Loading I/O
 
 : ${INPUT? ❌ not set}
 
+color () {
+
+}
+
 format () {
   ( test ! -f "$INPUT"  && echo lavfi ) || echo mp4
 }
