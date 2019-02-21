@@ -17,8 +17,6 @@ declare -r  LETTER=$(letterbox.color)
 
 echo LETTERZ: $LETTER
 
-# ????????
-
 
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
