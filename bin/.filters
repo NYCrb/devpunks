@@ -2,7 +2,7 @@
 
 echo Loading filters
 
-: ${SCALE? ❌ not set}
+: ${SCALE? ❌ not set} ${DEINTERLACE? ❌ not set}
 
 # LUTS - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
 # FFMPEG Mailing List - https://ffmpeg.org/pipermail/ffmpeg-user/2014-February/020063.html
