@@ -8,6 +8,7 @@ echo Loading display
 # declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for anamorphic video
 declare -r  COEFFICIENT="1.00" # Use SAR for anamorphic video
 #declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGHT\,trunc($COEFFICIENT*(ih*sar)/2)*2)"
+
 resolve () {
   local distance=$1
   ( test $distance && echo $distance ) || echo 0
