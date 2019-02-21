@@ -5,7 +5,15 @@
 # DIMENSIONS
 declare -ir WIDTH=1920
 declare -ir HEIGHT=1080
-
+# declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for anamorphic video
+declare -r  COEFFICIENT="1.00" # Use SAR for anamorphic video
+#declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGHT\,trunc($COEFFICIENT*(ih*sar)/2)*2)"
+declare -r  RESOLUTION="$WIDTH:$HEIGHT"
+declare -r  ASPECT="$WIDTH/$HEIGHT" # Aspect Ratio (4:3, 16:9, 1.3333) (Used for x265 encoding)
+source $BIN/.letterbox
+echo Final letter box:
+echo $(letterbox.color)
+echo
 
 # ????????
 
