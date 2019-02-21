@@ -4,11 +4,15 @@ echo Loading I/O
 
 : ${INPUT? ❌ not set}
 
+open () {
+  test -f $1 && echo $1
+}
+
 format () {
   local output=$1
 
   ( test   "$OUTPUT"   && echo mp4   ) || \
-  ( test ! "$OUTPUT"   && echo null  ) || \
+  ( test ! "$OUTPUT"   && echo null  ) || \ # https://trac.ffmpeg.org/wiki/Null
   ( test ! -f "$INPUT" && echo lavfi )
 }
 
