@@ -7,8 +7,8 @@ echo Loading I/O
 format () {
   local output=$1
 
-  ( test   "$OUTPUT"   && echo mp4  ) || \
-  ( test ! "$OUTPUT"   && echo null ) || \
+  ( test   "$OUTPUT"   && echo mp4   ) || \
+  ( test ! "$OUTPUT"   && echo null  ) || \
   ( test ! -f "$INPUT" && echo lavfi )
 }
 
