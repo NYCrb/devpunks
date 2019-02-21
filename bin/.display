@@ -20,6 +20,7 @@ declare -r  LETTERBOX=$(letterbox.color)
 #  - https://ffmpeg.org/ffmpeg-scaler.html
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
 
+# SAR (PAR), DAR - https://ffmpeg.org/ffmpeg-all.html#toc-setdar_002c-setsar
 declare -r  SAR="setsar=sar=1.000" # "setsar=sar=w/h"
 declare -r  DAR="setdar=dar=$WIDTH/$HEIGHT"
 declare -r  RATIOS=$SAR
