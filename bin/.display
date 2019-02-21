@@ -27,7 +27,6 @@ echo Loading display
 
 declare -r  RATIOS="setdar=dar=$WIDTH/$HEIGHT"
 declare -r  SCALE="$RATIOS,scale=$RESOLUTION:$ALGORITHM:force_original_aspect_ratio=decrease" # CHECK $ASPECT
-,
 
 # PLAYBACK?
 declare -r  DEINTERLACE="yadif=send_frame:auto:all"
