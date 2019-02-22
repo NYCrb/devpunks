@@ -5,12 +5,7 @@ echo Loading I/O
 : ${INPUT? ❌ not set}
 
 color () {
-  local color=$1
-  local width=200
-  local height=200
-  local duration=60
-
-  echo color=c=$color:s=${width}x${height}:d=${duration}
+  echo color=c=$1
 }
 
 format () {
