@@ -6,6 +6,7 @@ echo Loading stats
 
 declare -r  REPORT="-report"
 declare -r  REFERENCE="movie=REFERENCE.mp4"
+declare -r  VERBOSITY="-loglevel +verbose"
 declare -r  PTS="setpts=PTS-STARTPTS [main]; [main][ref]"
 
 # PSNR (Peak Signal to Noise Ratio) https://ffmpeg.org/ffmpeg-filters.html#psnr
