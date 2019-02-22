@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# video metrics - https://ffmpeg.org/ffmpeg-filters.html#Examples-99
+
 echo Loading stats
 
 declare -r  REPORT="-report"
