@@ -9,6 +9,7 @@ color () {
 }
 
 format () {
+  # lavfi - https://www.ffmpeg.org/ffmpeg-devices.html#lavfi
   ( test ! -f "$INPUT"  && echo lavfi ) || echo mp4
 }
 
