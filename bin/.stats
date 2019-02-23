@@ -17,6 +17,6 @@ declare -r  PSNR=";[0:v][1:v]psnr" # PSNR = 10* log10(MAX ^ 2 / Mean_Squarred_Er
 declare -r  LOG=stats.log
 declare -r  SSIM="ssim='stats_file=$LOG'"
 
-declare -r  STATS="-stats $BENCHMARK $VERBOSITY $REPORT" # $REFERENCE, $PTS $SSIM$PSNR"
+declare -r  STATS="-stats $REPORT $BENCHMARK $VERBOSITY" # $REFERENCE, $PTS $SSIM$PSNR"
 
 echo STATS $STATS
