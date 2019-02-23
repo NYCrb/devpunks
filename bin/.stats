@@ -5,6 +5,7 @@
 echo Loading stats
 
 declare -r  REPORT="-report"
+declare -r  BENCHMARK="-benchmark"
 declare -r  REFERENCE="movie=REFERENCE.mp4"
 declare -r  VERBOSITY="-loglevel +level+verbose"
 declare -r  PTS="setpts=PTS-STARTPTS [main]; [main][ref]"
