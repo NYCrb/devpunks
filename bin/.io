@@ -8,9 +8,15 @@ color () {
   echo color=c=$1
 }
 
+snow () {
+  local graph="-i nullsrc=s=256x256:d=5 -vf geq=random(1)*255:128:128"
+  echo nullsrc
+}
+
 format () {
   # lavfi - https://www.ffmpeg.org/ffmpeg-devices.html#lavfi
-  ( test ! -f "$INPUT"  && echo lavfi ) || echo mp4
+  ( test ! -f "$INPUT"  && echo lavfi ) || \
+  ( echo mp4 )
 }
 
 open () {
