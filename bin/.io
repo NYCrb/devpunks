@@ -33,7 +33,7 @@ declare -r IN="-i $( open $INPUT || color $INPUT )"
 declare -r OUT=${OUTPUT:-"-y /dev/null"}
 
 # lavfi for blank image
-declare -r FORMAT="-f $(format)" # image2 for still frames
+declare -r FORMAT="-f ${format}" # image2 for still frames
 
 echo IN $IN
 echo OUT $OUT
