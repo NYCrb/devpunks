@@ -11,12 +11,12 @@ echo RESOLUTION:   $RESOLUTION
 # LETTERBOXING
 # https://stackoverflow.com/questions/8133242/ffmpeg-resize-down-larger-video-to-fit-desired-size-and-add-padding
 # https://superuser.com/questions/547296/resizing-videos-with-ffmpeg-avconv-to-fit-into-static-sized-player/1136305#1136305
-declare -r  LETTER="pad=$RESOLUTION:($WIDTH-($COEFFICIENT*(iw*sar)))/2:($HEIGHT-($COEFFICIENT*(ih*sar)))/2:color=green"
+# declare -r  LETTER="pad=$RESOLUTION:($WIDTH-($COEFFICIENT*(iw*sar)))/2:($HEIGHT-($COEFFICIENT*(ih*sar)))/2:color=green"
 
 # How Blurs & Filters Work - https://www.youtube.com/watch?v=C_zFhWdM4ic
 
 letterbox.color () {
-  local color="black"
+  local color=black
   local filter="pad=$RESOLUTION:(ow-iw)/2:(oh-ih)/2:$color"
   echo $filter
 }
