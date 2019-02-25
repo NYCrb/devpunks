@@ -5,7 +5,7 @@ echo Loading I/O
 : ${INPUT? ❌ not set}
 
 color () {
-  echo color=c=$1
+  echo color=c=$1 # :s=700x200
 }
 
 snow () {
