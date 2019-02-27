@@ -15,6 +15,10 @@ resolve () {
   ( test $distance && echo $distance ) || echo 0
 }
 
+ratio () {
+
+}
+
 declare -r  RESOLUTION="$(resolve $WIDTH):$(resolve $HEIGHT)"
 
 echo
