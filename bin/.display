@@ -11,6 +11,7 @@ declare -r  COEFFICIENT="1.00" # Use SAR for anamorphic video
 
 resolve () {
   local distance=$1
+
   ( test $distance && echo $distance ) || echo 0
 }
 
