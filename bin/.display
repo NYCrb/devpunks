@@ -24,15 +24,9 @@ resolve () {
 
 ratio () {
   declare -r SAR="setsar=sar=1.00" # a = (w/h)
-  declare -r DAR="setdar=dar=$WIDTH/$HEIGHT"
+  declare -r DAR="setdar=dar=$RESOLUTION"
 }
 
-
-declare -r  RESOLUTION="$(resolve $WIDTH)\:$(resolve $HEIGHT)"
-
-echo
-echo RESOLUTION: $RESOLUTION
-echo
 
 declare -r  ASPECT="$WIDTH/$HEIGHT" # Aspect Ratio (4:3, 16:9, 1.3333) (Used for x265 encoding)
 source $BIN/.letterbox
