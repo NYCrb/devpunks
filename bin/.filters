@@ -2,6 +2,8 @@
 
 echo Loading filters
 
+source $BIN/.letterbox
+
 : ${SCALE? ❌ not set} ${DEINTERLACE? ❌ not set} ${LETTERBOX? ❌ not set}
 
 
