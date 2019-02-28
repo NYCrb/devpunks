@@ -36,8 +36,7 @@ for argument in "$@"
         ;;
 
       -letterbox=*)
-        declare -r LETTERBOX="letterbox ${argument#*=}"
-        echo LETTERBOX: $LETTERBOX
+        declare -r MATTE=${argument#*=}
         # shift # past key
         # shift # past value
         shift # past argument AND value
