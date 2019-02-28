@@ -34,4 +34,4 @@ declare -r LETTERBOX=$(letterbox)
 
 echo
 echo Interanal Letterbox:
-echo $LETTER
+echo $LETTERBOX
