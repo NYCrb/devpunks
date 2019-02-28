@@ -33,7 +33,7 @@ source $BIN/.letterbox
 declare -r  LETTERBOX=$(letterbox.color)
 
 echo
-echo RESOLUTION: $RESOLUTION
+echo LETTERBOX: $LETTERBOX
 echo
 
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
