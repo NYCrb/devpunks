@@ -17,12 +17,12 @@ resolve () {
 
 
 ratio () {
-  declare -r  SAR="setsar=sar=1.00" # a = (w/h)
-  declare -r  DAR="setdar=dar=$WIDTH/$HEIGHT"
+  declare -r SAR="setsar=sar=1.00" # a = (w/h)
+  declare -r DAR="setdar=dar=$WIDTH/$HEIGHT"
 }
 
 
-declare -r  RESOLUTION="$(resolve $WIDTH):$(resolve $HEIGHT)"
+declare -r  RESOLUTION="$(resolve $WIDTH)\:$(resolve $HEIGHT)"
 
 echo
 echo RESOLUTION: $RESOLUTION
