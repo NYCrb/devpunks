@@ -12,7 +12,7 @@ resolve () {
 
 
 ratio () {
-  declare -r SAR="setsar=sar=1.00" # a = (w/h)
+  local SAR="setsar=sar=1.00" # a = (w/h)
   declare -r DAR="setdar=dar=$RESOLUTION"
   (test $LETTERBOX && echo $SAR) || echo $DAR
 }
