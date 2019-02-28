@@ -18,6 +18,7 @@ resolve () {
 
 ratio () {
   declare -r  SAR="setsar=sar=1.00" # a = (w/h)
+declare -r  DAR="setdar=dar=$WIDTH/$HEIGHT"
 }
 
 
