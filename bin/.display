@@ -32,6 +32,10 @@ declare -r  ASPECT="$WIDTH/$HEIGHT" # Aspect Ratio (4:3, 16:9, 1.3333) (Used for
 source $BIN/.letterbox
 declare -r  LETTERBOX=$(letterbox.color)
 
+echo
+echo RESOLUTION: $RESOLUTION
+echo
+
 
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
