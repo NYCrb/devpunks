@@ -15,6 +15,11 @@ echo RESOLUTION:   $RESOLUTION
 
 # How Blurs & Filters Work - https://www.youtube.com/watch?v=C_zFhWdM4ic
 
+letterbox () {
+  local filter="pad=$RESOLUTION:(ow-iw)/2:(oh-ih)/2:$color"
+  (test $MATTE && echo $filter) || echo "null"
+}
+
 letterbox.color () {
   local color=black
   local filter="pad=$RESOLUTION:(ow-iw)/2:(oh-ih)/2:$color"
