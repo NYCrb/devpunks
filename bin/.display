@@ -12,7 +12,7 @@ resolve () {
 
 
 ratio () {
-  local SAR="setsar=sar=1.00" # a = (w/h)
+  local sar="setsar=sar=1.00" # a = (w/h)
   local DAR="setdar=dar=$RESOLUTION"
   (test $LETTERBOX && echo $SAR) || echo $DAR
 }
