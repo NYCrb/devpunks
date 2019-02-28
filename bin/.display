@@ -20,23 +20,23 @@ ratio () { # SAR (PAR), DAR - https://ffmpeg.org/ffmpeg-all.html#toc-setdar_002c
 
 # DIMENSIONS
 # declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for anamorphic video
-declare -r  COEFFICIENT="1.00" # Use SAR for anamorphic video
+declare -r COEFFICIENT="1.00" # Use SAR for anamorphic video
 #declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGHT\,trunc($COEFFICIENT*(ih*sar)/2)*2)"
-declare -r  RESOLUTION="$(resolve $WIDTH):$(resolve $HEIGHT)"
-declare -r  ASPECT="$(resolve $WIDTH)\$(resolve $HEIGHT)" # Aspect Ratio (4:3, 16:9, 1.3333) (Used for x265 encoding)
+declare -r RESOLUTION="$(resolve $WIDTH):$(resolve $HEIGHT)"
+declare -r ASPECT="$(resolve $WIDTH)\$(resolve $HEIGHT)" # Aspect Ratio (4:3, 16:9, 1.3333) (Used for x265 encoding)
 
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
 
-declare -r  RATIO=$(ratio)
-declare -r  ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # https://ffmpeg.org/ffmpeg-scaler.html#toc-Scaler-Options
-declare -r  SCALE="$RATIO,scale=$RESOLUTION:$ALGORITHM:force_original_aspect_ratio=decrease" # CHECK $ASPECT
+declare -r RATIO=$(ratio)
+declare -r ALGORITHM="flags=+bicubic" # https://i.stack.imgur.com/AaIAW.png # https://ffmpeg.org/ffmpeg-scaler.html#toc-Scaler-Options
+declare -r SCALE="$RATIO,scale=$RESOLUTION:$ALGORITHM:force_original_aspect_ratio=decrease" # CHECK $ASPECT
 
 # PLAYBACK?
-declare -r  DEINTERLACE="yadif=send_frame:auto:all"
-declare -r  PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
-declare -r  QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
+declare -r DEINTERLACE="yadif=send_frame:auto:all"
+declare -r PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel format https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
+declare -r QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 
 
 
