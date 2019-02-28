@@ -30,7 +30,7 @@ letterbox.blur () {
   echo Blurred
 }
 
-declare -fx letterbox.color
+declare -r LETTERBOX=$(letterbox)
 
 echo
 echo Interanal Letterbox:
