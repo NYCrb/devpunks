@@ -36,7 +36,6 @@ echo
 echo RESOLUTION: $RESOLUTION
 echo
 
-
 # SCALE https://trac.ffmpeg.org/wiki/Scaling
 #  - https://ffmpeg.org/ffmpeg-scaler.html
 #  - http://nickyguides.digital-digest.com/bilinear-vs-bicubic.htm
