@@ -2,6 +2,9 @@
 
 echo Loading filters
 
+# Experiments with FFmpeg Filters
+#   - https://yalantis.com/blog/experiments-with-ffmpeg-filters-and-frei0r-plugin-effects/
+
 source $BIN/.letterbox
 
 : ${SCALE? ❌ not set} ${DEINTERLACE? ❌ not set} ${LETTERBOX? ❌ not set}
