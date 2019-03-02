@@ -9,6 +9,7 @@ source $BIN/.letterbox
 
 # LUTS - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
 # Parse Cube Lut - https://github.com/thibauts/parse-cube-lut/blob/master/index.js
+# Apply Cube LUT - https://github.com/thibauts/apply-cube-lut
 # FFMPEG Mailing List - https://ffmpeg.org/pipermail/ffmpeg-user/2014-February/020063.html
 # BBC Article - http://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf
 # FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
