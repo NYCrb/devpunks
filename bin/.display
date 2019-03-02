@@ -19,6 +19,7 @@ ratio () { # SAR (PAR), DAR - https://ffmpeg.org/ffmpeg-all.html#toc-setdar_002c
 
 
 # DIMENSIONS
+# https://superuser.com/questions/547296/resizing-videos-with-ffmpeg-avconv-to-fit-into-static-sized-player/547406#answer-547406
 # declare -r  COEFFICIENT="min($WIDTH/(iw*sar)\,$HEIGHT/(ih*sar))" # Use SAR for anamorphic video
 declare -r COEFFICIENT="1.00" # Use SAR for anamorphic video
 #declare -r  RESOLUTION="max($WIDTH\,trunc($COEFFICIENT*(iw*sar)/2)*2):max($HEIGHT\,trunc($COEFFICIENT*(ih*sar)/2)*2)"
