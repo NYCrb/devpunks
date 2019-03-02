@@ -14,6 +14,7 @@ declare -r  PTS="setpts=PTS-STARTPTS [main]; [main][ref]"
 declare -r  PSNR=";[0:v][1:v]psnr" # PSNR = 10* log10(MAX ^ 2 / Mean_Squarred_Error)
 
 # SSIM (Structural Similarity Metric) https://ffmpeg.org/ffmpeg-filters.html#ssim
+# The SSIM Index for Image Quality Assessment
 declare -r  LOG=stats.log
 declare -r  SSIM="ssim='stats_file=$LOG'"
 
