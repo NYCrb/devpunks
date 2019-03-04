@@ -5,10 +5,9 @@ echo Loading filters
 # Experiments with FFmpeg Filters
 #   - https://yalantis.com/blog/experiments-with-ffmpeg-filters-and-frei0r-plugin-effects/
 
+: ${BIN? ❌ not set} ${SCALE? ❌ not set} ${DEINTERLACE? ❌ not set} ${LETTERBOX? ❌ not set}
+
 source $BIN/.letterbox
-
-: ${SCALE? ❌ not set} ${DEINTERLACE? ❌ not set} ${LETTERBOX? ❌ not set}
-
 
 # LUTS - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
 # Parse Cube lUT - https://github.com/thibauts/parse-cube-lut/blob/master/index.js
