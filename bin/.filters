@@ -2,7 +2,7 @@
 
 echo Loading filters
 
-# Experiments with FFmpeg Filters
+# Experiments with FFmpeg frei0r Filters
 #   - https://yalantis.com/blog/experiments-with-ffmpeg-filters-and-frei0r-plugin-effects/
 
 : ${BIN? ❌ not set} ${SCALE? ❌ not set} ${DEINTERLACE? ❌ not set} ${LETTERBOX? ❌ not set}
