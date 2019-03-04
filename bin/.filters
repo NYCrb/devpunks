@@ -7,7 +7,6 @@ echo Loading filters
 
 : ${BIN? ❌ not set} ${SCALE? ❌ not set} ${DEINTERLACE? ❌ not set} ${LETTERBOX? ❌ not set}
 
-source $BIN/.letterbox
 source $BIN/.luts
 
 # http://ffmpeg.org/ffmpeg-all.html#setpts_002c-asetpts
