@@ -1,3 +1,14 @@
 #!/usr/bin/env bash
 
 echo Loading luts
+
+# LUTS - https://ffmpeg.org/pipermail/ffmpeg-user/2014-May/021356.html
+# Parse Cube lUT - https://github.com/thibauts/parse-cube-lut/blob/master/index.js
+# Apply Cube LUT - https://github.com/thibauts/apply-cube-lut
+# Cube LUT Specification - http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/products/speedgrade/cc/pdfs/cube-lut-specification-1.0.pdf
+# Canvas LUT - https://github.com/hughsk/lut
+# FFMPEG Mailing List - https://ffmpeg.org/pipermail/ffmpeg-user/2014-February/020063.html
+# BBC Article - http://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf
+# FILTERS https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description
+#         http://manpages.ubuntu.com/manpages/cosmic/man1/ffmpeg-filters.1.html
+declare -r  LUT="lut3d=./blue.cube"
