@@ -10,6 +10,8 @@ echo Loading filters
 source $BIN/.luts
 source $BIN/.letterbox
 
+echo WATERMARK FILE: $WATERMARK
+
 # http://ffmpeg.org/ffmpeg-all.html#setpts_002c-asetpts
 declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = shorter)
 # declare -r  VIDEO_FILTERS="-filter:v $SCALE,$DEINTERLACE,$LUT,$SPEED" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
