@@ -24,4 +24,4 @@ declare -r  VOLUME="$FADE_IN,$FADE_OUT"                # Audio volume level 0-25
 declare -r  FILTER= # -filter [filter]                 # Main filter
 declare -r  FILTERS="$AUDIO_FILTERS $VIDEO_FILTERS"
 
-echo WATERMARK File: $WATERMARK
+echo WATERMARK FILE: $WATERMARK
