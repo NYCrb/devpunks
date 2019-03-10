@@ -40,6 +40,7 @@ declare -r  BITRATE="-b:a 128K -crf 24"
                                                        # crf (constant rate factor) quality (51 worst, 0 lossless, 18-28 is sane, default 23)
 
 $FFMPEG      \
+  $STATS     \
   $SEEK      \
   $FORMAT    \
   $IN        \
