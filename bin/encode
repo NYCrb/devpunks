@@ -42,7 +42,6 @@ declare -r  BITRATE="-b:a 128K -crf 24"
 $FFMPEG      \
   $STATS     \
   $SEEK      \
-  $FORMAT    \
   $IN        \
   $PROFILE   \
   $BASE      \
