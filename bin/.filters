@@ -16,7 +16,7 @@ echo WATERMARK FILE: $WATERMARK
 declare -r  SPEED="setpts=1.0*PTS" # Multiplier. (Higher = longer, Lower = shorter)
 # declare -r  VIDEO_FILTERS="-filter:v $SCALE,$DEINTERLACE,$LUT,$SPEED" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
 #declare -r  VIDEO_FILTERS="-i $WATERMARK -filter:v $SCALE,$DEINTERLACE,$LETTERBOX -filter_complex overlay=10:10" # :$SPEED" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
-declare -r  VIDEO_FILTERS="-i $WATERMARK -filter_complex $SCALE,$DEINTERLACE,$LETTERBOX[scaled];[1:v]overlay=10:10[out] -map [out] -map 0:a" # :$SPEED" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
+declare -r  VIDEO_FILTERS="-i $WATERMARK -filter_complex $SCALE,$DEINTERLACE,$LETTERBOX[scaled];[scaled][1:v]overlay=10:10[out] -map [out] -map 0:a" # :$SPEED" # https://ffmpeg.org/ffmpeg-filters.html#yadif-1
 
 # VOLUME https://stackoverflow.com/questions/38085408/complex-audio-volume-changes-with-ffmpeg
 #declare -r  VOLUME="volume=-3dB"                      # Audio volume level 0-256 (256 = normaled) (-100dB = "silence" logrithmic curving)
