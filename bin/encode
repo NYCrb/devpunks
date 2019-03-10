@@ -43,19 +43,19 @@ $FFMPEG      \
   $STATS     \
   $SEEK      \
   $IN        \
-  $PROFILE   \
-  $BASE      \
-  $SYNC      \
-  $STAMP     \
-  $STATS     \
-  $THREADS   \
-  $FILTERS   \
-  $CODECS    \
-  $MAPS      \
-  $QUICKTIME \
-  $FREQUENCY \
-  $BITRATE   \
+  $FORMAT    \
 $OUT
+# $PROFILE   \
+# $BASE      \
+# $SYNC      \
+# $STAMP     \
+# $THREADS   \
+# $FREQUENCY \
+# $FILTERS   \
+# $CODECS    \
+# $MAPS      \
+# $QUICKTIME \
+# $BITRATE   \
 
 ### 2-PASS https://slhck.info/video/2017/03/01/rate-control.html#2-pass-average-bitrate-2-pass-abr
 # ffmpeg -i <input> -pass 1 -f mp4 /dev/null
