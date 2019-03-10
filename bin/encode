@@ -43,15 +43,15 @@ $FFMPEG      \
   $STATS     \
   $SEEK      \
   $IN        \
-  $FORMAT    \
+  $FILTERS   \
 $OUT
+# $FORMAT    \
 # $PROFILE   \
 # $BASE      \
 # $SYNC      \
 # $STAMP     \
 # $THREADS   \
 # $FREQUENCY \
-# $FILTERS   \
 # $CODECS    \
 # $MAPS      \
 # $QUICKTIME \
