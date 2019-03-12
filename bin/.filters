@@ -12,6 +12,7 @@ source $BIN/.letterbox
 
 watermark () {
   echo WATERMARK FILE: $WATERMARK
+  echo "-i $WATERMARK"
 }
 
 # http://ffmpeg.org/ffmpeg-all.html#setpts_002c-asetpts
