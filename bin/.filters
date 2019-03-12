@@ -16,9 +16,7 @@ watermark () {
   local filtered=$1
 
   test "$WATERMARK" \
-    && echo "-i $WATERMARK" # -map [watermark]"
-
-# ";[$LABEL][1:v]overlay=10:10[watermark] -map [watermark]"
+    && echo "-i $WATERMARK $filtered[$LABEL];[$LABEL][1:v]overlay=10:10[$map] -map [$LABEL] -map [$map]"
 }
 
 # echo $(watermark)
