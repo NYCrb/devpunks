@@ -9,6 +9,7 @@ echo Loading filters
 
 source $BIN/.luts
 source $BIN/.letterbox
+declare -r LABEL=filtered
 
 watermark () {
   test "$WATERMARK" \
