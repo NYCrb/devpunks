@@ -12,6 +12,8 @@ source $BIN/.letterbox
 declare -r LABEL=filtered
 
 watermark () {
+  local label=watermark
+
   test "$WATERMARK" \
     && echo "-i $WATERMARK"
 }
