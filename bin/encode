@@ -44,6 +44,7 @@ $FFMPEG      \
   $SEEK      \
   $IN        \
   $FILTERS   \
+  $MAPS      \
 $OUT
 # $FORMAT    \
 # $PROFILE   \
