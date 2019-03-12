@@ -11,8 +11,8 @@ source $BIN/.luts
 source $BIN/.letterbox
 
 watermark () {
-  echo WATERMARK FILE: $WATERMARK
-  echo "-i $WATERMARK"
+  test "$WATERMARK" \
+    && echo "-i $WATERMARK"
 }
 
 $(watermark)
