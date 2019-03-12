@@ -15,7 +15,7 @@ watermark () {
   local label=watermark
 
   test "$WATERMARK" \
-    && echo "-i $WATERMARK -map [watermark]"
+    && echo "-i $WATERMARK" # -map [watermark]"
 
 # ";[$LABEL][1:v]overlay=10:10[watermark] -map [watermark]"
 }
