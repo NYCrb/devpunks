@@ -8,7 +8,6 @@ resolve () {
   ( test $distance && echo $distance ) || echo 0
 }
 
-
 ratio () { # SAR (PAR), DAR - https://ffmpeg.org/ffmpeg-all.html#toc-setdar_002c-setsar
   local sar="setsar=sar=1.00" # a = (w/h)
   local dar="setdar=dar=$ASPECT"
