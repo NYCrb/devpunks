@@ -2,7 +2,6 @@
 
 echo Loading display
 
-
 resolve () {
   local distance=$1
 
