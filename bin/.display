@@ -38,7 +38,6 @@ declare -r PIXELS="-pix_fmt yuv420p" # Chroma subsampling: 4:2:0 Quicktime Pixel
 declare -r QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/wiki/Encode/AAC#ProgressiveDownload
 
 
-
 echo
 echo RESOLUTION: $RESOLUTION
 echo ASPECT:     $ASPECT
