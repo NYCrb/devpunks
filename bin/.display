@@ -41,6 +41,6 @@ declare -r QUICKTIME="$PIXELS -movflags +faststart" # https://trac.ffmpeg.org/wi
 
 echo
 echo RESOLUTION: $RESOLUTION
-echo ASPECT:      $ASPECT
+echo ASPECT:     $ASPECT
 echo
 
