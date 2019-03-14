@@ -2,7 +2,6 @@
 
 echo Loading display
 
-: ${BIN? ❌ not set}
 
 resolve () {
   local distance=$1
