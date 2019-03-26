@@ -61,7 +61,6 @@ for argument in "$@"
       -start=*)
         declare -r START="${argument#*=}"
         shift # past argument AND value
-        echo END: $START
         ;;
 
       -stats)
