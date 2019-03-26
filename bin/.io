@@ -32,7 +32,7 @@ seek () {
   local end=$(  )
   local duration=
 
-  echo SEEK AND DESTROY! -ss $start
+  echo SEEK AND DESTROY! -ss $start $duration
 }
 
 seek
