@@ -25,6 +25,12 @@ open () {
 
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
+
+
+seek () {
+
+}
+
 declare -r START=$( test -f $1 && echo -ss 00:00:00 ) # seek start time offset
 declare -r DURATION="-t 10"   # seek duration time (precedence over -to)
 declare -r END= "-to [end]"       # seek end time
