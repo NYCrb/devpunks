@@ -32,7 +32,7 @@ for argument in "$@"
         ;;
 
       -end=*)
-        declare -r INPUT="${argument#*=}"
+        declare -r END="${argument#*=}"
         shift # past argument AND value
         ;;
 
