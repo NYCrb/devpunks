@@ -35,7 +35,6 @@ seek () {
   echo SEEK AND DESTROY! -ss $start $duration $end
 }
 
-seek
 
 declare -r IN="-i $( open $INPUT || color $INPUT )"
 declare -r OUT=${OUTPUT:-"-y /dev/null"}
