@@ -32,7 +32,6 @@ for argument in "$@"
       -end=*)
         declare -r END="${argument#*=}"
         shift # past argument AND value
-        echo END: $END
         ;;
 
       -hd)
