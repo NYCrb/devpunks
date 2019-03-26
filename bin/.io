@@ -28,7 +28,7 @@ open () {
 
 
 seek () {
-
+  local start
 }
 
 declare -r START=$( test -f $1 && echo -ss 00:00:00 ) # seek start time offset
