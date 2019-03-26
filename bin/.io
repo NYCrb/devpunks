@@ -28,7 +28,7 @@ open () {
 
 
 seek () {
-  local start
+  local start=00:00:00
 
   echo SEEK AND DESTROY! -ss $start
 }
