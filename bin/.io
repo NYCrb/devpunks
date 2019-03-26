@@ -27,6 +27,8 @@ open () {
 # *** SEEK BEFORE INPUT for cover image ***
 
 
+# SEEKING https://trac.ffmpeg.org/wiki/Seeking
+# *** SEEK BEFORE INPUT for cover image ***
 seek () {
   local start=00:00:00 # seek start time offset
   local end=$( test $END && echo -to $END )
