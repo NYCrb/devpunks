@@ -36,6 +36,12 @@ for argument in "$@"
         shift # past argument AND value
         ;;
 
+
+      -input=*)
+        declare -r INPUT="${argument#*=}"
+        shift # past argument AND value
+        ;;
+
       -letterbox*)
         declare -r MATTE=$( [[ $argument =~ ^-letterbox$ ]] && echo "black" || echo ${argument#*=})
         # shift # past key
