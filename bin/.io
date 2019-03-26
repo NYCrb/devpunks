@@ -30,7 +30,7 @@ open () {
 seek () {
   local start
 
-  echo SEEKING BITCHES!!!
+  echo SEEK AND DESTROY! -ss $start
 }
 
 seek
