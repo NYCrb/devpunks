@@ -28,7 +28,7 @@ open () {
 
 
 seek () {
-  local start=00:00:00
+  local start=00:00:00 # seek start time offset
   local end=$( test $END && echo -to $END )
   local duration= # -t 10  # seek duration time (precedence over -to)
 
@@ -37,8 +37,7 @@ seek () {
 
 seek
 
-declare -r START=$( test -f $1 && echo -ss 00:00:00 ) # seek start time offset
-declare -r END=$( test -f $1 && echo -to -END )
+declare -r START=$( test -f $1 && echo -ss 00:00:00 )
 declare -r SEEK="$START $"
 declare -r IN="-i $( open $INPUT || color $INPUT )"
 declare -r OUT=${OUTPUT:-"-y /dev/null"}
