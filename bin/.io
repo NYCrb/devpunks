@@ -43,6 +43,10 @@ declare -r OUT=${OUTPUT:-"-y /dev/null"}
 # lavfi for blank image
 declare -r FORMAT="-f $(format)" # image2 for still frames
 
+# SEEKING https://trac.ffmpeg.org/wiki/Seeking
+# *** SEEK BEFORE INPUT for cover image ***
+declare -r SEEK="$(seek)"
+
 echo IN $IN
 echo OUT $OUT
 echo SEEK $SEEK
