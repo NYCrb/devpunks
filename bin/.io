@@ -30,7 +30,7 @@ open () {
 seek () {
   local start=00:00:00
   local end=$(  )
-  local duration=# -t 10
+  local duration= # -t 10
 
   echo SEEK AND DESTROY! -ss $start $duration
 }
