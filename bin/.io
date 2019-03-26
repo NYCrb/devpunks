@@ -28,11 +28,11 @@ open () {
 
 
 seek () {
-  local start=00:00:00 # seek start time offset
+  local start=$( echo -ss 00:00:00 ) # seek start time offset
   local end=$( test $END && echo -to $END )
   local duration= # -t 10  # seek duration time (precedence over -to)
 
-  echo SEEK AND DESTROY! -ss $start $duration $end
+  echo $start $duration $end
 }
 
 
