@@ -37,8 +37,6 @@ seek () {
 
 seek
 
-declare -r START=$( test -f $1 && echo -ss 00:00:00 )
-declare -r SEEK="$START $"
 declare -r IN="-i $( open $INPUT || color $INPUT )"
 declare -r OUT=${OUTPUT:-"-y /dev/null"}
 
