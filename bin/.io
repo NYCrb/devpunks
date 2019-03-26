@@ -47,4 +47,5 @@ declare -r FORMAT="-f $(format)" # image2 for still frames
 
 echo IN $IN
 echo OUT $OUT
+echo SEEK $SEEK
 echo FORMAT $FORMAT
