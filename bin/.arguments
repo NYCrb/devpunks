@@ -16,7 +16,6 @@ for argument in "$@"
         echo
         echo "Options:"
         echo "-help                   show brief help"
-        echo "-start=[hh:mm:ss]       start timestamp"
         echo "-end=[hh:mm:ss]         end at timestamp"
         echo "-input=[file|color]     Input file or color"
         echo "-letterbox=[color|blur] set letterbox to color or blurred video matte"
