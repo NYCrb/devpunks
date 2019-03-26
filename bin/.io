@@ -29,7 +29,11 @@ open () {
 
 seek () {
   local start
+
+  echo SEEKING BITCHES!!!
 }
+
+seek
 
 declare -r START=$( test -f $1 && echo -ss 00:00:00 ) # seek start time offset
 declare -r DURATION="-t 10"   # seek duration time (precedence over -to)
