@@ -33,6 +33,12 @@ for argument in "$@"
         exit 0
         ;;
 
+      -start=*)
+        declare -r START="${argument#*=}"
+        shift # past argument AND value
+        echo END: $START
+        ;;
+
       -end=*)
         declare -r END="${argument#*=}"
         shift # past argument AND value
