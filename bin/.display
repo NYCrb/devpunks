@@ -10,7 +10,7 @@ resolve () {
 
 ratio () { # SAR (PAR), DAR - https://ffmpeg.org/ffmpeg-all.html#toc-setdar_002c-setsar
   local par="1.00"
-  local sar="setsar=sar=1.00" # a = (w/h)
+  local sar="setsar=sar=$par" # a = (w/h)
   local dar="setdar=dar=$ASPECT"
   (test $MATTE && echo $sar) || echo $dar
 }
