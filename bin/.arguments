@@ -35,8 +35,8 @@ for argument in "$@"
         ;;
 
       -4k)
-        declare -ir WIDTH=1920
-        declare -ir HEIGHT=1080
+        declare -ir WIDTH=3840
+        declare -ir HEIGHT=2160
         shift # past argument AND value
         ;;
 
