@@ -28,8 +28,8 @@ open () {
 
 
 seek () {
-  local start=$( echo -ss 00:00:00 ) # seek start time offset
-  local end=$( test $END && echo -to $END )
+  local start=$( test $START && echo -ss $START )
+  local end=$(   test $END   && echo -to $END   )
   local duration= # -t 10  # seek duration time (precedence over -to)
 
   echo $start $duration $end
