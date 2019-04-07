@@ -65,7 +65,7 @@ for argument in "$@"
         ;;
 
       -stop=*)
-        declare -r END="${argument#*=}"
+        declare -r STOP="${argument#*=}"
         shift # past argument AND value
         ;;
 
