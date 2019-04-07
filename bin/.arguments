@@ -67,7 +67,7 @@ for argument in "$@"
         ;;
 
       -passes=*)
-        declare -r PASSES="${argument#*=}"
+        declare -r PASSES=${argument#*=}
         shift # past argument AND value
         ;;
 
