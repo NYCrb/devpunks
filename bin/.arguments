@@ -64,6 +64,11 @@ for argument in "$@"
         shift # past argument AND value
         ;;
 
+      -stop=*)
+        declare -r END="${argument#*=}"
+        shift # past argument AND value
+        ;;
+
       -stats)
         source $BIN/.stats
         shift # past argument AND value
