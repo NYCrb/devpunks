@@ -29,7 +29,7 @@ open () {
 
 seek () {
   local start=$( test $START && echo -ss $START )
-  local end=$(   test $END   && echo -to $END   )
+  local stop=$(  test $STOP  && echo -to $STOP  )
   local duration= # -t 10  # seek duration time (precedence over -to)
 
   echo $start $duration $end
