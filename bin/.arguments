@@ -8,9 +8,8 @@
 #   done
 
 menu () {
-    echo
-    echo "Options:"
-    echo
+    echo; echo "Options:"; echo
+
     echo "  -help                   show brief help"
     echo "  -hd                     1920 x 1080 resolution"
     echo "  -4k                     3840 x 2160 resolution"
