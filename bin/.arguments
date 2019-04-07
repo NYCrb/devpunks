@@ -41,6 +41,7 @@ for argument in "$@"
       -help)
         menu
         # shift # past key
+        # shift # past value
         ;;
 
       -4k)
