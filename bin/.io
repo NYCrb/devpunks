@@ -32,7 +32,7 @@ seek () {
   local stop=$(  test $STOP  && echo -to $STOP  )
   local duration= # -t 10  # seek duration time (precedence over -to)
 
-  echo $start $duration $end
+  echo $start $duration $stop
 }
 
 
