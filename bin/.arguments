@@ -23,6 +23,8 @@ menu () {
     echo "  -stats                  output stats (and time)"
     echo "  -watermark=[file]       Watermark image file"
     echo
+
+    exit 0
 }
 
 
