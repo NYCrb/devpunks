@@ -15,7 +15,7 @@ menu () {
     echo "  -4k                     3840 x 2160 resolution"
     echo "  -input=[file|color]     Input file or color"
     echo "  -letterbox=[color|blur] letterbox color or blurred video matte (defaults to black)"
-    echo "    blur                  blur video as letterbox matte"
+    echo "    blur                  Blur video as letterbox matte"
     echo "    color values:"
     echo "      random              Random color value"
     echo "      [0x|#]RRGGBB[AA]    Hexidecimal RGB format (with optional 0.0 - 1.0 [AA]lpha value)"
