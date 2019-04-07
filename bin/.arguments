@@ -95,7 +95,8 @@ for argument in "$@"
         echo "$1 requires a value to be set (i.e. $1=value)" >&2; exit 1;;
 
       -*)
-        echo "unknown option: $1" >&2; exit 1;;
+        echo "unknown option: $1" >&2; exit 1
+        ;;
 
       *)
         declare -r OUTPUT="$1"
