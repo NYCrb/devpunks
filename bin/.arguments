@@ -30,7 +30,7 @@ for argument in "$@"
         exit 0
         ;;
 
-      -end=*)
+      -stop=*)
         declare -r END="${argument#*=}"
         shift # past argument AND value
         ;;
