@@ -68,7 +68,6 @@ for argument in "$@"
 
       -passes=*)
         declare -ir PASSES=${argument#*=}
-        echo PASSES: $PASSES
         shift # past argument AND value
         ;;
 
