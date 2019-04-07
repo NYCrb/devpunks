@@ -8,6 +8,26 @@ for i in `seq 1 10`
   done
 
 
+menu () {
+    echo
+    echo "Options:"
+    echo
+    echo "  -help                   show brief help"
+    echo "  -hd                     1920 x 1080 resolution"
+    echo "  -4k                     3840 x 2160 resolution"
+    echo "  -input=[file|color]     Input file or color"
+    echo "  -letterbox=[color|blur] set letterbox to color or blurred video matte"
+    echo "  -passes=[number]        Number of passes for video"
+    echo "  -start=[hh:mm:ss]       start timestamp"
+    echo "  -stop=[hh:mm:ss]        stop at timestamp"
+    echo "  -stats                  output stats (and time)"
+    echo "  -watermark=[file]       Watermark image file"
+    echo
+}
+
+
+# test $# -eq 0 && echo >&2 "SHIT" && exit 1
+
 for argument in "$@"
   do
     case $argument in
