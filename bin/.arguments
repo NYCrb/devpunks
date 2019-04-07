@@ -62,7 +62,6 @@ for argument in "$@"
 
       -letterbox*)
         declare -r MATTE=$( [[ $argument =~ ^-letterbox$ ]] && echo "black" || echo ${argument#*=})
-        # shift # past key
         # shift # past value
         shift # past argument AND value
         ;;
