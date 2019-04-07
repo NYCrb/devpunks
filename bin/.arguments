@@ -37,7 +37,6 @@ for argument in "$@"
 
       -help)
         menu
-        exit 0
         ;;
 
       -4k)
