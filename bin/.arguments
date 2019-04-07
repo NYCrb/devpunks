@@ -17,7 +17,7 @@ menu () {
     echo "  -letterbox=[color|blur] set letterbox to color or blurred video matte"
     echo "    color values:"
     echo "      random              Random color value"
-    echo "      [0x|#]RRGGBB[AA]    Hexidecimal RGB format (with optional Alpha value)"
+    echo "      [0x|#]RRGGBB[AA]    Hexidecimal RGB format (with optional 0.0 - 1.0 Alpha channel value)"
     echo "  -passes=[number]        Number of passes for video"
     echo "  -start=[hh:mm:ss]       start timestamp"
     echo "  -stop=[hh:mm:ss]        stop at timestamp"
