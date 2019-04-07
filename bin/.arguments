@@ -28,7 +28,6 @@ menu () {
 
 test $# -eq 0 && menu
 
-
 for argument in "$@"
   do
     case $argument in
