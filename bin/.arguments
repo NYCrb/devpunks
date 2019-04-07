@@ -15,6 +15,7 @@ menu () {
     echo "  -4k                     3840 x 2160 resolution"
     echo "  -input=[file|color]     Input file or color"
     echo "  -letterbox=[color|blur] set letterbox to color or blurred video matte"
+    echo "    color = random - Random color value"
     echo "    color = [0x|#]RRGGBB[AA] Hexidecimal RGB format (with optional Alpha value)"
     echo "  -passes=[number]        Number of passes for video"
     echo "  -start=[hh:mm:ss]       start timestamp"
