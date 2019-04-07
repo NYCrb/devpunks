@@ -23,7 +23,7 @@ menu () {
 
     echo "  -passes=[number]        Number of passes for video"
     echo "  -start=[HH:MM:SS]       Start at timestamp"
-    echo "  -stop=[hh:mm:ss]        Stop at timestamp"
+    echo "  -stop=[HH:MM:SS]        Stop at timestamp"
     echo "  -stats                  Log statistics (and time)"
     echo "  -watermark=[file]       Watermark image file"
     echo
