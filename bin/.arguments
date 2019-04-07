@@ -22,7 +22,7 @@ menu () {
     echo "      color by name       Full color list -> https://ffmpeg.org/ffmpeg-utils.html#toc-Color"
 
     echo "  -passes=[number]        Number of passes for video"
-    echo "  -start=[hh:mm:ss]       Start timestamp"
+    echo "  -start=[hh:mm:ss]       Start at timestamp"
     echo "  -stop=[hh:mm:ss]        Stop at timestamp"
     echo "  -stats                  Log statistics (and time)"
     echo "  -watermark=[file]       Watermark image file"
