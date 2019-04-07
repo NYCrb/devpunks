@@ -30,11 +30,6 @@ for argument in "$@"
         exit 0
         ;;
 
-      -stop=*)
-        declare -r END="${argument#*=}"
-        shift # past argument AND value
-        ;;
-
       -4k)
         declare -ir WIDTH=3840
         declare -ir HEIGHT=2160
