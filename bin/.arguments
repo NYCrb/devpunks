@@ -72,7 +72,7 @@ for argument in "$@"
         ;;
 
       -start=*)
-        declare -r START="${argument#*=}"
+        declare -r START="${argument#*=}
         shift # past argument AND value
         ;;
 
