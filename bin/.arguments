@@ -26,7 +26,8 @@ menu () {
 }
 
 
-# test $# -eq 0 && echo >&2 "SHIT" && exit 1
+test $# -eq 0 && menu && exit 1
+
 
 for argument in "$@"
   do
