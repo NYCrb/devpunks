@@ -20,7 +20,7 @@ format () {
 }
 
 open () {
-  test -f $1 && echo $1
+  test -f "$1" && echo $1
 }
 
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
