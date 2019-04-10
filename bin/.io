@@ -36,7 +36,7 @@ seek () {
 }
 
 
-declare -r IN="-i $( open $INPUT || color $INPUT )"
+declare -r IN="-i $( open "$INPUT" || color $INPUT )"
 declare -r OUT=${OUTPUT:-"-y /dev/null"}
 
 # lavfi for blank image
