@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 echo Loading I/O
-echo INPUT: $INPUT
 
 : ${INPUT? ❌ not set}
 
