@@ -8,6 +8,7 @@ color () {
   echo color=c=$1 # :s=700x200 Sizing
 }
 
+
 snow () {
   local graph="-i nullsrc=s=256x256:d=5 -vf geq=random(1)*255:128:128"
   echo nullsrc
