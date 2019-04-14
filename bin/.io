@@ -14,6 +14,7 @@ snow () {
 }
 
 format () {
+  # image2 for still frames
   # lavfi for blank image - https://www.ffmpeg.org/ffmpeg-devices.html#lavfi
   ( test ! -f "$INPUT"  && echo lavfi ) || \
   ( echo mp4 )
