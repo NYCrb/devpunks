@@ -25,8 +25,6 @@ open () {
 
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
-
-
 seek () {
   local start=$( test $START && echo -ss $START )
   local stop=$(  test $STOP  && echo -to $STOP  )
