@@ -38,7 +38,7 @@ seek () {
 declare -r IN="-i $( open "$INPUT" || color $INPUT )"
 declare -r OUT=${OUTPUT:-"-y /dev/null"}
 
-declare -r FORMAT="-f $(format)" # image2 for still frames
+declare -r FORMAT="-f $(format)"
 
 # SEEKING https://trac.ffmpeg.org/wiki/Seeking
 # *** SEEK BEFORE INPUT for cover image ***
