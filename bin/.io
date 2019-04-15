@@ -34,7 +34,6 @@ seek () {
   echo $start $duration $stop
 }
 
-
 declare -r IN="-i $( open "$INPUT" || color $INPUT )"
 declare -r OUT=${OUTPUT:-"-y /dev/null"}
 declare -r FORMAT="-f $(format)"
