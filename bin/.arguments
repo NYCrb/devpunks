@@ -18,7 +18,7 @@ menu () {
     echo "    blur                  Blurred video matte"
     echo "    color:"
     echo "      random              Random color value"
-    echo "      [0x|#]RRGGBB[AA]    Hexidecimal RGB format (with optional 0.0 - 1.0 [AA]lpha value)"
+    echo "      [0x|#]RRGGBB[AA]    Hexidecimal RGB format value (with optional 0.0 - 1.0 [AA]lpha)"
     echo "      color by name       Full color list -> https://ffmpeg.org/ffmpeg-utils.html#toc-Color"
 
     echo "  -passes=[number]        Number of passes for video"
