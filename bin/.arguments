@@ -21,8 +21,9 @@ menu () {
     echo "      [0x|#]RRGGBB[AA]    Hexidecimal RGB format value (with optional 0.0 - 1.0 [AA]lpha)"
     echo "      color by name       Full color list -> https://ffmpeg.org/ffmpeg-utils.html#toc-Color"
 
-    # Multipass Encoding - https://en.wikipedia.org/wiki/Variable_bitrate#Multi-pass_encoding_and_single-pass_encoding
-    # https://superuser.com/questions/1362800/ffmpeg-2-pass-encoding
+    # Multipass Encoding
+    #   https://en.wikipedia.org/wiki/Variable_bitrate#Multi-pass_encoding_and_single-pass_encoding
+    #   https://superuser.com/questions/1362800/ffmpeg-2-pass-encoding
     echo "  -passes=[number]        Number of passes for encoding"
     echo "  -start=[HH:]MM:SS[.mm]  Start at timestamp"
     echo "  -stop=[HH:]MM:SS[.mm]   Stop at timestamp"
