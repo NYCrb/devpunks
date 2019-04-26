@@ -34,8 +34,6 @@ menu () {
     exit 0
 }
 
-test $# -eq 0 && menu
-
 for argument in "$@"
   do
     case $argument in
