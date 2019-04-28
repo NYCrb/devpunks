@@ -16,7 +16,7 @@ menu () {
     echo "  -input=[file|color]     Input file or color"
     echo "  -letterbox=[blur|color] Blurred video matte or color value (default black)"
     echo "    -letterbox=blur       Blurred video matte"
-    echo "    color:"
+    echo "    -letterbox=color"
     echo "      random              Random color value"
     echo "      [0x|#]RRGGBB[AA]    Hexidecimal RGB format value (with optional 0.0 - 1.0 [AA]lpha)"
     echo "      color by name       Full color list -> https://ffmpeg.org/ffmpeg-utils.html#toc-Color"
