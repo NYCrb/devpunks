@@ -110,9 +110,6 @@ Used for video licensing.
   - [2 Live Crew Discuss Pretty Woman Supreme Court Case 'Campbell v Acuff-Rose'](https://www.youtube.com/watch?v=CRssktqjvOk)
 
 
-> And yes, Weird Al Yankovic sort of ruined it for all song parodists by never picking fights with those whose songs he parodies by giving those songwrighter _all_ of the publishing copyright on the parodies he performs. So even though he writes his own lyrics to their famous songs, he doesn't claim any ownership interest in those songs. And as my colleague notes, his lyrics do comment directly on the song itself and/or on its songwriter, which would greatly increase his odds of winning a parody argument, if he ever engaged in one. - Pamela Koslyn
-
-
-### Disclaimers
-
-> _No copyright is claimed in [content copied] and to the extent that material may appear to be infringed, I assert that such alleged infringement is permissible under fair use principles in U.S. copyright laws. If you believe material has been used in an unauthorized manner, please contact the poster._
+> And yes, Weird Al Yankovic sort of ruined it for all song parodists by never picking fights with those whose songs he parodies by giving those songwrighter _all_ of the publishing copyright on the
+> parodies he performs. So even though he writes his own lyrics to their famous songs, he doesn't claim any ownership interest in those songs. And as my colleague notes, his lyrics do comment directly
+> on the song itself and/or on its songwriter, which would greatly increase his odds of winning a parody argument, if he ever engaged in one. - Pamela Koslyn
