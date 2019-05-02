@@ -105,7 +105,7 @@ Used for video licensing.
   - https://en.wikipedia.org/wiki/Age_verification_system
 
 
-### Parody vs. Satire
+### Parody vs.
 
   - https://copyrightalliance.org/ca_faq_post/parody-considered-fair-use-satire-isnt/
   - https://www.avvo.com/legal-answers/do-i-need-permission-to-make-a-parody-song-to-adve-1206521.html
