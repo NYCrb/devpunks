@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'activerecord'
+gem 'active_support'
 
 gem 'rack-contrib'
 
