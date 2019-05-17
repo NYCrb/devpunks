@@ -1,6 +1,6 @@
 require "active_support/logger"
 
-class SEOLogger < ::Logger
+class CustomLogger < ::Logger
   def initialize (stream)
     puts "Our Stream #{stream}"
   end
