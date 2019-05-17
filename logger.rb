@@ -1,7 +1,5 @@
 require "active_support/logger"
 
-puts "#{ActiveSupport} Hello from logger"
-
 class SEOLogger < ::Logger
   def initialize (stream)
     puts "Our Stream #{stream}"
