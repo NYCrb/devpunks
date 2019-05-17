@@ -6,7 +6,7 @@ class CustomLogger < ::Logger
   end
 end
 
-seo_logger = SEOLogger.new (STDOUT)
+logger = CustomLogger.new (STDOUT)
 
 puts ActiveSupport::Logger.broadcast(seo_logger)
 
