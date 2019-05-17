@@ -6,7 +6,8 @@ class CustomLogger < ::Logger
   end
 end
 
-logger = CustomLogger.new(STDOUT)
+default = ActiveSupport::Logger.new (STDOUT)
+logger  = CustomLogger.new(STDOUT)
 
 puts ActiveSupport::Logger.broadcast(logger)
 
