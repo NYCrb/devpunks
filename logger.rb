@@ -10,7 +10,7 @@ default = ActiveSupport::Logger.new (STDOUT)
 logger  = CustomLogger.new(STDOUT)
 
 puts ::Logger
-puts ActiveSupport::Logger.broadcast(logger)
+puts default.extends(ActiveSupport::Logger.broadcast(logger))
 
 logger.debug "Debug level"
 logger.info "Info level"
