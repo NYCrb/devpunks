@@ -3,7 +3,6 @@
 
 ## `download`
 
-  Parse arguments
 
 
 ## `encode`
