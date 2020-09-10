@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# https://stackoverflow.com/questions/40088222/ffmpeg-convert-video-to-images
+declare -r name="$(file=${1##*/}; echo ${file%.*})"
+
+ffmpeg -i ${1} -vf fps=1 ${2}/${name}-%04d.png
+
