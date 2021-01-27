@@ -1,0 +1,88 @@
+<!-- This will degrade gracefully back to like IE6 Anchors or something ancient -->
+
+<title>#devPunks Pure CSS Responsive Flexbox Tabs</title>
+
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<style>
+@import '//www.devpunks.com/typography.css';
+
+:root {
+  --lightest-color: rgba(255,255,255,0.9);
+  --lighter-color:  rgba(245,245,245,0.8);
+  --darker-color:   rgba(100,100,100, 0.8);
+}
+
+h1, p { text-align: center }
+
+.tabs { display: flex; flex-flow: column nowrap }
+.tabs > a {
+  line-height: 2em;
+  border-bottom: 0;
+  text-align: center;
+}
+
+/*
+  targeted selectors (allows fragment identifier to be used for bookmarks
+  https://en.wikipedia.org/wiki/Fragment_identifier
+  https://developer.mozilla.org/en-US/docs/Web/CSS/:target
+*/
+.tabs > a, .tabs > a:target { flex: 1; order: 0 }
+.tabs > a:target { color: var(--hover-link) }
+
+/*
+  Adjacent sibling selectors & General sibling selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_selectors
+*/
+.tabs > section { order: 2 }
+.tabs a:target + section { order: 1; color: var(--lightest-color) }
+
+@media only screen and (orientation: landscape) {
+  .tabs { flex-flow: row wrap }
+  .tabs > a { background: var(--lighter-color) }
+  .tabs > a:hover, .tabs > a:target, .tabs a:target ~ section {
+    color: var(--darker-color);
+    background: var(--lightest-color)
+  }
+  .tabs > a ~ section { order: 1; min-height: 70% }
+  .tabs > a:not(:target) + section { display: none }
+}
+
+/* uncomment for toggle tabs (current one not visible */
+// .tabs > a:target { display: none; }
+</style>
+
+<h1>#devPunk Pure CSS Tabs</h1>
+
+<p>
+  <strong>BEHOLD</strong> Pure CSS Tabs 😂
+  <a title='Get the gist' rel='external' target='github' href='https://gist.github.com/snuggs/d10c14af11c7ee3070e47168fa9bc0bb'>Get the gist</a>
+</p>
+
+<main class='tabs'>
+  <a title='About' id='about' href='#about'>About</a>
+  <section>
+    <h1>About</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+  </section>
+
+  <a title='Maintenance' id='maintenance' href='#maintenance'>Maintenance</a>
+  <section>
+    <h1>Maintenance</h1>
+
+    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+  </section>
+
+  <!--
+  -->
+
+  <a title='Calibration' id='calibration' href='#calibration'>Calibration</a>
+  <section>
+    <h1>Calibratoin</h1>
+
+    <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+  </section>
+</main>
